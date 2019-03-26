@@ -1,0 +1,135 @@
+== Version 3.1 ==
+_Release date - Apr 3, 2018_
+
+  * New feature: New metal cooling tables that include atomic
+	self-shielding corrections for both Haardt & Madau and
+	Faucher-Giguere tables.  These tables have “_shielded” appended to
+	the filenames.
+  * New feature: H2 self-shielding of Lyman-Werner radiation using the
+	Wolcott-Green et al. (2011) model. Length scales for H2 column
+	density can be calculated using 1) neighboring grid zones (grid
+	codes only), 2) a user-supplied array of lengths, or 3) the local
+	Jeans length.
+  * Enhancement: pygrackle Python wrapper now compatible with Python 3.
+	Pygrackle works with Python 3.4 and later. Python 2.7 is still
+	supported.
+  * Enhancement: Added low-temperature (T < 30 K) term to (HI + HII ->
+	H2II + p) rate.
+  * Enhancement: Allow UV background parameters, UVbackground_redshift_on,
+	UVbackground_redshift_fullon, UVbackground_redshift_drop, and
+	UVbackground_redshift_on, to be user-settable and make
+	redshift-dependent ramping factor symmetric in redshift.
+  * Enhancement: Single consistent tolerance value used in solver.
+  * Enhancement: Volumetric and specific heating arrays now setable from
+	Python interface.
+  * Enhancement: Automated testing using Bitbucket Pipelines.
+  * Enhancement: New/updated make files for NCSA Blue Waters and Caltech
+	Wheeler.
+  * Bugfix: Fixed scaling and unit conversion issues with volumetric and
+	specific heating rate arrays and added tests.
+  * Bugfix: Fixed scaling issue of metal cooling rates.  Metal cooling
+	rates will change by a factor of (1 / 0.76).
+  * Bugfix: Source code format fixes for radiative transfer fields.
+  * Bugfix: Fixed issue where NaNs occurred in atomic self-shielding when
+	redshift is greater than turn-on redshift for UV background.
+  * Bugfix: Fixed OpenMP compilation errors.
+  * Bugfix: Fixed memory allocation in C example.
+  * Bugfix: Fixed precision issues with radiation transfer field
+	variables.
+  * Bugfix: Fixed bug in answer testing where some tests were not being
+	properly compared to existing answers.
+  * Documentation improvements.
+
+== Version 3.0 ==
+_Release date - Nov 1, 2016_
+
+  * New feature: New API with fields arrays provided in a struct.
+  * New feature: Added support for radiation transfer fields.
+  * New feature: Added atomic self-shielding of UV backgrounds.
+  * New feature: Added support for providing arrays of volumetric and
+	specific heating rates.
+  * Enhancement: added Case B recombination cooling rates and updated
+	Case A rates.
+  * Enhancement: updated testing framework to use pytest parametrized
+	tests.
+  * Bugfix: fixed kunit normalization for k4 Case B recombination rate.
+  * Bugfix: fixed scaling of low-density H2 cooling rate and use newer H2
+	LTE rate in all appropriate places.
+  * Significant documentation updates and improvements.
+
+== Version 2.2 ==
+_Release date - May 18, 2016_
+
+  * New feature: Added OpenMP support.
+  * New feature: Added test suite and continuous integration testing.
+  * New feature: Added support for old-style Cloudy tables used in Enzo's
+	Cloudy cooling routine.  Added cooling table for high density
+	metal cooling, cloudy_metals_2008_3D.h5.
+  * Enhancement: Many primordial chemistry updates: updated reactions
+	rates for H ionization, H- formation/destruction, H2 dissociation,
+	H2+ formation, H2 LTE cooling, and HD low density cooling.  Added
+	reactions for collisional ionization of H by H and H by He.
+  * Enhancement: Refactored and improved pygrackle interface.
+  * Bugfix: Fixed conversion of comoving to proper coordinates in
+	calculation of temperature field in tabulated mode.  This only
+	affected calls to calculate_temperature in tabulated mode, but not
+	the actual cooling solver.
+  * Removed code for old collisional rates.
+  * Reduced size of row temporary variables in chemistry/cooling solver.
+  * Fixed makefiles for TACC Stampede and NCSA Blue Waters.
+  * Moderate documentation improvements.
+
+== Version 2.1 ==
+_Release date - Jun 3, 2015_
+
+  * New feature: Added cooling_cell.py script to simulate the cooling of a
+	single cell over time.
+  * Enhancement: k19 reaction added to H- calculation.
+  * Enhancement: Build system converted to using libtool.
+  * Enhancement: Updated value of solar metal mass fraction to be
+	consistent with Cloudy.
+  * Enhancement: Mean molecular weight calculation in tabulated mode now
+	correctly accounts for photo-ionization from UV backgrounds.
+  * Bugfix: Metal field only considered in temperature calculation in
+	tabulated mode if actually present.
+
+== Version 2.0.1 ==
+_Release date - Jan 30, 2015_
+
+  * Enhancement: Physically motivated temperature cutoff for photo-
+	electric heating added.
+  * Bugfix: Spatially constant photo-electric heating now included in
+	purely tabulated cooling mode.
+  * Bugfix: Make sure grackle_data_file string is null-terminated.
+  * Minor compilation bugfixes.
+  * Installation docs updated.
+
+== Version 2.0 ==
+_Release date - Oct 1, 2014_
+
+  * Enhancement: All C++ files converted to C for easier integration into
+	C and Fortran code
+  * Enhancement: Main chemistry data structure moved into grackle
+	namespace.  The user is no longer responsible for carrying it.
+  * Enhancement: Changeable integer precision compile flag removed for
+	greater simplicity
+  * Enhancement: Internal chemistry and cooling calculation now always
+	done in double precision with gr_float type only used for baryon
+	fields.  The Grackle can now be reliably run in 32-bit mode.
+  * Enhancement: Changeable Fortran baryon field precision now controlled
+	with a custom variable type for better stability
+  * Enhancement: Examples now available for C, C++, and Fortran codes
+  * Enhancement: Grackle output now configurable so that all processors do
+	not have to print info
+  * Enhancement: Version and compile options now written to a file at run
+	start-up
+
+== Version 1.1 ==
+_Release date - Oct 1, 2014_
+
+  * New feature: Static library build option
+  * Enhancement: Updated H-, H2, and HD chemistry and cooling rates
+  * Enhancement: Sign of returned cooling time is now preserved
+
+== Version 1.0 ==
+_Release date - Jan 10, 2014_
