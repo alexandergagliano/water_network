@@ -186,3 +186,191 @@ makedepend: warning:  bckeul.h (reading /usr/include/libio.h, line 50): cannot f
 	not in /usr/include/stdarg.h
 	not in ./stdarg.h
 	not in /usr/include/stdarg.h
+makedepend: warning:  cannot open "*.C"
+makedepend: warning:  auto_show_config.c (reading /usr/include/stdio.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  auto_show_config.c (reading /usr/include/_G_config.h, line 15): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  auto_show_config.c (reading /usr/include/wchar.h, line 51): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  auto_show_config.c (reading /usr/include/libio.h, line 50): cannot find include file "stdarg.h"
+	not in /usr/include/stdarg.h
+	not in ./stdarg.h
+	not in /usr/include/stdarg.h
+makedepend: warning:  /usr/include/math.h includes /usr/include/bits/mathcalls.h more than once!
+Already have
+	/usr/include/features.h
+	/usr/include/bits/huge_val.h
+	/usr/include/bits/huge_valf.h
+	/usr/include/bits/huge_vall.h
+	/usr/include/bits/inf.h
+	/usr/include/bits/nan.h
+	/usr/include/bits/mathdef.h
+	/usr/include/bits/mathcalls.h
+makedepend: warning:  /usr/include/math.h includes /usr/include/bits/mathcalls.h more than once!
+Already have
+	/usr/include/features.h
+	/usr/include/bits/huge_val.h
+	/usr/include/bits/huge_valf.h
+	/usr/include/bits/huge_vall.h
+	/usr/include/bits/inf.h
+	/usr/include/bits/nan.h
+	/usr/include/bits/mathdef.h
+	/usr/include/bits/mathcalls.h
+makedepend: warning:  bckeul.c (reading /usr/include/stdlib.h, line 32): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  /usr/include/time.h includes /usr/include/bits/types.h more than once!
+Already have
+	/usr/include/bits/types.h
+makedepend: warning:  /usr/include/time.h includes /usr/include/bits/types.h more than once!
+Already have
+	/usr/include/bits/types.h
+makedepend: warning:  /usr/include/time.h includes /usr/include/bits/types.h more than once!
+Already have
+	/usr/include/bits/types.h
+makedepend: warning:  bckeul.c (reading /usr/include/sys/types.h, line 146): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.c (reading /usr/include/alloca.h, line 24): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.c (reading /usr/include/string.h, line 32): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.c (reading /usr/include/err.h, line 25): cannot find include file "stdarg.h"
+	not in /usr/include/stdarg.h
+	not in ./stdarg.h
+	not in /usr/include/stdarg.h
+makedepend: warning:  bckeul.c, line 10: cannot find include file "stdbool.h"
+	not in /usr/include/stdbool.h
+	not in ./stdbool.h
+	not in /usr/include/stdbool.h
+makedepend: warning:  initialize_cloudy_data.c (reading /usr/include/limits.h, line 124): cannot find include file "limits.h"
+makedepend: warning:  initialize_cloudy_data.c (reading /usr/include/inttypes.h, line 37): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  initialize_cloudy_data.c (reading /usr/include/H5public.h, line 58): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  initialize_cloudy_data.c (reading /usr/include/H5public.h), line 200: #   error "nothing appropriate for H5_PRINTF_HADDR_FMT"
+makedepend: warning:  jac_rhs.c (reading /usr/include/gsl/gsl_machine.h, line 6): cannot find include file "float.h"
+	not in /usr/include/float.h
+	not in ./float.h
+	not in /usr/include/float.h
+makedepend: warning:  solve_chemistry.c includes /usr/include/stdio.h more than once!
+Already have
+	/usr/include/stdio.h
+	/usr/include/math.h
+	grackle_macros.h
+	grackle_types.h
+	grackle_chemistry_data.h
+	phys_constants.h
+	./chemistry.h
+	./solver.h
+	./calc_mass.h
+	/usr/include/err.h
+	/usr/include/stdlib.h
+makedepend: warning:  solve_chemistry.c, line 30: cannot find include file "stdbool.h"
+	not in /usr/include/stdbool.h
+	not in ./stdbool.h
+	not in /usr/include/stdbool.h
+makedepend: warning:  calc_tdust_1d_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  calc_temp_cloudy_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  interpolators_g.F includes grackle_fortran_types.def more than once!
+Already have
+	grackle_fortran_types.def
+makedepend: warning:  interpolators_g.F includes grackle_fortran_types.def more than once!
+Already have
+	grackle_fortran_types.def
+makedepend: warning:  interpolators_g.F includes grackle_fortran_types.def more than once!
+Already have
+	grackle_fortran_types.def
+makedepend: warning:  interpolators_g.F includes grackle_fortran_types.def more than once!
+Already have
+	grackle_fortran_types.def
+makedepend: warning:  interpolators_g.F includes grackle_fortran_types.def more than once!
+Already have
+	grackle_fortran_types.def
+makedepend: warning:  interpolators_g.F includes grackle_fortran_types.def more than once!
+Already have
+	grackle_fortran_types.def
+makedepend: warning:  solve_rate_cool_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  solve_rate_cool_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  solve_rate_cool_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  solve_rate_cool_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  solve_rate_cool_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  solve_rate_cool_g.F includes grackle_fortran_types.def more than once!
+Already have
+	phys_const.def
+	grackle_fortran_types.def
+makedepend: warning:  bckeul.h (reading /usr/include/stdlib.h, line 32): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  /usr/include/time.h includes /usr/include/bits/types.h more than once!
+Already have
+	/usr/include/bits/types.h
+makedepend: warning:  /usr/include/time.h includes /usr/include/bits/types.h more than once!
+Already have
+	/usr/include/bits/types.h
+makedepend: warning:  /usr/include/time.h includes /usr/include/bits/types.h more than once!
+Already have
+	/usr/include/bits/types.h
+makedepend: warning:  bckeul.h (reading /usr/include/sys/types.h, line 146): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.h (reading /usr/include/alloca.h, line 24): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.h (reading /usr/include/stdio.h, line 33): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.h (reading /usr/include/_G_config.h, line 15): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.h (reading /usr/include/wchar.h, line 51): cannot find include file "stddef.h"
+	not in /usr/include/stddef.h
+	not in ./stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  bckeul.h (reading /usr/include/libio.h, line 50): cannot find include file "stdarg.h"
+	not in /usr/include/stdarg.h
+	not in ./stdarg.h
+	not in /usr/include/stdarg.h

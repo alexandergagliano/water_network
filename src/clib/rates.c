@@ -275,10 +275,10 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
    if (water_rates == 3)
    {
        /****** BIALY RATES **********/
-      //rate[H2] = 4.0e-16 * pow(tov300, 0.67) * exp(4.0/temp);
-      //rate[H3] = 1.30e-9;
-      //rate[H7] = 1.0e-8 * exp(-84100.0/temp);
-      //rate[H8] = 3e-17 * pow(T2, 0.5) * pow(Z, 1.0) ;
+      rate[H2] = 4.0e-16 * pow(tov300, 0.67) * exp(4.0/temp);
+      rate[H3] = 1.30e-9;
+      rate[H7] = 1.0e-8 * exp(-84100.0/temp);
+      rate[H8] = 3e-17 * pow(T2, 0.5) * pow(Z, 1.0) ;
       
       //Metallicity Reactions
       rate[Z1]  = 5.66e-10 * pow(tov300, 0.36) * exp(8.6 * tinv);
