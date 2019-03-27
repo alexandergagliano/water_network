@@ -80,15 +80,19 @@ C     ------- Compute various values of T.
       T_eV = T/11605._DKIND
       log_T_eV = log(T_eV)
       
-      k1 = exp(-32.71396786375_DKIND 
-     &     + 13.53655609057_DKIND*log_T_eV
-     &     - 5.739328757388_DKIND*log_T_eV**2 
-     &     + 1.563154982022_DKIND*log_T_eV**3
-     &     - 0.2877056004391_DKIND*log_T_eV**4
-     &     + 0.03482559773736999_DKIND*log_T_eV**5
-     &     - 0.00263197617559_DKIND*log_T_eV**6
-     &     + 0.0001119543953861_DKIND*log_T_eV**7
-     &     - 2.039149852002e-6_DKIND*log_T_eV**8) / kunit
+      IF (water_rates .eq. 2) THEN
+         k1 = exp(-32.71396786375_DKIND 
+     &        + 13.53655609057_DKIND*log_T_eV
+     &        - 5.739328757388_DKIND*log_T_eV**2 
+     &        + 1.563154982022_DKIND*log_T_eV**3
+     &        - 0.2877056004391_DKIND*log_T_eV**4
+     &        + 0.03482559773736999_DKIND*log_T_eV**5
+     &        - 0.00263197617559_DKIND*log_T_eV**6
+     &        + 0.0001119543953861_DKIND*log_T_eV**7
+     &        - 2.039149852002e-6_DKIND*log_T_eV**8) / kunit
+      ELSE
+         k1 = tiny
+      ENDIF
       
       IF (T_eV .GT. 0.8) THEN
          k3 = exp(-44.09864886561001_DKIND
@@ -208,12 +212,15 @@ c         ELSE
 c            k8 = 1.5e-9_DKIND /kunit
 c         ENDIF 
 c      ELSE
+       IF (water_rates .eq. 2) THEN
          k8 = 1.35e-9_DKIND*(T**9.8493e-2_DKIND + 3.2852e-1_DKIND
      &      * T**5.5610e-1_DKIND + 2.771e-7_DKIND * T**2.1826_DKIND)
      &      / (1._DKIND + 6.191e-3_DKIND * T**1.0461_DKIND
      &      + 8.9712e-11_DKIND * T**3.0424_DKIND
      &      + 3.2576e-14_DKIND * T**3.7741_DKIND) / kunit
-c      ENDIF
+      ELSE
+         k8 = tiny
+      ENDIF
 
 c     H2+ formation by radiative association: HI + HII -> H2II + gamma
 c     This fit is from Latif et al (2015, MNRAS, 446, 3163) and is valid

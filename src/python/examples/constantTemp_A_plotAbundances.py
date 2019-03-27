@@ -31,7 +31,7 @@ from pygrackle.utilities.physical_constants import \
     sec_per_Myr, \
     cm_per_mpc
 
-tiny_number = 1.e-9
+tiny_number = 1.e-60
 
 amu_cgs           = 1.660538921e-24  # g
 mass_oxygen_cgs = 15.9994*amu_cgs  # g
@@ -84,7 +84,7 @@ if __name__=="__main__":
 
         # set initial density and temperature
         initial_temperature = 100.
-        initial_density     = 1.e1 * mass_hydrogen_cgs # g / cm^3
+        initial_density     = 8.e2 * mass_hydrogen_cgs # g / cm^3
          
         rval = my_chemistry.initialize()
 
@@ -280,8 +280,8 @@ if __name__=="__main__":
 
                 #leg = pyplot.legend(fancybox = True, labelspacing=0.0, loc='best')
                 #leg.get_frame().set_alpha(0.5)
-                #pyplot.ylim(ymin=1.e-10,ymax=1.e-3)
-                #pyplot.xlim(xmin=1.e-3,xmax=1.e0)
+                pyplot.ylim(ymin=1.e-10,ymax=1.e-3)
+                pyplot.xlim(xmin=1.e-3,xmax=1.e0)
                 pyplot.tight_layout()
                 pyplot.savefig("metal_evolve_abundances_metals.png")
 
@@ -394,8 +394,8 @@ if __name__=="__main__":
         leg = pyplot.legend(fancybox = True, labelspacing=0.0, loc='best')
         leg.get_frame().set_alpha(0.5)
         pyplot.xlim(xmin=1.e-3)
-       # pyplot.ylim(ymin=1.e-8,ymax=1.e-4)
-       # pyplot.xlim(xmin=1.e-3,xmax=1.e0)
+        #pyplot.ylim(ymin=1.e-8,ymax=1.e-4)
+        #pyplot.xlim(xmin=1.e-3,xmax=1.e0)
         pyplot.tight_layout()
         pyplot.savefig("metal_evolve_abundances_H+.png")
 
