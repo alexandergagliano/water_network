@@ -323,15 +323,15 @@ int _solve_chemistry(chemistry_data *my_chemistry,
   int index_start = nghost * ((2*nghost + di) * (2*nghost + dj)) + nghost * (2*nghost + di) + nghost;
 
   /* determine the number of species in the network */
-  int nSpecies = 21;
-  if (my_chemistry->primordial_chemistry > 1)
-  {
-      nSpecies = 23;
-      if (my_chemistry->primordial_chemistry > 2)
-      {
-          nSpecies = 26;
-      }
-  }
+  int nSpecies = (my_chemistry->primordial_chemistry > 1) ? ((my_chemistry->primordial_chemistry > 2) ? 26 : 23) : 21;
+
+
+  double UV_water;
+  /* flag to turn on UV rates in water network! */
+  UV_water = (my_chemistry->water_rates == 1) ? 1.0 : 0.0;
+
+  setup_rxns(my_chemistry->primordial_chemistry, UV_water, my_chemistry->water_rates);
+  setup_species(my_chemistry->primordial_chemistry, UV_water, my_chemistry->water_rates);
 
   for (k = 0; k < dk; k++){
     for (j = 0; j < dj; j++){
@@ -383,9 +383,6 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                }
 
                double temperature = (double) internal_energy[index]* (double) temperature_units;
-               /* flag to turn on UV rates in water network! */
-               double UV_water = 1.0;
-
                /* keep the number density of C species the same */
                double C_num_pre = Y[C] + Y[Cplus] + Y[CH] + Y[CH2] + Y[CH3] + Y[CH4] + Y[CO] + Y[COplus] + Y[CO2];
                double O_num_pre = Y[O] + Y[OH] + Y[H2O] + 2.0*Y[O2] + Y[Oplus] + Y[OHplus] + Y[H2Oplus] + Y[H3Oplus] + 2*Y[O2plus];

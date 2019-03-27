@@ -586,7 +586,7 @@ c
 c     k23 from Omukai (2000).
 c
 c Omukai Rate - matches already present rate in Grackle
-           if (water_rates .eq. 2) then
+           if (water_rates .ne. 3) then
              h2dusta(i,j) = 6.0d-17 * (ttt / 300.0d0)**(0.5d0) *
      &            ((1.0d0 + exp(7.5d2 * ((1.0d0 / 75.0d0) - 
      &                                (1.0d0 / d_ttt))))**(-1.0d0)) *

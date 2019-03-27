@@ -84,7 +84,7 @@ if __name__=="__main__":
 
         # set initial density and temperature
         initial_temperature = 100.
-        initial_density     = 8.e2 * mass_hydrogen_cgs # g / cm^3
+        initial_density     = 9.e2 * mass_hydrogen_cgs # g / cm^3
          
         rval = my_chemistry.initialize()
 

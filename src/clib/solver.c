@@ -13,27 +13,35 @@
 #include "grackle_chemistry_data.h"
 
 int do_network_step(double *Y, double *r, double dt, double *dtrcmd, int ispecies) {
+
   // backward-Euler
   int ierr = backward_euler_step(r, Y, dt, dtrcmd, 1, Y, ispecies);
   //int ierr = backward_euler_NR(r, Y, dt, dtrcmd, ispecies);
-  //int ierr = backward_euler_step(r, Y, dt, dtrcmd, 1, Y, ispecies);
-
-  //printf("In do_network_step, Y[0] = %.2e\n", Y[0]);
-
   //int ierr = rk45_integrate(Y, r, dt, dtrcmd, ispecies);
+  
   return ierr;
 }
 
-int integrate_network(int water_rate, double *Y, double T0, double T1, double n, double metl, double UV, double dtwant, int *nstp, code_units *my_units, int ispecies, int H2_shield, double crsHI, double k24)
+int integrate_network(int water_rates, double *Y, double T0, double T1, double n, double metl, double UV, double dtwant, int *nstp, code_units *my_units, int ispecies, int H2_shield, double crsHI, double k24)
   {
+
   // MultiSpecies handler 
   int nSpecies = (ispecies > 1) ? ((ispecies > 2) ? 26 : 23) : 21;
   int nReactions = (ispecies > 1) ? ((ispecies > 2) ? 54 : 48) : 24;
 
   //Add UV rates! 
-  nReactions += 8;
+  if ((int) UV){
+     nReactions += 8;
+  }
 
-  double *Ylst = (double *) malloc(nSpecies * sizeof(double)); // abundances at last iteration
+/*  
+  if (water_rates == 3){
+    nReactions += 13;
+    nSpecies   += 10;
+  }
+*/
+
+  double *Ylst = (double *) malloc(nSpecies * sizeof(double)); // last iter abundances
   int s;
   memcpy(Ylst, Y, sizeof(double) * nSpecies);
   double dttry, dtdone, dtrcmd;
@@ -42,7 +50,7 @@ int integrate_network(int water_rate, double *Y, double T0, double T1, double n,
   double *Y_old = (double *) malloc(nSpecies * sizeof(double));
 
   // init
-  double *r = (double *) malloc(62 * sizeof(double));
+  double *r = (double *) malloc(nReactions * sizeof(double));
 
   // We try to jump the entire time interval, instead of assuming subcycling
   dttry = dtwant ;
@@ -53,10 +61,7 @@ int integrate_network(int water_rate, double *Y, double T0, double T1, double n,
   // substep loop
   for (j = 1; j < max_substp; j++) {
     
-    get_rates(water_rate, r, T0, n, T0, metl, UV, my_units, ispecies, Y, H2_shield, crsHI, k24);
-    //printf("In solver, T0 = %.2f\n", T0);
-    //get_rates(r, T0, n, T0, metl, UV, my_units);
-
+    get_rates(water_rates, r, T0, n, T0, metl, UV, my_units, ispecies, Y, H2_shield, crsHI, k24);
 
     // perform one step integration
     ierr = do_network_step(Y, r, dttry, &dtrcmd, ispecies);

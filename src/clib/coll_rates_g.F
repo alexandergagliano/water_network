@@ -80,7 +80,7 @@ C     ------- Compute various values of T.
       T_eV = T/11605._DKIND
       log_T_eV = log(T_eV)
       
-      IF (water_rates .eq. 2) THEN
+      IF (water_rates .ne. 3) THEN
          k1 = exp(-32.71396786375_DKIND 
      &        + 13.53655609057_DKIND*log_T_eV
      &        - 5.739328757388_DKIND*log_T_eV**2 
@@ -212,7 +212,7 @@ c         ELSE
 c            k8 = 1.5e-9_DKIND /kunit
 c         ENDIF 
 c      ELSE
-       IF (water_rates .eq. 2) THEN
+       IF (water_rates .ne. 3) THEN
          k8 = 1.35e-9_DKIND*(T**9.8493e-2_DKIND + 3.2852e-1_DKIND
      &      * T**5.5610e-1_DKIND + 2.771e-7_DKIND * T**2.1826_DKIND)
      &      / (1._DKIND + 6.191e-3_DKIND * T**1.0461_DKIND

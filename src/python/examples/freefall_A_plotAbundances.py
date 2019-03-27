@@ -143,12 +143,6 @@ if __name__=="__main__":
         fc["z-velocity"][:] = 0.0
  
         fc["n_H"][:] = fc.calculate_hydrogen_number_density()
-        print(fc["n_H"][:])
-        abundanceSum = 0
-        for field in fc.density_fields:
-            if (field is not "metal") and (field is not "density"):
-                abundanceSum += (fc[field][0]/fc["density"][0])
-        #sys.exit()
 
         # timestepping safety factor
         safety_factor = 0.1

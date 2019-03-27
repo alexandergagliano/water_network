@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+void setup_rxns(int ispecies, int UV, int water_rates);
+
 extern int H       ;
 extern int Hplus   ; 
 extern int Hmin    ; 
@@ -27,9 +29,16 @@ extern int CH4     ;
 extern int CO      ; 
 extern int COplus  ; 
 extern int CO2     ; 
-
-
-
+extern int SI      ;
+extern int SII     ;
+extern int SiI     ;
+extern int SiII    ;
+extern int CHII    ;
+extern int CH2II   ;
+extern int HeI     ;
+extern int HeII    ;
+extern int SiO     ;
+extern int H3II    ;
 
 extern int H1  ;
 extern int H2  ;
@@ -85,6 +94,19 @@ extern int Z37 ;
 extern int Z38 ;
 extern int Z39 ;
 extern int Z40 ;
+extern int Z41 ;
+extern int Z42 ;
+extern int Z43 ;
+extern int Z44 ;
+extern int Z45 ;
+extern int Z46 ;
+extern int Z47 ;
+extern int Z48 ;
+extern int Z49 ;
+extern int Z50 ;
+extern int Z51 ;
+extern int Z52 ;
+extern int Z53 ;
 extern int UV1 ;
 extern int UV2 ;
 extern int UV3 ;
@@ -93,6 +115,3 @@ extern int UV5 ;
 extern int UV6 ;
 extern int UV7 ; 
 extern int UV8 ;
-
-
-
