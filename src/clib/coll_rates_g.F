@@ -195,9 +195,13 @@ c      IF (water_rates .eq. 1) THEN
 c          k7 = 1.4e-18_DKIND * (T)**0.928_DKIND
 c     &       * exp(-T/1.62e4_DKIND) / kunit
 c      ELSE 
+       IF (water_rates .eq. 3) THEN
+          k7 = 4.00e-16_DKIND * (T/3.e2_DKIND)**0.67_DKIND 
+     &       * exp(4.0_DKIND/T) / kunit
+       ELSE 
           k7 = 3.0e-16_DKIND * (T/3.e2_DKIND)**0.95_DKIND 
      &       * exp(-T/9.32e3_DKIND) / kunit
-c      ENDIF
+      ENDIF
 
 c
 c     H- destruction by associative detachment with HI: HM + HI -> H2I + e
@@ -218,8 +222,6 @@ c      ELSE
      &      / (1._DKIND + 6.191e-3_DKIND * T**1.0461_DKIND
      &      + 8.9712e-11_DKIND * T**3.0424_DKIND
      &      + 3.2576e-14_DKIND * T**3.7741_DKIND) / kunit
-      ELSE
-         k8 = tiny
       ENDIF
 
 c     H2+ formation by radiative association: HI + HII -> H2II + gamma
@@ -228,22 +230,29 @@ c     for temperatures in the range 1 < T < 32000 K. At higher temperatures,
 c     we keep the value of the rate coefficient constant; note that its 
 c     behaviour in this regime is unlikely to be important
 c
-      IF (T .LT. 30.0_DKIND) THEN
-        k9 = 2.10e-20_DKIND * (T/30.0_DKIND)**(-0.15_DKIND) / kunit
-      ELSE
-        IF (T .GT. 3.2e4_DKIND) THEN
-          tk9 = 3.2e4_DKIND
+      IF (water_rates .ne. 3) THEN 
+        IF (T .LT. 30.0_DKIND) THEN
+          k9 = 2.10e-20_DKIND * (T/30.0_DKIND)**(-0.15_DKIND) / kunit
         ELSE
-          tk9 = T
+          IF (T .GT. 3.2e4_DKIND) THEN
+            tk9 = 3.2e4_DKIND
+          ELSE
+            tk9 = T
+          ENDIF
+
+          k9 = 1d1**(-18.20_DKIND  - 3.194_DKIND * log10(tk9)
+     &            + 1.786_DKIND  * log10(tk9)**2
+     &            - 0.2072_DKIND * log10(tk9)**3 ) / kunit
         ENDIF
-
-        k9 = 1d1**(-18.20_DKIND  - 3.194_DKIND * log10(tk9)
-     &          + 1.786_DKIND  * log10(tk9)**2
-     &          - 0.2072_DKIND * log10(tk9)**3 ) / kunit
-
+      ELSE
+        k9 = 5.13e-19_DKIND * (T/3.0e2_DKIND)**1.85_DKIND / kunit
       ENDIF
 
-      k10 = 6.0e-10_DKIND / kunit
+      IF (water_rates .ne. 3) THEN
+        k10 = 6.0e-10_DKIND / kunit
+      ELSE
+        k10 = 6.4e-10_DKIND / kunit
+      ENDIF
 
 c SET TO 0 HERE; REDEFINED IN SOLVE_RATE_COOL_G.F
 c Omukai Rate - Commented out for cosmology
@@ -279,8 +288,7 @@ c      ENDIF
      &        + 0.0004138398421504563_DKIND*log_T_eV**7
      &        - 9.36345888928611e-6_DKIND*log_T_eV**8) / kunit
 #endif /* USE_SAVIN2004 */
-         
-
+  
 c Revised rate coefficient for collisional dissociation of H2 by electrons,
 c from Trevisan & Tennyson (2002, Plasma Phys. Cont. Fus., 44, 1263). 
 c Assumes all of the H2 molecules are in the v=0 vibrational ground state
@@ -290,6 +298,14 @@ c Assumes all of the H2 molecules are in the v=0 vibrational ground state
          k13 = tiny 
          k11 = tiny
          k12 = tiny
+      ENDIF
+
+      IF (water_rates .eq. 3) THEN
+         k11 = 1.00e-10_DKIND * exp(-21200.0/T) / kunit
+         k12 = 3.22e-9_DKIND * (T/3.0e2_DKIND)**0.35_DKIND
+     &       * exp(-102000.0_DKIND/T) / kunit
+         k13 = 4.67e-7 * (T/3.0e2_DKIND)**(-1.0_DKIND )
+     &       * exp(-55000.0_DKIND/T) / kunit 
       ENDIF
       
       IF (T_eV .GT. 0.04_DKIND) THEN
@@ -326,17 +342,25 @@ c     Fit from Croft et al (1999, MNRAS, 304, 327), based on the cross-section
 c     of Fussen & Kubach (1986, J. Phys. B, 18 L31). This fit agrees well
 c     with recent measurements of the rate by X. Urbain & collaborators, to
 c     within experimental error
-c      
-      k16 = 2.4e-6_DKIND*(1._DKIND+T/2e4_DKIND)/sqrt(T) / kunit
-      
+c     
+      IF (water_rates .eq. 3) THEN
+         k16 = 2.30e-7_DKIND * (T/3.0e2_DKIND) ** (-0.50_DKIND) / kunit
+      ELSE 
+         k16 = 2.4e-6_DKIND*(1._DKIND+T/2e4_DKIND)/sqrt(T) / kunit
+      ENDIF 
+
       k17 = 1.e-8_DKIND*T**(-0.4_DKIND) / kunit
       IF (T .GT. 1.0e4_DKIND)
      &     k17=4.0e-4_DKIND*T**(-1.4_DKIND)*exp(-15100._DKIND/T) / kunit
       
       k18 = 1.e-8_DKIND / kunit
-      If (T .GT. 617._DKIND)
+      IF (T .GT. 617._DKIND)
      $     k18 = 1.32e-6_DKIND * T**(-0.76_DKIND) / kunit
+      IF (water_rates .eq. 3) 
+     &     k18 = 1.60e-8_DKIND * (T/3e2_DKIND)**(-0.43_DKIND) / kunit
       k19 = 5.e-7_DKIND*sqrt(100._DKIND/T) / kunit
+      IF (water_rates .eq. 3)
+     &     k19 = 2.30e-7_DKIND * (T/3e2_DKIND)**(-0.5_DKIND) / kunit
       k23 = ((8.125e-8_DKIND / sqrt(T))
      $     * exp(-52000._DKIND/T)
      $     * (1._DKIND - exp(-6000._DKIND/T))) / kunit

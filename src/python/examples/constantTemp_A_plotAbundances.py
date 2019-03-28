@@ -84,19 +84,19 @@ if __name__=="__main__":
 
         # set initial density and temperature
         initial_temperature = 100.
-        initial_density     = 9.e2 * mass_hydrogen_cgs # g / cm^3
+        initial_density     = 8.e2 * mass_hydrogen_cgs # g / cm^3
          
         rval = my_chemistry.initialize()
 
         fc = FluidContainer(my_chemistry, 1)
         fc["density"][:] = initial_density / my_chemistry.density_units
         fc["HII"][:] = tiny_number * fc["density"]
-        fc["HI"][:] = 6.5e-1 * fc["density"]
+        fc["HI"][:] = 7.0e-1 * fc["density"]
         fc["HeI"][:] = tiny_number * fc["density"]
         fc["HeII"][:] = tiny_number * fc["density"]
         fc["HeIII"][:] = tiny_number * fc["density"]
         if my_chemistry.primordial_chemistry > 1:
-            fc["H2I"][:] = 2.5e-1 * fc["density"]
+            fc["H2I"][:] = 2.0e-1 * fc["density"]
             fc["H2II"][:] = tiny_number * fc["density"]
             fc["HM"][:] = tiny_number * fc["density"]
         if my_chemistry.primordial_chemistry > 2:
