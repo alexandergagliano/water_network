@@ -38,7 +38,7 @@ if __name__=="__main__":
     colors = ["blue", "green", "red", "purple"]
     metallicity = [1.e-6, 1.e-4, 1.e-2, 1.e-0]
     logZ = [-6, -4, -2, 0]
-    pyplot.figure(dpi=1000)
+    #pyplot.figure(dpi=1000)
     for i in range(4):
         my_chemistry = chemistry_data()
         my_chemistry.use_grackle = 1
