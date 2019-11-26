@@ -111,7 +111,10 @@ chemistry_data _set_default_chemistry_parameters(void)
   my_chemistry.withWater                              = 0;
 
   /* switch for Omukai's 2005 water network */
-  my_chemistry.water_rates                            = 2;
+  my_chemistry.water_rates                            = 3;
+
+  /* switch to use only water network */
+  my_chemistry.water_only                             = 0;
 
 //number of OpenMP threads
 # ifdef _OPENMP

@@ -52,18 +52,24 @@ int _calculate_pressure(chemistry_data *my_chemistry,
                         int grid_rank, int *grid_dimension,
                         int *grid_start, int *grid_end,
                         gr_float *density, gr_float *internal_energy,
-                        gr_float *HI_density, gr_float *HII_density, gr_float *HM_density,
-                        gr_float *HeI_density, gr_float *HeII_density, gr_float *HeIII_density,
+                        gr_float *HI_density, gr_float *HII_density,  
+                        gr_float *HM_density, gr_float *HeI_density, 
+                        gr_float *HeII_density, gr_float *HeIII_density,
                         gr_float *H2I_density, gr_float *H2II_density,
-                        gr_float *DI_density, gr_float *DII_density, gr_float *HDI_density,
-                        gr_float *Water_density, gr_float *O_density, gr_float *OH_density,
+                        gr_float *DI_density, gr_float *DII_density, 
+                        gr_float *HDI_density, gr_float *Water_density, 
+                        gr_float *O_density, gr_float *OH_density,
                         gr_float *O2_density, gr_float *Oplus_density,
                         gr_float *OHplus_density, gr_float *H2Oplus_density,
                         gr_float *H3Oplus_density, gr_float *O2plus_density,
                         gr_float *Cplus_density, gr_float *C_density,
                         gr_float *CH_density, gr_float *CH2_density,
                         gr_float *CH3_density, gr_float *CH4_density,
-                        gr_float *CO_density, gr_float *COplus_density, gr_float *CO2_density,
+                        gr_float *CO_density, gr_float *COplus_density,  
+                        gr_float *CO2_density, 
+                        gr_float *CHplus_density,
+                        gr_float *CH2plus_density, 
+                        gr_float *H3plus_density,
                         gr_float *e_density, gr_float *metal_density,
                         gr_float *pressure);
 
@@ -93,7 +99,11 @@ int _calculate_temperature(chemistry_data *my_chemistry,
                            gr_float *Cplus_density, gr_float *C_density,
                            gr_float *CH_density, gr_float *CH2_density,
                            gr_float *CH3_density, gr_float *CH4_density,
-                           gr_float *CO_density, gr_float *COplus_density, gr_float *CO2_density,
+                           gr_float *CO_density, gr_float *COplus_density, 
+                           gr_float *CO2_density,
+                           gr_float *CHplus_density,
+                           gr_float *CH2plus_density, 
+                           gr_float *H3plus_density,
                            gr_float *e_density, gr_float *metal_density,
                            gr_float *temperature)
 {
@@ -121,6 +131,9 @@ int _calculate_temperature(chemistry_data *my_chemistry,
                             CH3_density, CH4_density,
                             CO_density, COplus_density,
                             CO2_density,
+                            CHplus_density,
+                            CH2plus_density,
+                            H3plus_density,
                             e_density, metal_density,
                             temperature) == FAIL) {
       fprintf(stderr, "Error in calculate_pressure.\n");
@@ -174,18 +187,6 @@ int _calculate_temperature(chemistry_data *my_chemistry,
         0.5 * (H2I_density[i] + H2II_density[i]);
     }
 
-    //withWater - maybe remove later? 
-    /*
-    if (my_chemistry->withWater) {
-     number_density += Water_density[i]/18. + O_density[i]/16. + OH_density[i]/17. +
-          O2_density[i]/32. + Oplus_density[i]/16. + OHplus_density[i]/17. +
-          H2Oplus_density[i]/18. + H3Oplus_density[i]/19. + O2plus_density[i]/32. +
-          Cplus_density[i]/12. + C_density[i]/12. + CH_density[i]/13. + CH2_density[i]/14. +
-          CH3_density[i]/15. + CH4_density[i]/16. + CO_density[i]/28. + COplus_density[i]/28. +
-          CO2_density[i]/44.;
-
-    } 
-    else */
     if (metal_density != NULL) {
       number_density += metal_density[i] * inv_metal_mol;
     }
@@ -291,7 +292,11 @@ int local_calculate_temperature(chemistry_data *my_chemistry,
                              my_fields->Cplus_density, my_fields->C_density,
                              my_fields->CH_density, my_fields->CH2_density,
                              my_fields->CH3_density, my_fields->CH4_density,
-                             my_fields->CO_density, my_fields->COplus_density, my_fields->CO2_density,
+                             my_fields->CO_density, my_fields->COplus_density,  
+                             my_fields->CO2_density,
+                             my_fields->CHplus_density,
+                             my_fields->CH2plus_density, 
+                             my_fields->H3plus_density,
                              my_fields->e_density, my_fields->metal_density,
                              temperature) == FAIL) {
     fprintf(stderr, "Error in _calculate_temperature.\n");

@@ -1,15 +1,12 @@
 #!/bin/tcsh
 ##### These lines are for Moab
 #  predict the duration of the job
-#SBATCH -t 06:00:00  # Walltime
+#SBATCH -t 00:10:00  # Walltime
 #SBATCH -N 1       # Number of nodes
-###SBATCH -n 288      # Number of processors
 #SBATCH -o slurm_%j.out # name of the stdout
-#SBATCH --qos=standard
-#SBATCH -J PopIb       # job name
-#SBATCH -d singleton    #ensures one job starts after another
+#SBATCH -J Pop6       # job name
+##SBATCH -d singleton    #ensures one job starts after another
 #SBATCH -A w18_lgsims
-##MSUB -N enzo_elgordo
 #
 #  specify the pathname for output
 #
@@ -19,10 +16,14 @@
 #  forward current environment variables to the job
 ##MSUB -V
 date
-module purge
-module load gcc/5.3.0 
-module load openmpi/1.10.5
+#module purge
+#module load gcc/5.3.0 
+#module load openmpi/2.1.2
+#module load python/3.5-anaconda-4.1.1
 
-setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/lustre/scratch3/turquoise/agagliano/WATER/lib
-python constantTemp_A_plotAbundances.py 
+#setenv LD_LIBRARY_PATH /lustre/scratch3/turquoise/agagliano/WATER/lib:${LD_LIBRARY_PATH}
+#setenv PYTHONPATH /lustre/scratch3/turquoise/agagliano/WATER/Fresh_1027/src/python/:${PYTHONPATH}
+#setenv PATH /users/agagliano/.conda/envs/my_root/bin/python:/lustre/scratch3/turquoise/agagliano/WATER/yt-conda/bin:${PATH}
+
+python oneZone_UMIST2012.py
 date

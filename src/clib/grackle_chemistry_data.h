@@ -123,6 +123,10 @@ typedef struct
   /* flag to specify particular Omukai water rates */ 
   int water_rates;
 
+  /* flag to turn off Grackle and use only the water network
+     for testing purposes */
+  int water_only;
+
   /* number of OpenMP threads, if supported */
 # ifdef _OPENMP
   int omp_nthreads;

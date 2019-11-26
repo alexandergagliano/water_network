@@ -44,7 +44,7 @@ int initialize_UVbackground_data(chemistry_data *my_chemistry,
                                  chemistry_data_storage *my_rates);
 
 extern void FORTRAN_NAME(calc_rates_g)(
-     int *ispecies, int *water_rates,
+     int *ispecies, int *iwater, int *water_rates,
      int *nratec, double *aye, double *temstart, double *temend, 
      int *casebrates, int *threebody,
      double *uxyz, double *uaye, double *urho, double *utim,
@@ -252,7 +252,7 @@ int _initialize_chemistry_data(chemistry_data *my_chemistry,
   /* Call FORTRAN routine to do the hard work. */
  
   FORTRAN_NAME(calc_rates_g)(
-     &my_chemistry->primordial_chemistry, &my_chemistry->water_rates,
+     &my_chemistry->primordial_chemistry, &my_chemistry->withWater, &my_chemistry->water_rates,
      &my_chemistry->NumberOfTemperatureBins, &my_units->a_value, &my_chemistry->TemperatureStart,
         &my_chemistry->TemperatureEnd,
         &my_chemistry->CaseBRecombination, &my_chemistry->three_body_rate,

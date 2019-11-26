@@ -91,6 +91,15 @@ c        NEW CHEMISTRY
          TYPE(C_PTR) :: CO_density
          TYPE(C_PTR) :: COplus_density
          TYPE(C_PTR) :: CO2_density
+         TYPE(C_PTR) :: CHplus_density
+         TYPE(C_PTR) :: CH2plus_density
+         TYPE(C_PTR) :: H3plus_density
+         TYPE(C_PTR) :: HCOplus_density
+         TYPE(C_PTR) :: HeHplus_density
+	 TYPE(C_PTR) :: CH3plus_density
+         TYPE(C_PTR) :: CH4plus_density
+         TYPE(C_PTR) :: CH5plus_density
+         TYPE(C_PTR) :: O2Hplus_density
 
       END TYPE
 
@@ -140,6 +149,7 @@ c     This is the fortran definition of grackle_chemistry_dadta
          INTEGER(C_INT) :: self_shielding_method
          INTEGER(C_INT) :: withWater
          INTEGER(C_INT) :: water_rates
+         INTEGER(C_INT) :: water_only
 cc       INTEGER(C_INT) :: omp_nthreads // not supported in fortran
       END TYPE
 

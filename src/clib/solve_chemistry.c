@@ -28,11 +28,14 @@
 #include <gsl/gsl_matrix.h>
 #include <const.h>
 #include <stdbool.h>
+#ifdef _OPENMP
+#include <omp.h>
+#endif
 
 extern chemistry_data *grackle_data;
 extern chemistry_data_storage grackle_rates;
 
-#define tiny 1.e-20
+#define tiny 1.e-50
 
 /* function prototypes */
 
@@ -77,6 +80,9 @@ extern void FORTRAN_NAME(solve_rate_cool_g)(
         gr_float *Cplus_density, gr_float *C_density, gr_float *CH_density,
         gr_float *CH2_density, gr_float *CH3_density, gr_float *CH4_density,
         gr_float *CO_density, gr_float *COplus_density, gr_float *CO2_density,
+        gr_float *CHplus_density, gr_float *CH2plus_density, gr_float *H3plus_density, 
+        gr_float *HCOplus_density, gr_float *HeHplus_density, gr_float *CH3plus_density,
+	gr_float *CH4plus_density, gr_float *CH5plus_density, gr_float *O2Hplus_density,
 	double *hyd01ka, double *h2k01a, double *vibha,
         double *rotha, double *rotla,
 	double *gpldl, double *gphdl, double *HDltea, double *HDlowa,
@@ -109,20 +115,30 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                      gr_float *density, gr_float *internal_energy,
                      gr_float *x_velocity, gr_float *y_velocity, gr_float *z_velocity,
                      gr_float *HI_density, gr_float *HII_density, gr_float *HM_density,
-                     gr_float *HeI_density, gr_float *HeII_density, gr_float *HeIII_density, gr_float *Water_density,
+                     gr_float *HeI_density, gr_float *HeII_density, 
+                     gr_float *HeIII_density, gr_float *Water_density,
                      gr_float *H2I_density, gr_float *H2II_density,
                      gr_float *DI_density, gr_float *DII_density, gr_float *HDI_density,
                      gr_float *e_density, gr_float *metal_density,
                      gr_float *volumetric_heating_rate, gr_float *specific_heating_rate,
-                     gr_float *RT_heating_rate, gr_float *RT_HI_ionization_rate, gr_float *RT_HeI_ionization_rate,
-                     gr_float *RT_HeII_ionization_rate, gr_float *RT_H2_dissociation_rate,
+                     gr_float *RT_heating_rate, gr_float *RT_HI_ionization_rate, 
+                     gr_float *RT_HeI_ionization_rate,
+                     gr_float *RT_HeII_ionization_rate, 
+                     gr_float *RT_H2_dissociation_rate,
                      gr_float *H2_self_shielding_length, 
                      gr_float *O_density, gr_float *OH_density,
-                     gr_float *O2_density, gr_float *Oplus_density, gr_float *OHplus_density,
-                     gr_float *H2Oplus_density, gr_float *H3Oplus_density, gr_float *O2plus_density,
-                     gr_float *Cplus_density, gr_float *C_density, gr_float *CH_density,
-                     gr_float *CH2_density, gr_float *CH3_density, gr_float *CH4_density,
-                     gr_float *CO_density, gr_float *COplus_density, gr_float *CO2_density)
+                     gr_float *O2_density, gr_float *Oplus_density,  
+                     gr_float *OHplus_density, gr_float *H2Oplus_density, 
+                     gr_float *H3Oplus_density, gr_float *O2plus_density,
+                     gr_float *Cplus_density, gr_float *C_density, 
+                     gr_float *CH_density, gr_float *CH2_density, 
+                     gr_float *CH3_density, gr_float *CH4_density,
+                     gr_float *CO_density, gr_float *COplus_density, 
+                     gr_float *CO2_density, gr_float *CHplus_density, 
+                     gr_float *CH2plus_density, gr_float *H3plus_density,  
+                     gr_float *HCOplus_density, gr_float *HeHplus_density,
+                     gr_float *CH3plus_density, gr_float *CH4plus_density, 
+		     gr_float *CH5plus_density, gr_float *O2Hplus_density)
 {
 
   /* Return if this doesn't concern us. */
@@ -193,7 +209,15 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                     "local Jeans length.");
     return FAIL;
   }
-
+ 
+  if (my_chemistry->water_rates ==3 && my_chemistry->primordial_chemistry == 1){
+  
+    fprintf(stderr, "Error in solve_chemistry: Bialy (2019) water network "
+                    "will only work with H2 species included. Set"
+                    "multispecies to 2 or 3 or change water chemistry "
+                    "option.");
+    return FAIL; 
+   }
   /* Calculate temperature units. */
 
   double temperature_units =  mh * POW(my_units->velocity_units, 2) / kboltz;
@@ -202,96 +226,103 @@ int _solve_chemistry(chemistry_data *my_chemistry,
 
   int ierr = 0;
 
-  FORTRAN_NAME(solve_rate_cool_g)(
-    &my_chemistry->with_radiative_cooling,
-    density, internal_energy, x_velocity, y_velocity, z_velocity,
-    e_density, HI_density, HII_density,
-    HeI_density, HeII_density, HeIII_density,
-    grid_dimension, grid_dimension+1, grid_dimension+2,
-    &my_chemistry->NumberOfTemperatureBins, &my_units->comoving_coordinates,
-    &my_chemistry->primordial_chemistry, &metal_field_present, &my_chemistry->metal_cooling,
-    &my_chemistry->h2_on_dust, &grid_rank, 
-    &my_chemistry->withWater, &my_chemistry->water_rates,
-    grid_start, grid_start+1, grid_start+2,
-    grid_end, grid_end+1, grid_end+2,
-    &my_chemistry->ih2co, &my_chemistry->ipiht, &my_chemistry->photoelectric_heating,
-    &dx_value, &dt_value, &my_units->a_value, &my_chemistry->TemperatureStart, &my_chemistry->TemperatureEnd,
-    &temperature_units, &co_length_units, &my_units->a_units,
-    &co_density_units, &my_units->time_units, &my_chemistry->Gamma,
-    &my_chemistry->HydrogenFractionByMass, &my_chemistry->DeuteriumToHydrogenRatio,
-    &my_chemistry->SolarMetalFractionByMass,
-    my_rates->k1, my_rates->k2, my_rates->k3, my_rates->k4, my_rates->k5,
-    my_rates->k6, my_rates->k7, my_rates->k8, my_rates->k9, my_rates->k10,
-    my_rates->k11, my_rates->k12, my_rates->k13, my_rates->k13dd,
-    my_rates->k14, my_rates->k15, my_rates->k16,
-    my_rates->k17, my_rates->k18, my_rates->k19, my_rates->k22,
-    &my_uvb_rates.k24, &my_uvb_rates.k25, &my_uvb_rates.k26, &my_uvb_rates.k27,
-    &my_uvb_rates.k28, &my_uvb_rates.k29, &my_uvb_rates.k30, &my_uvb_rates.k31,
-    my_rates->k50, my_rates->k51, my_rates->k52, my_rates->k53,
-    my_rates->k54, my_rates->k55, my_rates->k56,
-    my_rates->k57, my_rates->k58,
-    &my_chemistry->NumberOfDustTemperatureBins, &my_chemistry->DustTemperatureStart,
-    &my_chemistry->DustTemperatureEnd, my_rates->h2dust,
-    my_rates->n_cr_n, my_rates->n_cr_d1, my_rates->n_cr_d2,
-    my_rates->ceHI, my_rates->ceHeI, my_rates->ceHeII, my_rates->ciHI,
-    my_rates->ciHeI, my_rates->ciHeIS, my_rates->ciHeII, my_rates->reHII,
-    my_rates->reHeII1, my_rates->reHeII2, my_rates->reHeIII, my_rates->brem,
-    &my_rates->comp, &my_rates->gammah,
-    &my_uvb_rates.comp_xray, &my_uvb_rates.temp_xray,
-    &my_uvb_rates.piHI, &my_uvb_rates.piHeI, &my_uvb_rates.piHeII,
-    HM_density, H2I_density, H2II_density,
-    DI_density, DII_density, HDI_density, metal_density,
-    Water_density, O_density, OH_density,
-    O2_density, Oplus_density, OHplus_density,
-    H2Oplus_density, H3Oplus_density, O2plus_density,
-    Cplus_density, C_density, CH_density,
-    CH2_density, CH3_density, CH4_density,
-    CO_density, COplus_density, CO2_density,
-    my_rates->hyd01k, my_rates->h2k01, my_rates->vibh,
-    my_rates->roth, my_rates->rotl,
-    my_rates->GP99LowDensityLimit, my_rates->GP99HighDensityLimit,
-    my_rates->HDlte, my_rates->HDlow,
-    my_rates->GAHI, my_rates->GAH2, my_rates->GAHe, my_rates->GAHp,
-    my_rates->GAel, my_rates->H2LTE, my_rates->gas_grain,
-    &my_chemistry->H2_self_shielding,
-    &my_chemistry->self_shielding_method, &my_uvb_rates.crsHI,
-    &my_uvb_rates.crsHeI, &my_uvb_rates.crsHeII,
-    &my_chemistry->use_radiative_transfer, &my_chemistry->radiative_transfer_coupled_rate_solver,
-    &my_chemistry->radiative_transfer_intermediate_step, &my_chemistry->radiative_transfer_hydrogen_only,
-    RT_HI_ionization_rate, RT_HeI_ionization_rate, RT_HeII_ionization_rate,
-    RT_H2_dissociation_rate, RT_heating_rate, 
-    H2_self_shielding_length,
-    &ierr,
-    &my_chemistry->h2_optical_depth_approximation, &my_chemistry->cie_cooling,
-    &my_chemistry->three_body_rate, my_rates->cieco,
-    &my_chemistry->cmb_temperature_floor,
-    &my_chemistry->UVbackground,
-    &my_chemistry->cloudy_electron_fraction_factor,
-    &my_rates->cloudy_primordial.grid_rank,
-    my_rates->cloudy_primordial.grid_dimension,
-    my_rates->cloudy_primordial.grid_parameters[0],
-    my_rates->cloudy_primordial.grid_parameters[1],
-    my_rates->cloudy_primordial.grid_parameters[2],
-    my_rates->cloudy_primordial.grid_parameters[3],
-    my_rates->cloudy_primordial.grid_parameters[4],
-    &my_rates->cloudy_primordial.data_size,
-    my_rates->cloudy_primordial.cooling_data,
-    my_rates->cloudy_primordial.heating_data,
-    my_rates->cloudy_primordial.mmw_data,
-    &my_rates->cloudy_metal.grid_rank,
-    my_rates->cloudy_metal.grid_dimension,
-    my_rates->cloudy_metal.grid_parameters[0],
-    my_rates->cloudy_metal.grid_parameters[1],
-    my_rates->cloudy_metal.grid_parameters[2],
-    my_rates->cloudy_metal.grid_parameters[3],
-    my_rates->cloudy_metal.grid_parameters[4],
-    &my_rates->cloudy_metal.data_size,
-    my_rates->cloudy_metal.cooling_data,
-    my_rates->cloudy_metal.heating_data,
-    &my_rates->cloudy_data_new,
-    &my_chemistry->use_volumetric_heating_rate,
-    &my_chemistry->use_specific_heating_rate,
-    volumetric_heating_rate, specific_heating_rate);
+  if(!my_chemistry->water_only){
+    FORTRAN_NAME(solve_rate_cool_g)(
+      &my_chemistry->with_radiative_cooling,
+      density, internal_energy, x_velocity, y_velocity, z_velocity,
+      e_density, HI_density, HII_density,
+      HeI_density, HeII_density, HeIII_density,
+      grid_dimension, grid_dimension+1, grid_dimension+2,
+      &my_chemistry->NumberOfTemperatureBins, &my_units->comoving_coordinates,
+      &my_chemistry->primordial_chemistry, &metal_field_present, &my_chemistry->metal_cooling,
+      &my_chemistry->h2_on_dust, &grid_rank, 
+      &my_chemistry->withWater, &my_chemistry->water_rates,
+      grid_start, grid_start+1, grid_start+2,
+      grid_end, grid_end+1, grid_end+2,
+      &my_chemistry->ih2co, &my_chemistry->ipiht, &my_chemistry->photoelectric_heating,
+      &dx_value, &dt_value, &my_units->a_value, &my_chemistry->TemperatureStart, &my_chemistry->TemperatureEnd,
+      &temperature_units, &co_length_units, &my_units->a_units,
+      &co_density_units, &my_units->time_units, &my_chemistry->Gamma,
+      &my_chemistry->HydrogenFractionByMass, &my_chemistry->DeuteriumToHydrogenRatio,
+      &my_chemistry->SolarMetalFractionByMass,
+      my_rates->k1, my_rates->k2, my_rates->k3, my_rates->k4, my_rates->k5,
+      my_rates->k6, my_rates->k7, my_rates->k8, my_rates->k9, my_rates->k10,
+      my_rates->k11, my_rates->k12, my_rates->k13, my_rates->k13dd,
+      my_rates->k14, my_rates->k15, my_rates->k16,
+      my_rates->k17, my_rates->k18, my_rates->k19, my_rates->k22,
+      &my_uvb_rates.k24, &my_uvb_rates.k25, &my_uvb_rates.k26, &my_uvb_rates.k27,
+      &my_uvb_rates.k28, &my_uvb_rates.k29, &my_uvb_rates.k30, &my_uvb_rates.k31,
+      my_rates->k50, my_rates->k51, my_rates->k52, my_rates->k53,
+      my_rates->k54, my_rates->k55, my_rates->k56,
+      my_rates->k57, my_rates->k58,
+      &my_chemistry->NumberOfDustTemperatureBins, &my_chemistry->DustTemperatureStart,
+      &my_chemistry->DustTemperatureEnd, my_rates->h2dust,
+      my_rates->n_cr_n, my_rates->n_cr_d1, my_rates->n_cr_d2,
+      my_rates->ceHI, my_rates->ceHeI, my_rates->ceHeII, my_rates->ciHI,
+      my_rates->ciHeI, my_rates->ciHeIS, my_rates->ciHeII, my_rates->reHII,
+      my_rates->reHeII1, my_rates->reHeII2, my_rates->reHeIII, my_rates->brem,
+      &my_rates->comp, &my_rates->gammah,
+      &my_uvb_rates.comp_xray, &my_uvb_rates.temp_xray,
+      &my_uvb_rates.piHI, &my_uvb_rates.piHeI, &my_uvb_rates.piHeII,
+      HM_density, H2I_density, H2II_density,
+      DI_density, DII_density, HDI_density, metal_density,
+      Water_density, O_density, OH_density,
+      O2_density, Oplus_density, OHplus_density,
+      H2Oplus_density, H3Oplus_density, O2plus_density,
+      Cplus_density, C_density, CH_density,
+      CH2_density, CH3_density, CH4_density,
+      CO_density, COplus_density, CO2_density,
+      CHplus_density, CH2plus_density, 
+      H3plus_density, HCOplus_density, 
+      HeHplus_density, CH3plus_density,
+      CH4plus_density, CH5plus_density,
+      O2Hplus_density,
+      my_rates->hyd01k, my_rates->h2k01, my_rates->vibh,
+      my_rates->roth, my_rates->rotl,
+      my_rates->GP99LowDensityLimit, my_rates->GP99HighDensityLimit,
+      my_rates->HDlte, my_rates->HDlow,
+      my_rates->GAHI, my_rates->GAH2, my_rates->GAHe, my_rates->GAHp,
+      my_rates->GAel, my_rates->H2LTE, my_rates->gas_grain,
+      &my_chemistry->H2_self_shielding,
+      &my_chemistry->self_shielding_method, &my_uvb_rates.crsHI,
+      &my_uvb_rates.crsHeI, &my_uvb_rates.crsHeII,
+      &my_chemistry->use_radiative_transfer, &my_chemistry->radiative_transfer_coupled_rate_solver,
+      &my_chemistry->radiative_transfer_intermediate_step, &my_chemistry->radiative_transfer_hydrogen_only,
+      RT_HI_ionization_rate, RT_HeI_ionization_rate, RT_HeII_ionization_rate,
+      RT_H2_dissociation_rate, RT_heating_rate, 
+      H2_self_shielding_length,
+      &ierr,
+      &my_chemistry->h2_optical_depth_approximation, &my_chemistry->cie_cooling,
+      &my_chemistry->three_body_rate, my_rates->cieco,
+      &my_chemistry->cmb_temperature_floor,
+      &my_chemistry->UVbackground,
+      &my_chemistry->cloudy_electron_fraction_factor,
+      &my_rates->cloudy_primordial.grid_rank,
+      my_rates->cloudy_primordial.grid_dimension,
+      my_rates->cloudy_primordial.grid_parameters[0],
+      my_rates->cloudy_primordial.grid_parameters[1],
+      my_rates->cloudy_primordial.grid_parameters[2],
+      my_rates->cloudy_primordial.grid_parameters[3],
+      my_rates->cloudy_primordial.grid_parameters[4],
+      &my_rates->cloudy_primordial.data_size,
+      my_rates->cloudy_primordial.cooling_data,
+      my_rates->cloudy_primordial.heating_data,
+      my_rates->cloudy_primordial.mmw_data,
+      &my_rates->cloudy_metal.grid_rank,
+      my_rates->cloudy_metal.grid_dimension,
+      my_rates->cloudy_metal.grid_parameters[0],
+      my_rates->cloudy_metal.grid_parameters[1],
+      my_rates->cloudy_metal.grid_parameters[2],
+      my_rates->cloudy_metal.grid_parameters[3],
+      my_rates->cloudy_metal.grid_parameters[4],
+      &my_rates->cloudy_metal.data_size,
+      my_rates->cloudy_metal.cooling_data,
+      my_rates->cloudy_metal.heating_data,
+      &my_rates->cloudy_data_new,
+      &my_chemistry->use_volumetric_heating_rate,
+      &my_chemistry->use_specific_heating_rate,
+      volumetric_heating_rate, specific_heating_rate);
+    }
 
 //Decide whether to turn to the water network
   if (!my_chemistry->withWater || metal_density == NULL)
@@ -322,33 +353,68 @@ int _solve_chemistry(chemistry_data *my_chemistry,
 
   int index_start = nghost * ((2*nghost + di) * (2*nghost + dj)) + nghost * (2*nghost + di) + nghost;
 
-  /* determine the number of species in the network */
-  int nSpecies = (my_chemistry->primordial_chemistry > 1) ? ((my_chemistry->primordial_chemistry > 2) ? 26 : 23) : 21;
-
-
-  double UV_water;
   /* flag to turn on UV rates in water network! */
-  UV_water = (my_chemistry->water_rates == 1) ? 1.0 : 0.0;
+  double UV_water = (double) my_chemistry->UVbackground;
+
+  double d_to_n = co_density_units/mh;
 
   setup_rxns(my_chemistry->primordial_chemistry, UV_water, my_chemistry->water_rates);
   setup_species(my_chemistry->primordial_chemistry, UV_water, my_chemistry->water_rates);
 
+  // Building the reactions is time consuming. We should only do it once.
+  static int first = 1;
+  static double *Y;
+  if(first){
+    my_reactions = (reaction_t*) malloc(nReactions*sizeof(reaction_t));
+    build_reactions(my_reactions,my_chemistry->primordial_chemistry,UV_water,my_chemistry->water_rates);
+    Y = (double *) malloc(nSpecies * sizeof(double));
+    first = 0;
+  }
+
+  # ifdef _OPENMP
+  # pragma omp parallel for schedule( runtime ) collapse(3) private( i, j, k, index, metallicity, Y, temperature, C_num_pre, O_num_pre, C_num_post, O_num_post, scale, metal_cgs, ierr, metal_exp, delta_mass, sum_metl, metl_frac, f) 
+  # endif
   for (k = 0; k < dk; k++){
     for (j = 0; j < dj; j++){
         for (i = 0; i < di; i++){
 
+	   //flatten 3D cube of space into 1d array
            int index = index_start + i + j*(di + 2*nghost) + k*(di*dj + di*2*nghost + dj*2*nghost + 4*nghost*nghost);
 
            double Z_solar = my_chemistry->SolarMetalFractionByMass;
            double metallicity = metal_density[index] / density[index] / Z_solar;
 
-               if (metallicity < 1.e-8){continue;}
+               //double temperature = (double) internal_energy[index]* (double) temperature_units;
+               double temperature;
+               if(my_chemistry->water_only){
+	         temperature = 100.0;
+               }
+               else{
+                 temperature = (double) internal_energy[index]* (double) temperature_units;
+                 if( metallicity < 1.e-8 || temperature > 1.e5){
+                   continue;
+                 }
+                 static int on = 1;
+                 if(on){
+                   printf("Water network turned on!\n");
+                   printf("Z = %g\n",metallicity);
+                   printf("T = %g\n",temperature);
+                   on = 0;
+                 }
+               }
 
-               /* create temporary array for updating metal species */
-               double *Y = (double *) malloc(nSpecies * sizeof(double));
+	       //we skip metal-free regions for speedup
+//               if ((metallicity < 1.e-8) && (temperature > 1.e5)){continue;}
 
                Y[H] = HI_density[index];
                Y[Hplus] = HII_density[index];
+
+               // convert to number density 
+	       // (grackle solves its species 
+	       // in code density)
+               Y[H]     *= d_to_n;
+               Y[Hplus] *= d_to_n;
+
                Y[el] = e_density[index];
                Y[O] = O_density[index];
                Y[OH] = OH_density[index];
@@ -372,23 +438,66 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                if (my_chemistry->primordial_chemistry > 1)
                {
                    Y[Hmin] = HM_density[index];
-                   Y[H2m] = H2I_density[index];
+		   Y[H2m] = H2I_density[index];
+
+                   Y[Hmin] *= d_to_n;
+                   Y[H2m]  *= d_to_n;
 
                    if (my_chemistry->primordial_chemistry > 2)
                    {
                        Y[D] = DI_density[index];
                        Y[Dplus] = DII_density[index];
                        Y[HD] = HDI_density[index];
+
+                       // convert to number density!
+                       Y[D]     *= d_to_n;
+                       Y[Dplus] *= d_to_n;
+                       Y[HD]    *= d_to_n;
                    }
                }
 
-               double temperature = (double) internal_energy[index]* (double) temperature_units;
-               /* keep the number density of C species the same */
-               double C_num_pre = Y[C] + Y[Cplus] + Y[CH] + Y[CH2] + Y[CH3] + Y[CH4] + Y[CO] + Y[COplus] + Y[CO2];
-               double O_num_pre = Y[O] + Y[OH] + Y[H2O] + 2.0*Y[O2] + Y[Oplus] + Y[OHplus] + Y[H2Oplus] + Y[H3Oplus] + 2*Y[O2plus];
+	       //Bialy (2019) network
+               if (my_chemistry->water_rates == 3){
+                  Y[CHplus]  = CHplus_density[index];
+                  Y[CH2plus] = CH2plus_density[index];
+                  Y[He]      = HeI_density[index];
+                  Y[Heplus]  = HeII_density[index];
+                  Y[H3plus]  = H3plus_density[index];
+                  Y[HCOplus] = HCOplus_density[index];
+                  Y[H2plus]  = H2II_density[index];
+                  Y[HeHplus] = HeHplus_density[index];
+                  Y[CH3plus] = CH3plus_density[index];
+		  Y[CH4plus] = CH4plus_density[index];
+		  Y[CH5plus] = CH5plus_density[index];
+		  Y[O2Hplus] = O2Hplus_density[index];
+ 
+                  Y[H2plus] *= d_to_n;
+                  Y[He]     *= d_to_n;
+                  Y[Heplus] *= d_to_n;
+               } 
+               
+	       
+	       double C_num_pre, O_num_pre, C_num_post, O_num_post, scale, sum_metl, metal_cgs, delta_mass, metl_frac, metal_frac;
 
-               /* complete one iteration of the water network */
-               ierr = integrate_network(my_chemistry->water_rates, Y, temperature, temperature, density[index], metallicity*Z_solar, UV_water, dt_value * my_units->time_units, &nstp, my_units, my_chemistry->primordial_chemistry, my_chemistry->H2_self_shielding, my_uvb_rates.crsHI, my_uvb_rates.k24);
+	       //if (my_chemistry->water_rates == 1){
+                  // keep the number density of C species the same
+                  C_num_pre = Y[C] + Y[Cplus] + Y[CH] + Y[CH2] + Y[CH3] + Y[CH4] + Y[CO] + Y[COplus] + Y[CO2];
+
+		  if (my_chemistry->water_rates ==3){
+			  C_num_pre += Y[CHplus] + Y[CH2plus] + Y[HCOplus] + Y[CH3plus] + Y[CH4plus] + Y[CH5plus];
+		  }
+
+                  // keep the number density of O species the same
+                  O_num_pre = Y[O] + Y[OH] + Y[H2O] + 2.0*Y[O2] + Y[Oplus] + Y[OHplus] + Y[H2Oplus] + Y[H3Oplus] + 2.0*Y[O2plus] + Y[CO] + Y[COplus] + 2.0*Y[CO2];
+
+		  if (my_chemistry->water_rates ==3){
+			  O_num_pre += Y[HCOplus] + 2.0*Y[O2Hplus];
+		  }
+	       //} //how much is it differing before or after?? Err on the side of not correcting? 
+	       // Maybe indicate that you need to subcycle more? 
+             
+               // complete one iteration of the water network
+               ierr = integrate_network(my_chemistry->water_rates, Y, temperature, temperature, density[index], metallicity*Z_solar, UV_water, dt_value * my_units->time_units, &nstp, my_units, my_chemistry->primordial_chemistry, my_chemistry->H2_self_shielding, my_uvb_rates.crsHI, my_uvb_rates.k24,my_chemistry->water_only);
 
                if (ierr != 0 && ierr != MXSTP)
                {
@@ -396,20 +505,16 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                    exit(99);
                }
 
-               int f;
-               for (f = 0; f < nSpecies; f++)
-               {
-                   if (Y[f] < tiny)
-                   {
-                     Y[f] = tiny;
-                   }
-               }
+	       //if (my_chemistry->water_rates == 1){
+                  // keep the number density of C species the same 
+                  C_num_post = Y[C] + Y[Cplus] + Y[CH] + Y[CH2] + Y[CH3] + Y[CH4] + Y[CO] + Y[COplus] + Y[CO2];
+                   if (my_chemistry->water_rates ==3){
+                          C_num_post += Y[CHplus] + Y[CH2plus] + Y[HCOplus] + Y[CH3plus] + Y[CH4plus] + Y[CH5plus];
+                  }
 
-               // keep the number density of C species the same 
-               double C_num_post = Y[C] + Y[Cplus] + Y[CH] + Y[CH2] + Y[CH3] + Y[CH4] + Y[CO] + Y[COplus] + Y[CO2];
-               double O_num_post = Y[O] + Y[OH] + Y[H2O] + 2.0*Y[O2] + Y[Oplus] + Y[OHplus] + Y[H2Oplus] + Y[H3Oplus] + 2*Y[O2plus];
+                  scale = C_num_pre/C_num_post; 
+		  if (abs(scale - 1.0) > 0.1){
 
-                  double scale = C_num_pre/C_num_post; 
                   Y[C]      *= scale;
                   Y[Cplus]  *= scale;
                   Y[CH]     *= scale;
@@ -420,7 +525,26 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                   Y[COplus] *= scale;
                   Y[CO2]    *= scale;
 
+                  if (my_chemistry->water_rates ==3){
+                        Y[CHplus]  *= scale;
+                        Y[CH2plus] *= scale;
+                        Y[CH3plus] *= scale;
+                        Y[CH4plus] *= scale;
+                        Y[CH5plus] *= scale;
+                  }
+		  }
+	          // keep the number density of O species the same
+		  
+                  O_num_post = Y[O] + Y[OH] + Y[H2O] + 2.0*Y[O2] + Y[Oplus] + Y[OHplus] + Y[H2Oplus] + Y[H3Oplus] + 2.0*Y[O2plus] + Y[CO] + Y[COplus] + 2.0*Y[CO2];
+
+                if (my_chemistry->water_rates ==3){
+                         O_num_post += Y[HCOplus] + 2.0*Y[O2Hplus];
+                  }
+
+
                   scale = O_num_pre/O_num_post;
+		  if (abs(scale - 1.0) > 0.1){
+
                   Y[O]       *= scale;
                   Y[OH]      *= scale;
                   Y[H2O]     *= scale;
@@ -430,52 +554,76 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                   Y[H2Oplus] *= scale;
                   Y[H3Oplus] *= scale;
                   Y[O2plus]  *= scale;
-               
-               // Calculate mass densities of metal field and summed water metals
-               double metal_cgs = metal_density[index] * co_density_units;
-               double sum_metl = calculate_metl_mass(Y);
+                  Y[CO]      *= scale;
+                  Y[COplus]  *= scale;
 
-               // calculate deviation of network mass from all metals that should be in the network
-               //  NOTE: The fractions of metals enriched from supernovae that are included in the 
-               //  water network are 0.553 for Oxygen and 0.228 for Carbon, summing to 0.781
-               //
-               double metal_frac = 0.781;
-               double metal_exp = metal_frac*metal_cgs;
-               double delta_mass = fabs((sum_metl - metal_exp)/(metal_exp));
-               // Ensure water metals don't sum to greater than metal field //
-               if ((sum_metl > metal_cgs) || (delta_mass > tiny)) {
-                 // scale the water species back to appropriate values //
-                 double metl_frac = metal_cgs/sum_metl * metal_frac;
-                  Y[O]       *= metl_frac;
-                  Y[OH]      *= metl_frac;
-                  Y[H2O]     *= metl_frac;
-                  Y[O2]      *= metl_frac;
-                  Y[Oplus]   *= metl_frac;
-                  Y[OHplus]  *= metl_frac;
-                  Y[H2Oplus] *= metl_frac;
-                  Y[H3Oplus] *= metl_frac;
-                  Y[O2plus]  *= metl_frac;
-                  Y[Cplus]   *= metl_frac;
-                  Y[C]       *= metl_frac;
-                  Y[CH]      *= metl_frac;
-                  Y[CH2]     *= metl_frac;
-                  Y[CH3]     *= metl_frac;
-                  Y[CH4]     *= metl_frac;
-                  Y[CO]      *= metl_frac;
-                  Y[COplus]  *= metl_frac;
-                  Y[CO2]     *= metl_frac;
-               }
+		  if (my_chemistry->water_rates ==3){
+                        Y[HCOplus] *= scale;
+                        Y[O2Hplus] *= scale;
+                     }
+		  }
+		  
+                  // Calculate mass densities of metal field and summed water metals
+                  metal_cgs = metal_density[index] * co_density_units;
+                  sum_metl = calculate_metl_mass(Y, my_chemistry->primordial_chemistry, my_chemistry->water_rates);
 
-               //Checks for errors in the network
-               for (f = 0; f < nSpecies; f++)
-               {
-                   if ((Y[f] != Y[f]) || (Y[f] == INFINITY))
-                   {
-                     printf("Error in Y[i]!\n");
-                   }
-               }
+                  // calculate deviation of network mass from all metals that should be in the network
+                  //  NOTE: The fractions of metals enriched from supernovae that are included in the 
+                  //  water network are 0.553 for Oxygen and 0.228 for Carbon, summing to 0.781
+      	          if (my_units->comoving_coordinates == TRUE)
+	          {
+	             metal_frac = 0.781;
+	          } 
+	          else{
+                     metal_frac = 1.00;
+	          }
+	       
+                  double metal_exp = metal_frac*metal_cgs;
+                  delta_mass = fabs((sum_metl - metal_exp)/(metal_exp));
+
+                  // Ensure water metals don't sum to greater than metal field //
+                  if ((sum_metl > metal_cgs) || (delta_mass > tiny)) {
+                     // scale the water species back to appropriate values //
+                     metl_frac = metal_cgs/sum_metl * metal_frac; 
+
+		     if (abs(metl_frac - 1.0) > 0.1){
+
+                     Y[O]       *= metl_frac;
+                     Y[OH]      *= metl_frac;
+                     Y[H2O]     *= metl_frac;
+                     Y[O2]      *= metl_frac;
+                     Y[Oplus]   *= metl_frac;
+                     Y[OHplus]  *= metl_frac;
+                     Y[H2Oplus] *= metl_frac;
+                     Y[H3Oplus] *= metl_frac;
+                     Y[O2plus]  *= metl_frac;
+                     Y[Cplus]   *= metl_frac;
+                     Y[C]       *= metl_frac;
+                     Y[CH]      *= metl_frac;
+                     Y[CH2]     *= metl_frac;
+                     Y[CH3]     *= metl_frac;
+                     Y[CH4]     *= metl_frac;
+                     Y[CO]      *= metl_frac;
+                     Y[COplus]  *= metl_frac;
+                     Y[CO2]     *= metl_frac;
+
+		     if (my_chemistry->water_rates ==3){
+	   	        Y[CHplus]  *= metl_frac;
+                        Y[CH2plus] *= metl_frac;
+                        Y[HCOplus] *= metl_frac;
+                        Y[CH3plus] *= metl_frac;
+                        Y[CH4plus] *= metl_frac;
+                        Y[CH5plus] *= metl_frac;
+                        Y[O2Hplus] *= metl_frac;
+		     }
+		     }
+                  }
+	       //}
 
                /* Write updated number densities back to metal fields */
+               Y[H]   /= d_to_n;
+               Y[Hplus] /= d_to_n; 
+
                HI_density[index] = Y[H];
                HII_density[index] = Y[Hplus];
                e_density[index] = Y[el];
@@ -498,19 +646,42 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                COplus_density[index] = Y[COplus];
                CO2_density[index] = Y[CO2];
 
+
                if (my_chemistry->primordial_chemistry > 1)
-               {
+               { 
+                   Y[Hmin] /= d_to_n;
+                   Y[H2m] /= d_to_n;
+
                    HM_density[index] = Y[Hmin];
                    H2I_density[index] = Y[H2m];
                    if (my_chemistry->primordial_chemistry > 2)
                    {
+                       Y[D]     /= d_to_n;
+                       Y[Dplus] /= d_to_n;
+                       Y[HD]    /= d_to_n;
                        DI_density[index] = Y[D];
                        DII_density[index] = Y[Dplus];
                        HDI_density[index] = Y[HD];
                    }
                }
-
-               free(Y);
+               if (my_chemistry->water_rates == 3){ 
+                  Y[H2plus] /= d_to_n;
+		  Y[He] /= d_to_n;
+		  Y[Heplus] /= d_to_n;
+                     
+                  CHplus_density[index] = Y[CHplus];
+                  CH2plus_density[index] = Y[CH2plus];
+                  HeI_density[index] = Y[He];
+                  HeII_density[index] = Y[Heplus];
+                  H3plus_density[index] = Y[H3plus];
+                  HCOplus_density[index] = Y[HCOplus];
+                  H2II_density[index] = Y[H2plus];
+                  HeHplus_density[index] = Y[HeHplus];
+                  CH3plus_density[index] = Y[CH3plus];
+		  CH4plus_density[index] = Y[CH4plus];
+		  CH5plus_density[index] = Y[CH5plus];
+		  O2Hplus_density[index] = Y[O2Hplus];
+               }
         }
      }
   }
@@ -543,15 +714,23 @@ int local_solve_chemistry(chemistry_data *my_chemistry,
                        my_fields->volumetric_heating_rate,
                        my_fields->specific_heating_rate,
                        my_fields->RT_heating_rate, my_fields->RT_HI_ionization_rate,
-                       my_fields->RT_HeI_ionization_rate, my_fields->RT_HeII_ionization_rate,
+                       my_fields->RT_HeI_ionization_rate, 
+                       my_fields->RT_HeII_ionization_rate,
                        my_fields->RT_H2_dissociation_rate,
                        my_fields->H2_self_shielding_length,
                        my_fields->O_density, my_fields->OH_density,
-                       my_fields->O2_density, my_fields->Oplus_density, my_fields->OHplus_density,
-                       my_fields->H2Oplus_density, my_fields->H3Oplus_density, my_fields->O2plus_density,
-                       my_fields->Cplus_density, my_fields->C_density, my_fields->CH_density,
-                       my_fields->CH2_density, my_fields->CH3_density, my_fields->CH4_density,
-                       my_fields->CO_density, my_fields->COplus_density, my_fields->CO2_density) == FAIL) {
+                       my_fields->O2_density, my_fields->Oplus_density, 
+                       my_fields->OHplus_density, my_fields->H2Oplus_density, 
+                       my_fields->H3Oplus_density, my_fields->O2plus_density,
+                       my_fields->Cplus_density, my_fields->C_density, 
+                       my_fields->CH_density, my_fields->CH2_density, 
+                       my_fields->CH3_density, my_fields->CH4_density,
+                       my_fields->CO_density, my_fields->COplus_density, 
+                       my_fields->CO2_density, my_fields->CHplus_density, 
+                       my_fields->CH2plus_density, my_fields->H3plus_density, 
+                       my_fields->COplus_density, my_fields->HeHplus_density, 
+                       my_fields->CH3plus_density, my_fields->CH4plus_density,
+                       my_fields->CH5plus_density, my_fields->O2Hplus_density) == FAIL) {
     fprintf(stderr, "Error in _solve_chemistry.\n");
     return FAIL;
   }

@@ -7,50 +7,75 @@
 #include <err.h>
 #include <bckeul.h>
 #include <const.h>
+#include <chemistry.h>
 #include <stdbool.h>
+#include "jac_rhs_builder.h"
+#include "jac_rhs.h"
+#include "linalg.h"
+#include "fwdeul.h"
+#include "rk45.h"
 
 // compute a backward-euler time step. if newton is true (non-zero), this is a
 // step of a newton-raphson iteration, in which case the abundances for the
 // previous iteration should also be provided in the variable Ylst
-int backward_euler_step(double *r, double *Y, double dt, double *dtrcmd, int newton, double *Ylst, int ispecies) {
-  // MultiSpecies handler 
-  int nSpecies   = (ispecies > 1) ? ((ispecies > 2) ? 26 : 23) : 21;
-  int nReactions = (ispecies > 1) ? ((ispecies > 2) ? 54 : 48) : 24;
+int backward_euler_step(double *r, double *Y, double dt, double *dtrcmd, int newton, double *Ylst, int ispecies, double UV, int water_rates) {
 
-  //Add UV reactions!!
-  nReactions += 8;
+  //const double rmax = 2, rmin = 0.2;
+  //double err = TINY;
+  //double tol = TINY;
 
+  static int first = 1;
+  static double *F, **J;
+  static gsl_matrix *A;
+  static gsl_vector *b;
+  if(first){
+    F = (double *) malloc(nSpecies * sizeof(double));
+    J = (double **) malloc(nSpecies * sizeof(double *));
+    for (int i = 0; i < nSpecies; i++){
+      J[i] = (double *) malloc(nSpecies * sizeof(double));
+    }
+    b = gsl_vector_alloc(nSpecies);
+    A = gsl_matrix_alloc(nSpecies,nSpecies);
+    first = 0;
+  }
 
-  double *F = (double *) malloc(nSpecies * sizeof(double)); // RHS (dY/dt)
-  gsl_matrix *A;
-  gsl_vector *b;
-  double *pdelta = (double *) malloc(nSpecies * sizeof(double));
+  memset(F, 0., nSpecies*sizeof(double));
+  for(int i = 0; i < nSpecies; i++){
+    memset(J[i],0,nSpecies*sizeof(double));
+  }
+
 
   double dtinv = 1. / dt;
   int i, j, ierr;
 
-  // set up Jacobian matrix and initialize to zero
-  double **J = (double **) malloc(nSpecies * sizeof(double *));
-  for (i = 0; i < nSpecies; i++) {
-    J[i] = (double *) malloc(nSpecies * sizeof(double));
-    for (j = 0; j < nSpecies; j++) {
-      J[i][j] = 0.;
+  // We use Ylst for NR and Y from last time step for BE.
+  if(newton){
+    // For NR, do a quick floor on all the abundances; we shouldn't be guessing
+    // negative numbers.
+    for(int i = 0; i < nSpecies; i++){
+      Ylst[i] = fmax(0.0,Ylst[i]);
     }
+    cal_jacobian(J, Ylst, my_reactions, r);
+    cal_rhs(F, Ylst, my_reactions, r);
+  }
+  else{
+    cal_jacobian(J, Y, my_reactions, r);
+    cal_rhs(F, Y, my_reactions, r);
   }
 
-  // get jacobian: use Y from last time step if BE or last iteration (Ylst) if NR
-  (newton) ? get_jacobian(r, J, Ylst, ispecies) : get_jacobian(r, J, Y, ispecies);
-
   // clip abs. values to 1e-99
-  clip_jacobian(J, ispecies);
-
-  // alloc
-  b = gsl_vector_alloc(nSpecies);
-  A = gsl_matrix_alloc(nSpecies, nSpecies);
+  clip_jacobian(J, ispecies, water_rates);
 
   // get RHS (dY/dt): use Y from last time step if BE or last iteration (Ylst) if NR
-  (newton) ? get_f_vector(r, F, Ylst, ispecies) : get_f_vector(r, F, Y, ispecies);
+  (newton) ? cal_rhs(F, Ylst, my_reactions, r) : cal_rhs(F, Y, my_reactions, r);
 
+
+/*
+  for (int k = 0; k < nSpecies; k++){
+     printf("dydt[%i] = %.2e\n", k, F[k]);
+  }
+  */
+  
   // set up matrix A and vector b for the Ax = b linear solve
   if (newton) {
     // NR: copy -dt*J to A and Ylst - Y_previous - dt * F to b
@@ -91,8 +116,6 @@ int backward_euler_step(double *r, double *Y, double dt, double *dtrcmd, int new
   // solve system Ax = b for x (returned as b)
   ierr = solve_Ax_equals_b(A, b);
   if (ierr != 0) {
-    printf("ERROR: Ax = b solve failed with error %d", ierr);
-    *dtrcmd = .2 * dt;
     goto error;
   }
 
@@ -108,155 +131,61 @@ int backward_euler_step(double *r, double *Y, double dt, double *dtrcmd, int new
     }
   }
 
-  // check for negative abundances and NaNs
-  double x;
-  double sumM0 = 0;
-  double sumM1 = 0;
-  double subcycle = 0;
-  for (i = 0; i < nSpecies; i++) {
-    x = (newton) ? Ylst[i] : Y[i];
-
-    if (x < 0.0) {
-      // abundance is negative, reject time step and try with smaller one
-      ierr = NEG_X;
-      *dtrcmd = .2 * dt;
-      goto error;
-    }
-    else if (x != x || isnan(x)) {
-      // abundance is NaN, reject time step and try with smaller one
-      ierr = NAN_X;
-      *dtrcmd = .2 * dt;
-      goto error;
-    }
-    
-    // Check that no species changes by more than 20% in one iteration
-    pdelta[i] = (Y[i] - Ylst[i]) / Ylst[i];
-    if (pdelta[i] > 0.2) {subcycle = 1;}
-  }
-
-  if (subcycle) {
-     ierr = DEL_X;
-     *dtrcmd = 0.1 * dt;
-     goto error;
-  }
-
-  //check for mass conservation!
-  sumM0 = calculate_mass(Ylst);
-  sumM1 = calculate_mass(Y);
-  double sumFrac = sumM0/sumM1;
-  if (fabs(sumFrac - 1.) > 1.e-20)
-  {
-
-    printf("Mass Conservation violation! pChange(x) = %.5e \n", sumFrac);
-    *dtrcmd = 0.1 * dt;
-    ierr = MASSC;
-  }
-
-
-  // free memory
-  gsl_vector_free (b);
-  gsl_matrix_free (A);
-  for (i = 0; i < nSpecies; i++) 
-  {
-      free(J[i]);
-  }
-  free(J); free(F);
-  free(pdelta);
-  return 0;
+  return ALLOK;
 
 error:
-  gsl_vector_free (b);
-  gsl_matrix_free (A);
-  for (i = 0; i < nSpecies; i++) 
-  { 
-      free(J[i]);
-  } 
-  free(J); free(F);
-  free(pdelta);
   return ierr;
 }
 
-
 // perform Newton-Raphson iterations using backward Euler to converge to solution
-int backward_euler_NR(double *r, double *Y, double dt, double *dtrcmd, int ispecies) {
-  int iter, ierr, i;
-  // MultiSpecies handler 
-  int nSpecies   = (ispecies > 1) ? ((ispecies > 2) ? 26 : 23) : 21;
-  int nReactions = (ispecies > 1) ? ((ispecies > 2) ? 54 : 48) : 24;
-  //Add UV reactions!!
-  nReactions += 8;
-  const int maxiter = 1.e3;
-  double *Yold = (double *) malloc(nSpecies * sizeof(double)); // abundances at prev. time step
-  double *Ycur = (double *) malloc(nSpecies * sizeof(double)); // abundances at current iteration
-  double *Ylst = (double *) malloc(nSpecies * sizeof(double)); // abundances at last iteration
-  const double tol = 1e-20, rmax = 2, rmin = 0.2;
-  double eps = 0.;
+int backward_euler_NR(double *r, double *Y, double dt, double *dtrcmd, int ispecies, double UV, int water_rates) {
 
-  // initialise
+  int iter, ierr, i;
+  const int maxiter = 7;
+  static int first_call = 1;
+  static double *Yold, *Ycur, *Ylst;
+  if(first_call){
+    Yold = (double *) malloc(nSpecies * sizeof(double)); // abundances at prev. time step
+    Ycur = (double *) malloc(nSpecies * sizeof(double)); // abundances at current iteration
+    Ylst = (double *) malloc(nSpecies * sizeof(double)); // abundances at last iteration
+    first_call = 0;
+  }
+  const double rmax = 2, rmin = 0.2;
+  double err = TINY, tol;
+  
+
+  // initialize arrays
   memcpy(Yold, Y   , sizeof(double)*nSpecies);
   memcpy(Ycur, Yold, sizeof(double)*nSpecies);
+  forward_euler_integrate(r,Ycur,dt,ispecies,UV,water_rates);
   memcpy(Ylst, Ycur, sizeof(double)*nSpecies);
 
   // perform newton iterations
   for (iter = 0; iter < maxiter; iter++) {
+    //printf("Starting iteration number %i\n", iter + 1);
 
     // perform one backward euler step
-    ierr = backward_euler_step(r, Yold, dt, dtrcmd, 1, Ycur, ispecies);
+    ierr = backward_euler_step(r, Yold, dt, dtrcmd, 1, Ycur, ispecies, UV, water_rates);
     if (ierr != 0) break;
 
-    // check for convergence
-    for (i = 0; i < nSpecies; i++) {
-      eps = fmax(fabs((Ycur[i] - Ylst[i]) / fmax(Ylst[i], SMALL)), eps);
-    }
+    ierr = check_solution(Ycur, Ylst, &err, &tol, ispecies, water_rates, 0);
 
-    //check that all species values are positive
-    bool allPos = 1;
-    int check;
-    for(check = 0; check < nSpecies; check++){
-        if (Ycur[check] < 0.0){
-            allPos = 0;
-        }
-    }
+    if (ierr == ALLOK) { break; }
+    if (ierr == NAN_X) { break; }
 
-    if (allPos){
-        
-        //converged?
-        if (eps < tol) 
-	{
-	    //printf("All vals are positive, doing okay!\n"); 
-            ierr = 0; break; 
-        }
-    }
+    if (iter == maxiter) { break; }
 
- 
-    // check whether max iterations have been reached
-    if (iter == maxiter - 1) 
-    {
-        //printf("ERROR: HIT THE MAX NUMBER OF ITERATIONS IN NR!\n");
-        ierr = MXITR; 
-	break; 
-    }
-    
     // copy Ycur (current abundances) to Ylst (abundances at last iteration)
     memcpy(Ylst, Ycur, sizeof(double)*nSpecies);
   }
 
-  // write solution
-  memcpy(Y, Ycur, sizeof(double)*nSpecies);
+  //ierr = check_solution(Ycur, Ylst, &err, &tol, ispecies, water_rates, 1);
+
+  memcpy(Y, Ylst, sizeof(double)*nSpecies);
 
   // recommended time step to try next
-  if (ierr == 0 || ierr == MXITR) 
-  {
-    *dtrcmd = fmax(fmin(pow(( tol / eps ), HALF), rmax), rmin) * dt;
-  }
-  else 
-  {
-    *dtrcmd = 0.2 * dt;
-  }
-
-  // cleanup
-  free(Yold); free(Ycur); free(Ylst);
+  *dtrcmd = fmax(fmin(pow(( tol / err ), HALF), rmax), rmin) * dt;
+  //printf("dttry = %.2e  dtrcmd = %.2e  err = %.2e  tol = %.2e  ierr %d  err = %s\n", dt, *dtrcmd, err, tol, ierr, errmsg[ierr]);
+  
   return ierr;
 }
-
-

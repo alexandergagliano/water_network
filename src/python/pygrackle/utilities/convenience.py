@@ -104,6 +104,10 @@ def setup_fluid_container(my_chemistry,
         fc["CO_density"][:] = tiny_number * fc["density"]
         fc["COplus_density"][:] = tiny_number * fc["density"]
         fc["CO2_density"][:] = tiny_number * fc["density"]	
+        if my_chemistry.water_rates == 3:
+           fc["CHplus_density"][:] = tiny_number * fc["density"]
+           fc["CH2plus_density"][:] = tiny_number * fc["density"]
+           fc["H3plus_density"][:] = tiny_number * fc["density"]
 
     fc["energy"] = temperature / \
         fc.chemistry_data.temperature_units / \
@@ -125,10 +129,15 @@ def setup_fluid_container(my_chemistry,
                           (dt * my_chemistry.time_units / sec_per_Myr)))
         for field in ["HI", "HII", "HM", "HeI", "HeII", "HeIII",
                       "H2I", "H2II", "DI", "DII", "HDI", "de", 
-                      "Water_density", "O_density", "OH_density", "O2_density", "Oplus_density", 
-                      "OHplus_density", "H2Oplus_density", "H3Oplus_density", "O2plus_density", 
-                      "Cplus_density", "C_density", "C_density", "CH_density", "CH2_density", 
-                      "CH3_density", "CH4_density", "CO_density", "COplus_density", "CO2_density"]:
+                      "Water_density", "O_density", "OH_density",  
+                      "O2_density", "Oplus_density", 
+                      "OHplus_density", "H2Oplus_density", 
+                      "H3Oplus_density", "O2plus_density", 
+                      "Cplus_density", "C_density", "C_density", 
+                      "CH_density", "CH2_density", "CH3_density", 
+                      "CH4_density", "CO_density", "COplus_density", 
+                      "CO2_density", "CHplus_density", 
+                      "CH2plus_density", "H3plus_density"]:
             if field in fc:
                 fc_last[field] = np.copy(fc[field])
         fc.solve_chemistry(dt)

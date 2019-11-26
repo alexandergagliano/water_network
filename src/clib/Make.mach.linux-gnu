@@ -21,7 +21,8 @@ MACH_FILE  = Make.mach.linux-gnu
 # Install paths (local variables)
 #-----------------------------------------------------------------------
 
-LOCAL_HDF5_INSTALL = /usr
+#LOCAL_HDF5_INSTALL = /usr
+LOCAL_HDF5_INSTALL = $(HDF5_ROOT)
 
 #-----------------------------------------------------------------------
 # Compiler settings
@@ -83,7 +84,9 @@ MACH_LIBS         = $(LOCAL_LIBS_HDF5) $(LOCAL_LIBS_MACH)
 #-----------------------------------------------------------------------
 
 #MACH_INSTALL_PREFIX = /lustre/scratch1/turquoise/agagliano/millennium/waterWiggins
-MACH_INSTALL_PREFIX = /lustre/scratch3/turquoise/agagliano/WATER
+#MACH_INSTALL_PREFIX = /lustre/scratch3/turquoise/agagliano/WATER
 #MACH_INSTALL_PREFIX = /users/wiggins/local/
+#MACH_INSTALL_PREFIX = /net/scratch4/swjones/grackle_waternet/build
+MACH_INSTALL_PREFIX = /home/alexgagliano/Documents/Research/water_network/grackle_Bialy2019
 MACH_INSTALL_LIB_DIR =
 MACH_INSTALL_INCLUDE_DIR =

@@ -3,3 +3,4 @@
 
 const double SMALL;
 const double HALF;
+const double TINY;

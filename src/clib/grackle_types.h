@@ -88,6 +88,18 @@ typedef struct
   gr_float *COplus_density;
   gr_float *CO2_density;
 
+  /* Bialy (2018) chemistry species */
+  gr_float *CHplus_density; 
+  gr_float *CH2plus_density;
+  gr_float *H3plus_density;
+  gr_float *HCOplus_density;
+  gr_float *HeHplus_density;
+  gr_float *CH3plus_density;
+  gr_float *CH4plus_density;
+  gr_float *CH5plus_density;
+  gr_float *O2Hplus_density;
+
+
 } grackle_field_data;
 
 typedef struct

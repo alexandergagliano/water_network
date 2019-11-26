@@ -167,6 +167,12 @@ cdef class chemistry_data:
         def __set__(self, val):
             self.data.water_rates = val
 
+    property water_only:
+        def __get__(self):
+            return self.data.water_only
+        def __set__(self, val):
+            self.data.water_only = val
+
     property k24:
         def __get__(self):
             return self.rates.k24
@@ -335,6 +341,16 @@ def solve_chemistry(fc, my_dt):
     cdef gr_float *CO_density = get_field(fc, "CO_density")
     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
+    cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
+    cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
+    cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
+    cdef gr_float *HCOplus_density = get_field(fc, "HCOplus_density")
+    cdef gr_float *HeHplus_density = get_field(fc, "HeHplus_density")
+    cdef gr_float *CH3plus_density = get_field(fc, "CH3plus_density")
+    cdef gr_float *CH4plus_density = get_field(fc, "CH4plus_density")
+    cdef gr_float *CH5plus_density = get_field(fc, "CH5plus_density")
+    cdef gr_float *O2Hplus_density = get_field(fc, "O2Hplus_density")
+
 
     c_solve_chemistry (
                 &my_chemistry,
@@ -389,7 +405,16 @@ def solve_chemistry(fc, my_dt):
                 CH4_density,
                 CO_density,
                 COplus_density,
-                CO2_density)
+                CO2_density,
+                CHplus_density,
+                CH2plus_density,
+                H3plus_density,
+                HCOplus_density, 
+                HeHplus_density, 
+                CH3plus_density, 
+                CH4plus_density,
+                CH5plus_density, 
+                O2Hplus_density)
     
 def calculate_cooling_time(fc):
     cdef int grid_rank = 1
@@ -511,6 +536,9 @@ def calculate_gamma(fc):
     cdef gr_float *CO_density = get_field(fc, "CO_density")
     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
+    cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
+    cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
+    cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
     cdef gr_float *e_density = get_field(fc, "de")
     cdef gr_float *metal_density = get_field(fc, "metal")
     cdef gr_float *gamma = get_field(fc, "gamma")
@@ -554,6 +582,9 @@ def calculate_gamma(fc):
                 CO_density,
                 COplus_density,
                 CO2_density,
+                CHplus_density,
+                CH2plus_density,
+                H3plus_density,
                 e_density,
                 metal_density,
                 gamma)
@@ -606,6 +637,9 @@ def calculate_pressure(fc):
     cdef gr_float *CO_density = get_field(fc, "CO_density")
     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
+    cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
+    cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
+    cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
     cdef gr_float *e_density = get_field(fc, "de")
     cdef gr_float *metal_density = get_field(fc, "metal")
     cdef gr_float *pressure = get_field(fc, "pressure")
@@ -649,6 +683,9 @@ def calculate_pressure(fc):
                 CO_density,
                 COplus_density,
                 CO2_density,
+                CHplus_density,
+                CH2plus_density,
+                H3plus_density,
                 e_density,
                 metal_density,
                 pressure)
@@ -701,6 +738,9 @@ def calculate_temperature(fc):
     cdef gr_float *CO_density = get_field(fc, "CO_density")
     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
+    cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
+    cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
+    cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
     cdef gr_float *e_density = get_field(fc, "de")
     cdef gr_float *metal_density = get_field(fc, "metal")
     cdef gr_float *temperature = get_field(fc, "temperature")
@@ -744,6 +784,9 @@ def calculate_temperature(fc):
                 CO_density,
                 COplus_density,
                 CO2_density,
+                CHplus_density,
+                CH2plus_density,
+                H3plus_density,
                 e_density,
                 metal_density,
                 temperature)

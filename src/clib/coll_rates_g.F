@@ -3,7 +3,7 @@ c/////////////////////  SUBROUTINE COLL_RATES_G  \\\\\\\\\\\\\\\\\\\\\\\
 c
       SUBROUTINE coll_rates_g(T, k1, k2, k3, k4, k5, k6, k7, k8, k9,
      $     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k23,
-     $     kunit, casebrates, water_rates)
+     $     kunit, casebrates, iwater, water_rates)
 c
 c  COMPUTE MULTISPECIES COLLISIONAL RATES
 c
@@ -62,7 +62,7 @@ c
      $       k14, k15, k16, k17, k18, k19, k23
       real*8 kunit, T
       real*8 d
-      integer casebrates, water_rates
+      integer casebrates, iwater, water_rates
 c
 c  Parameters
 c
@@ -80,7 +80,7 @@ C     ------- Compute various values of T.
       T_eV = T/11605._DKIND
       log_T_eV = log(T_eV)
       
-      IF (water_rates .ne. 3) THEN
+c      IF (iwater .eq. 0) THEN
          k1 = exp(-32.71396786375_DKIND 
      &        + 13.53655609057_DKIND*log_T_eV
      &        - 5.739328757388_DKIND*log_T_eV**2 
@@ -90,9 +90,9 @@ C     ------- Compute various values of T.
      &        - 0.00263197617559_DKIND*log_T_eV**6
      &        + 0.0001119543953861_DKIND*log_T_eV**7
      &        - 2.039149852002e-6_DKIND*log_T_eV**8) / kunit
-      ELSE
-         k1 = tiny
-      ENDIF
+c      ELSE
+c         k1 = tiny
+c      ENDIF
       
       IF (T_eV .GT. 0.8) THEN
          k3 = exp(-44.09864886561001_DKIND
@@ -130,45 +130,35 @@ c     redefine k4 if case B recombination rates are requested
       if (casebrates.eq.1) then
          k4 = 1.26e-14_DKIND * (5.7067e5_DKIND/T)**(0.75_DKIND) / kunit
       endif
-
+      
+c      IF (iwater .eq. 0) THEN
+c         k2 = tiny
+c      ELSE
 c     set HII recombination rate as either case A or case B
-      IF (casebrates.eq.1) THEN
-         IF (T .lt. 1.0d9) then
-            k2 = 4.881357e-6_DKIND*T**(-1.5_DKIND) 
-     &           * (1._DKIND+1.14813e2_DKIND
-     &           * T**(-0.407_DKIND))**(-2.242_DKIND) / kunit
+         IF (casebrates.eq.1) THEN
+            IF (T .lt. 1.0d9) then
+               k2 = 4.881357e-6_DKIND*T**(-1.5_DKIND) 
+     &              * (1._DKIND+1.14813e2_DKIND
+     &              * T**(-0.407_DKIND))**(-2.242_DKIND) / kunit
+            ELSE
+               k2 = tiny
+            ENDIF
          ELSE
-            k2 = tiny
+            IF ( T .GT. 5500._DKIND ) THEN
+               k2 = exp(-28.61303380689232_DKIND
+     &              - 0.7241125657826851_DKIND*log_T_eV
+     &              - 0.02026044731984691_DKIND*log_T_eV**2
+     &              - 0.002380861877349834_DKIND*log_T_eV**3
+     &              - 0.0003212605213188796_DKIND*log_T_eV**4
+     &              - 0.00001421502914054107_DKIND*log_T_eV**5
+     &              + 4.989108920299513e-6_DKIND*log_T_eV**6
+     &              + 5.755614137575758e-7_DKIND*log_T_eV**7
+     &              - 1.856767039775261e-8_DKIND*log_T_eV**8
+     &              - 3.071135243196595e-9_DKIND*log_T_eV**9) / kunit
+            ELSE
+               k2 = k4
+            ENDIF
          ENDIF
-      ELSE
-         IF ( T .GT. 5500._DKIND ) THEN
-            k2 = exp(-28.61303380689232_DKIND
-     &           - 0.7241125657826851_DKIND*log_T_eV
-     &           - 0.02026044731984691_DKIND*log_T_eV**2
-     &           - 0.002380861877349834_DKIND*log_T_eV**3
-     &           - 0.0003212605213188796_DKIND*log_T_eV**4
-     &           - 0.00001421502914054107_DKIND*log_T_eV**5
-     &           + 4.989108920299513e-6_DKIND*log_T_eV**6
-     &           + 5.755614137575758e-7_DKIND*log_T_eV**7
-     &           - 1.856767039775261e-8_DKIND*log_T_eV**8
-     &           - 3.071135243196595e-9_DKIND*log_T_eV**9) / kunit
-         ELSE
-            k2 = k4
-         ENDIF
-      ENDIF
-
-c Omukai Rate - Commented out for cosmology
-c      IF (water_rates .eq. 1) THEN
-c          k2 = exp(-28.6130338_DKIND
-c     &           - 0.72411256_DKIND*log_T_eV
-c     &           - 0.0202604473_DKIND*log_T_eV**2
-c     &           - 0.00238086188_DKIND*log_T_eV**3
-c     &           - 0.000321260521_DKIND*log_T_eV**4
-c     &           - 0.0000142150291_DKIND*log_T_eV**5
-c     &           + 4.98910892e-6_DKIND*log_T_eV**6
-c     &           + 5.75561414e-7_DKIND*log_T_eV**7
-c     &           - 1.85676704e-8_DKIND*log_T_eV**8
-c     &           - 3.07113524e-9_DKIND*log_T_eV**9) / kunit
 c      ENDIF
 
 c     set HeIII recombination rate as either case A or case B
@@ -191,17 +181,12 @@ c     on photodetachment cross-section of Wishart (1979, MNRAS, 187, P59)
 c      
 
 c Omukai Rate - Commented out for cosmology
-c      IF (water_rates .eq. 1) THEN
-c          k7 = 1.4e-18_DKIND * (T)**0.928_DKIND
-c     &       * exp(-T/1.62e4_DKIND) / kunit
+c      IF (water_rates .eq. 3) THEN
+c         k7 = tiny
 c      ELSE 
-       IF (water_rates .eq. 3) THEN
-          k7 = 4.00e-16_DKIND * (T/3.e2_DKIND)**0.67_DKIND 
-     &       * exp(4.0_DKIND/T) / kunit
-       ELSE 
-          k7 = 3.0e-16_DKIND * (T/3.e2_DKIND)**0.95_DKIND 
-     &       * exp(-T/9.32e3_DKIND) / kunit
-      ENDIF
+         k7 = 3.0e-16_DKIND * (T/3.e2_DKIND)**0.95_DKIND 
+     &      * exp(-T/9.32e3_DKIND) / kunit
+c      ENDIF
 
 c
 c     H- destruction by associative detachment with HI: HM + HI -> H2I + e
@@ -209,20 +194,15 @@ c     This fit is from Kreckel et al (2010, Science, 329, 69), based on their
 c     experimental measurements of the process. 
 c     
 c Omukai Rate - Commented out for cosmology
-c      IF (water_rates .eq. 1) THEN
-c         IF (T .gt. 3.0d2) THEN
-c            k8 = 4.0e-9_DKIND*(T**(-0.17_DKIND)) / kunit
-c         ELSE 
-c            k8 = 1.5e-9_DKIND /kunit
-c         ENDIF 
-c      ELSE
-       IF (water_rates .ne. 3) THEN
+c       IF (water_rates .eq. 3) THEN
+c         k8 = tiny 
+c       ELSE
          k8 = 1.35e-9_DKIND*(T**9.8493e-2_DKIND + 3.2852e-1_DKIND
      &      * T**5.5610e-1_DKIND + 2.771e-7_DKIND * T**2.1826_DKIND)
      &      / (1._DKIND + 6.191e-3_DKIND * T**1.0461_DKIND
      &      + 8.9712e-11_DKIND * T**3.0424_DKIND
      &      + 3.2576e-14_DKIND * T**3.7741_DKIND) / kunit
-      ENDIF
+c       ENDIF 
 
 c     H2+ formation by radiative association: HI + HII -> H2II + gamma
 c     This fit is from Latif et al (2015, MNRAS, 446, 3163) and is valid
@@ -230,7 +210,7 @@ c     for temperatures in the range 1 < T < 32000 K. At higher temperatures,
 c     we keep the value of the rate coefficient constant; note that its 
 c     behaviour in this regime is unlikely to be important
 c
-      IF (water_rates .ne. 3) THEN 
+c      IF (iwater .eq. 0) THEN 
         IF (T .LT. 30.0_DKIND) THEN
           k9 = 2.10e-20_DKIND * (T/30.0_DKIND)**(-0.15_DKIND) / kunit
         ELSE
@@ -244,28 +224,22 @@ c
      &            + 1.786_DKIND  * log10(tk9)**2
      &            - 0.2072_DKIND * log10(tk9)**3 ) / kunit
         ENDIF
-      ELSE
-        k9 = 5.13e-19_DKIND * (T/3.0e2_DKIND)**1.85_DKIND / kunit
-      ENDIF
+c      ELSE
+c        k9 = tiny
+c      ENDIF
 
-      IF (water_rates .ne. 3) THEN
+c      IF (iwater .eq. 0) THEN
         k10 = 6.0e-10_DKIND / kunit
-      ELSE
-        k10 = 6.4e-10_DKIND / kunit
-      ENDIF
-
-c SET TO 0 HERE; REDEFINED IN SOLVE_RATE_COOL_G.F
-c Omukai Rate - Commented out for cosmology
-c      IF (water_rates .eq. 1) THEN
-c         k13 = 0._DKIND
-c      ENDIF      
+c      ELSE
+c        k10 = tiny
+c      ENDIF
 
          IF (T_eV .GT. 0.3_DKIND) THEN
-            IF (water_rates .gt. 1) THEN
+c            IF (iwater .eq. 0) THEN
                 k13 = 1.0670825e-10_DKIND*T_eV**2.012_DKIND/
      &               (exp(4.463_DKIND/T_eV)*(1._DKIND+0.2472_DKIND
      &               * T_eV)**3.512_DKIND) / kunit
-            ENDIF 
+c            ENDIF 
          
 #ifdef USE_SAVIN2004
          k11 = (exp(-21237.15_DKIND/T) * 
@@ -300,13 +274,11 @@ c Assumes all of the H2 molecules are in the v=0 vibrational ground state
          k12 = tiny
       ENDIF
 
-      IF (water_rates .eq. 3) THEN
-         k11 = 1.00e-10_DKIND * exp(-21200.0/T) / kunit
-         k12 = 3.22e-9_DKIND * (T/3.0e2_DKIND)**0.35_DKIND
-     &       * exp(-102000.0_DKIND/T) / kunit
-         k13 = 4.67e-7 * (T/3.0e2_DKIND)**(-1.0_DKIND )
-     &       * exp(-55000.0_DKIND/T) / kunit 
-      ENDIF
+c      IF (iwater .eq. 1) THEN
+c         k11 = tiny
+c         k12 = tiny
+c         k13 = tiny
+c      ENDIF
       
       IF (T_eV .GT. 0.04_DKIND) THEN
          k14 = exp(-18.01849334273_DKIND
@@ -343,11 +315,13 @@ c     of Fussen & Kubach (1986, J. Phys. B, 18 L31). This fit agrees well
 c     with recent measurements of the rate by X. Urbain & collaborators, to
 c     within experimental error
 c     
-      IF (water_rates .eq. 3) THEN
-         k16 = 2.30e-7_DKIND * (T/3.0e2_DKIND) ** (-0.50_DKIND) / kunit
-      ELSE 
+
+
+c      IF (iwater .eq. 1) THEN
+c         k16 = tiny
+c      ELSE 
          k16 = 2.4e-6_DKIND*(1._DKIND+T/2e4_DKIND)/sqrt(T) / kunit
-      ENDIF 
+c      ENDIF 
 
       k17 = 1.e-8_DKIND*T**(-0.4_DKIND) / kunit
       IF (T .GT. 1.0e4_DKIND)
@@ -356,11 +330,11 @@ c
       k18 = 1.e-8_DKIND / kunit
       IF (T .GT. 617._DKIND)
      $     k18 = 1.32e-6_DKIND * T**(-0.76_DKIND) / kunit
-      IF (water_rates .eq. 3) 
-     &     k18 = 1.60e-8_DKIND * (T/3e2_DKIND)**(-0.43_DKIND) / kunit
+c      IF (iwater .eq. 1) 
+c     &     k18 = tiny
       k19 = 5.e-7_DKIND*sqrt(100._DKIND/T) / kunit
-      IF (water_rates .eq. 3)
-     &     k19 = 2.30e-7_DKIND * (T/3e2_DKIND)**(-0.5_DKIND) / kunit
+c      IF (iwater .eq. 1)
+c     &     k19 = tiny
       k23 = ((8.125e-8_DKIND / sqrt(T))
      $     * exp(-52000._DKIND/T)
      $     * (1._DKIND - exp(-6000._DKIND/T))) / kunit

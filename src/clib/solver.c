@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <solver.h>
+#include <rk45.h>
 #include <bckeul.h>
 #include <err.h>
 #include <const.h>
@@ -11,94 +12,150 @@
 #include "grackle_macros.h"
 #include "grackle_types.h"
 #include "grackle_chemistry_data.h"
+#include "rates.h"
 
-int do_network_step(double *Y, double *r, double dt, double *dtrcmd, int ispecies) {
+int do_network_step(double *Y, double *r, double dt, double *dtrcmd, int ispecies, double UV, int water_rates) {
 
   // backward-Euler
-  int ierr = backward_euler_step(r, Y, dt, dtrcmd, 1, Y, ispecies);
-  //int ierr = backward_euler_NR(r, Y, dt, dtrcmd, ispecies);
-  //int ierr = rk45_integrate(Y, r, dt, dtrcmd, ispecies);
+  int ierr = backward_euler_NR(r, Y, dt, dtrcmd, ispecies, UV, water_rates);
+  //int ierr = backward_euler_step(r, Y, dt, dtrcmd, 0, Y, ispecies, UV, water_rates);
+  //int ierr = rk45_integrate(r, Y, dt, dtrcmd, ispecies, UV, water_rates);
   
   return ierr;
 }
 
-int integrate_network(int water_rates, double *Y, double T0, double T1, double n, double metl, double UV, double dtwant, int *nstp, code_units *my_units, int ispecies, int H2_shield, double crsHI, double k24)
+int integrate_network(int water_rates, double *Y, double T0, double T1, double n, double metl, double UV, double dtwant, int *nstp, code_units *my_units, int ispecies, int H2_shield, double crsHI, double k24,
+ int water_only)
   {
-
-  // MultiSpecies handler 
-  int nSpecies = (ispecies > 1) ? ((ispecies > 2) ? 26 : 23) : 21;
-  int nReactions = (ispecies > 1) ? ((ispecies > 2) ? 54 : 48) : 24;
-
-  //Add UV rates! 
-  if ((int) UV){
-     nReactions += 8;
-  }
-
-/*  
-  if (water_rates == 3){
-    nReactions += 13;
-    nSpecies   += 10;
-  }
-*/
 
   double *Ylst = (double *) malloc(nSpecies * sizeof(double)); // last iter abundances
   int s;
   memcpy(Ylst, Y, sizeof(double) * nSpecies);
   double dttry, dtdone, dtrcmd;
-  const int max_substp = 5.e2; // max. number of substeps
+  int max_substp;
+  if(water_only){
+    max_substp = 5000; // max. number of substeps
+  }
+  else{
+    max_substp = 500;
+  }
   int j, ierr;
   double *Y_old = (double *) malloc(nSpecies * sizeof(double));
 
   // init
   double *r = (double *) malloc(nReactions * sizeof(double));
 
-  // We try to jump the entire time interval, instead of assuming subcycling
-  dttry = dtwant ;
+  // We start by trying to jump the entire time interval, 
+  // instead of assuming subcycling from the get go
+  dttry =  dtwant ;
   dtdone = 0.; 
   dtrcmd = 1.e99; 
+
+  // clip abundances on input to tiny (non-zero) number
+  for (int i = 1; i < nSpecies; i++) {
+    Y[i] = fmax(Y[i], TINY);
+  }
   memcpy(Y_old, Y, sizeof(double) * nSpecies);
 
   // substep loop
   for (j = 1; j < max_substp; j++) {
-    
-    get_rates(water_rates, r, T0, n, T0, metl, UV, my_units, ispecies, Y, H2_shield, crsHI, k24);
+
+    // the rates are updated based on the density and temp
+    // of the cell
+    get_rates(water_rates, r, T0, n, T0, metl, UV, my_units, ispecies, Y, H2_shield, crsHI, k24, 
+              water_only);
 
     // perform one step integration
-    ierr = do_network_step(Y, r, dttry, &dtrcmd, ispecies);
+    ierr = do_network_step(Y, r, dttry, &dtrcmd, ispecies, UV, water_rates);
+
+    // Floor the species that make up less than 1.e-33% of the 
+    // total number density
+    double noise_tol = 1.e-35;
+    double sumY = 0;
+    for (int i = 0; i < nSpecies; i++) {
+      sumY += Y[i];
+    }
+    
+    for (int i = 0; i < nSpecies; i++) {
+      // If species are below the noise, then just floor them
+      if ((Y[i]/sumY) < noise_tol) {
+        Y[i] = 0.; //TINY;
+      }
+    }
+    
+    /*
+    if (j%200 == 0) {
+      // print status
+      printf("substp %6d  dtwant = %9.2e  dtdone = %9.2e dttry = %9.2e  dtrcmd = %9.2e  err = %5s\n",j,dtwant,dtdone,dttry,dtrcmd,errmsg[ierr]);
+    }
+    */
+
     //check success of step
     if (ierr == 0){
+      //printf("dt = %g\n",dttry);
       // success
       dtdone += dttry;
-      if (dtdone == dtwant ) {
+
+      // compute greatest change in chemical over time step
+      double tmp, drel, dydt;
+      int idx = 0;
+      drel = 1.e-99;
+      dydt = (Y[H2m] - Y_old[H2m])/dttry;
+      //double Z_solar = 0.01295;
+      //printf("sumR[H2m] = %.2e\n", dydt/(Y[H]*Y[H]*(metl/Z_solar)));
+      /*
+      for (int i = 0; i < nSpecies; i++) {
+        //printf("cvg x, all abunds: %3d: Ylst = %15.6e  Y = %15.6e\n", i, Ylst[i], Y[i]);
+	printf("Y[%i] = %.2e\n", i, Y[i]);
+        //tmp = fabs(Y[i] - Y_old[i])/Y_old[i];
+        dydt = (Y[i] - Y_old[i])/dttry;
+        printf("dY[%d]/dt = %g\n",i,dydt);
+        //if ((Y[i] / sumY > noise_tol) && (tmp > drel)) {
+        //  idx = i;
+        //  drel = tmp;
+        }*/
+
+     // }
+      //printf("\n");
+      //printf("Greatest Change: Y_old[%2d] = %.5e  Y[%2d] = %.5e  DY[%d] = %.5e\n",idx,Y_old[idx],idx,Y[idx],idx,drel);
+
+      if (dtdone >= dtwant ) {
         //cycle complete
-        ierr = 0;
+        ierr = ALLOK;
         break;
-      } else{
-        dttry = fmin(dttry, dtwant - dtdone);
       }
       memcpy(Y_old, Y, sizeof(double) * nSpecies);
     }
     else {
       //failure
       memcpy(Y, Y_old, sizeof(double) * nSpecies);
-      dtrcmd = 0.1 * dttry;
-      dttry = fmin(dtrcmd, dtwant - dtdone);
     } 
-    //dttry = fmin(dtrcmd, dtwant - dtdone);
+
+    // set dttry to dtrcmd, unless the remaining time is 
+    // even smaller
+    dttry = fmin(dtrcmd, dtwant - dtdone);
 
     // check for time step underflow
     if (dttry < SMALL) {
-      dttry = SMALL;
-      ierr = SMLDT;
-      break;
+  //      printf("time step underflow :/ \n"); 
+        dttry = SMALL;
+        ierr = SMLDT;
+        break;
     }
+
     //maximum number of iterations reached
+    /*
     if ( j == max_substp - 1) {
-      //Currently - DON'T reject entire timestep if not finished
+      // SJ: NO!!! DO NOT DO THIS!!!
+      printf("max sub time steps reached\n");
+      exit(99);
       ierr = MXSTP;
       break;
     }
-  }
+    */
+  } 
+
+  //free the malloc'd arrays
   free(r);
   free(Ylst);
   free(Y_old);

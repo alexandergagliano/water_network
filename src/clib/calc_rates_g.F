@@ -3,7 +3,7 @@ c=======================================================================
 c//////////////////////  SUBROUTINE CALC_RATES_G  \\\\\\\\\\\\\\\\\\\\\\\
 c
       subroutine calc_rates_g(
-     &             ispecies, water_rates,
+     &             ispecies, iwater, water_rates,
      &             nratec, aye, temstart, temend,
      &             casebrates, threebody,
      &             uxyz, uaye, urho, utim,
@@ -132,7 +132,7 @@ c
 c
 c  Arguments
 c
-      integer ispecies, nratec, casebrates, threebody, ndratec,
+      integer ispecies, iwater, nratec, casebrates, threebody, ndratec,
      &        water_rates
       real*8  aye, temstart, temend, dtemstart, dtemend
       real*8  uxyz, uaye, urho, utim
@@ -382,7 +382,7 @@ c
      &                  k6a(i), k7a(i), k8a(i), k9a(i), k10a(i),
      &                  k11a(i), k12a(i), k13a(i), k14a(i), k15a(i), 
      &                  k16a(i), k17a(i), k18a(i), k19a(i), k23a(i),
-     &                  kunit, casebrates, water_rates)
+     &                  kunit, casebrates, iwater, water_rates)
 c
 c       Compute the coefficients needed for the density-dependent collision 
 c       H2 dissociation rate. Our source for this (Martin et al, 1996, ApJ, 461, 265) 
@@ -461,15 +461,15 @@ c Inferred from detailed balance from Forrey rate
             stop
         endif
 
-c        if(water_rates .eq. 1) then
-c Omukai Rate - Commented out for cosmology
-c          k22a(i) = 5.5d-29 / ttt 
-c          k13a(i) = 0.0d0     
-c          k21a(i) = k22a(i) / 8.0d0
-c        else
+c        if(iwater .eq. 0) then
          k13a(i) = k13a(i) / kunit
          k22a(i) = k22a(i) / kunit_3bdy
          k21a(i) = 2.8d-31 * (ttt**(-0.6d0)) / kunit_3bdy
+c        else
+c         k13a(i) = tiny
+c         k22a(i) = tiny
+c         k21a(i) = tiny
+c        endif
 
 c        write(6,*),'calc_rates_g: check: ', ttt, k2a(i), k22a(i)
 c
@@ -484,20 +484,6 @@ c       55) HD  +  H  -> H2 +  D
 c       56) D   +  H- -> HD +  e-
 c      [57) D-  +  H  -> HD +  e-]  included by multiply 56 by 2
 c
-
-c        if (water_rates .eq.1) then
-c Omukai Rate - Commented out for cosmology
-c          k50a(i) = (3.7d-10 * (ttt**2.8d-1) * exp(-4.3d1 / ttt)) / kunit  
-c          k51a(i) = (3.7d-10 * (ttt**2.8d-1)) / kunit 
-c          k52a(i) = 2.1d-9 / kunit 
-c          k53a(i) = (1.0d-9 * exp(-4.64d2/ttt)) / kunit
-c          k54a(i) = (9.0d-11*exp(-3.876d3/ttt)) / kunit
-c          k55a(i) = (3.2d-11 * exp(-3.624d3/ttt) ) / kunit
-c          k56a(i) = 0.0d0
-c          k57a(i) = 0.0d0
-c          k58a(i) = 0.0d0
-c        else
-         if (water_rates .ne. 1) then
           if (ttt .le. 2d5) then
 c   Fit from Savin (2002), valid for T < 2e5 K; at higher T, we
 c   extrapolate
@@ -543,7 +529,7 @@ c to avoid producing an anomalously large rate coefficient
           else
             k55a(i) = 5.25d-11 * exp(-4.43d3/ttt + 1.739d5/ttt**2) / kunit
           endif
-         endif
+c         endif
 
           if (ttt .gt. 3d3) then
             k57a(i) = 1.2d-17  * ttt**1.2d0 * dexp(-1.578d5 / ttt) / kunit
@@ -554,6 +540,18 @@ c to avoid producing an anomalously large rate coefficient
           endif
 
           k56a(i) = k8a(i)
+
+         if (water_rates .eq. 1) then
+           k50a(i) = tiny
+           k51a(i) = tiny
+           k52a(i) = tiny
+           k53a(i) = tiny
+           k54a(i) = tiny
+           k55a(i) = tiny
+           k56a(i) = tiny
+           k57a(i) = tiny
+           k58a(i) = tiny
+         endif
 
 c        endif
 
@@ -584,16 +582,12 @@ c
            d_ttt2 = d_ttt / 1.0d2
 c
 c     k23 from Omukai (2000).
-c
-c Omukai Rate - matches already present rate in Grackle
-           if (water_rates .ne. 3) then
              h2dusta(i,j) = 6.0d-17 * (ttt / 300.0d0)**(0.5d0) *
      &            ((1.0d0 + exp(7.5d2 * ((1.0d0 / 75.0d0) - 
      &                                (1.0d0 / d_ttt))))**(-1.0d0)) *
      &            ((1.0d0 + (4.0d-2 * (ttt + d_ttt)**(0.5d0)) + 
      &             (2.0d-3 * ttt) + 
      &             (8.0d-6 * ttt**(2.0d0)))**(-1.0d0)) / kunit
-          endif
 c
 c     Equation 3.8 from Hollenbach & McKee (1979).
 c

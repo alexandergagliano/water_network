@@ -25,6 +25,7 @@ cdef extern from "grackle_chemistry_data.h":
         int self_shielding_method
         int H2_self_shielding
         int withWater
+        int water_only
         int water_rates
 
     ctypedef struct c_chemistry_data_storage "chemistry_data_storage":
@@ -110,7 +111,16 @@ cdef extern from "grackle.h":
                 gr_float *CH4_density,
                 gr_float *CO_density,
                 gr_float *COplus_density,
-                gr_float *CO2_density)
+                gr_float *CO2_density,
+                gr_float *CHplus_density,
+                gr_float *CH2plus_density, 
+                gr_float *H3plus_density,
+                gr_float *HCOplus_density, 
+                gr_float *HeHplus_density, 
+                gr_float *CH3plus_density,
+                gr_float *CH4plus_density,
+                gr_float *CH5plus_density, 
+                gr_float *O2Hplus_density)
 
 
     int c_calculate_cooling_time "_calculate_cooling_time"(
@@ -183,6 +193,9 @@ cdef extern from "grackle.h":
                 gr_float *CO_density,
                 gr_float *COplus_density,
                 gr_float *CO2_density,
+                gr_float *CHplus_density,
+                gr_float *CH2plus_density, 
+                gr_float *H3plus_density,
                 gr_float *e_density,
                 gr_float *metal_density,
                 gr_float *my_gamma)
@@ -226,6 +239,9 @@ cdef extern from "grackle.h":
                 gr_float *CO_density,
                 gr_float *COplus_density,
                 gr_float *CO2_density,
+                gr_float *CHplus_density,
+                gr_float *CH2plus_density, 
+                gr_float *H3plus_density,
                 gr_float *e_density,
                 gr_float *metal_density,
                 gr_float *pressure)
@@ -269,6 +285,9 @@ cdef extern from "grackle.h":
                 gr_float *CO_density,
                 gr_float *COplus_density,
                 gr_float *CO2_density,
+                gr_float *CHplus_density,
+                gr_float *CH2plus_density, 
+                gr_float *H3plus_density,
                 gr_float *e_density,
                 gr_float *metal_density,
                 gr_float *temperature)

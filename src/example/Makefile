@@ -82,14 +82,14 @@ GRACKLE_LIB = -L$(MACH_INSTALL_PREFIX)/lib -lgrackle
 # C++ EXAMPLE
 #-----------------------------------------------------------------------
 
-cxx_example: $(MODULES) cxx_example.o
+water_test: $(MODULES) water_test.o
 	@rm -f $@
 	@echo "Linking"
-	-@$(CXX) $(LDFLAGS) -o cxx_example cxx_example.o $(LIBS) $(GRACKLE_LIB) >& $(OUTPUT)
+	-@$(CXX) $(LDFLAGS) -o water_test water_test.o $(LIBS) $(GRACKLE_LIB) >& $(OUTPUT)
 	@(if [ -e $@ ]; then \
              echo "Success!"; \
          else \
-             echo "$(CXX) $(LDFLAGS) -o cxx_example cxx_example.o $(LIBS) $(GRACKLE_LIB)" >> temp1; \
+             echo "$(CXX) $(LDFLAGS) -o water_test water_test.o $(LIBS) $(GRACKLE_LIB)" >> temp1; \
              cat temp1 $(OUTPUT) > temp2; \
              rm -f temp1; \
              mv -f temp2 $(OUTPUT); \
@@ -218,7 +218,7 @@ help:
 #-----------------------------------------------------------------------
 
 clean:
-	-@rm -f *.o *.mod *.f *.f90 *~ *.exe $(OUTPUT) cxx_example cxx_omp_example c_example fortran_example
+	-@rm -f *.o *.mod *.f *.f90 *~ *.exe $(OUTPUT) water_test cxx_omp_example c_example fortran_example
 
 #-----------------------------------------------------------------------
 # Include configuration targets

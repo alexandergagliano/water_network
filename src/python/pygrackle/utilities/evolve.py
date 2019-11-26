@@ -14,6 +14,7 @@
 from collections import defaultdict
 import numpy as np
 import yt
+import sys
 
 from .physical_constants import \
     gravitational_constant_cgs, \
@@ -78,6 +79,7 @@ def evolve_freefall(fc, final_density, safety_factor=0.01,
          
         fc.solve_chemistry(dt)
 
+
         # use this to multiply by elemental densities if you are tracking those
         density_ratio = new_density / fc["density"][0]
 
@@ -117,96 +119,58 @@ def evolve_freefall(fc, final_density, safety_factor=0.01,
 
     return data
 
-def evolve_freefall_metal(fc, final_metallicity, safety_factor,
-                    include_pressure=False):
+def evolve_freefall_metal(fc, final_metallicity, final_time, 
+       include_pressure=False, dtmax=1.e11):
     my_chemistry = fc.chemistry_data
   
     i = 0
-    # Set units of gravitational constant
-    gravitational_constant = (
-        4.0 * np.pi * gravitational_constant_cgs *
-        my_chemistry.density_units * my_chemistry.time_units**2)
-
-    # some constants for the analytical free-fall solution
-    freefall_time_constant = np.power(((32. * gravitational_constant) /
-                                       (3. * np.pi)), 0.5)
-
     data = defaultdict(list)
     current_time = 0.0
-    metal = fc["metal"][0] 
-    final_time = 2.00e+12 * sec_per_year / my_chemistry.time_units
-    #final_time = 1.90e+12 * sec_per_year / my_chemistry.time_units
-
+    #dt = 1.e-15 # safety_factor
+    dtmax = dtmax / my_chemistry.time_units
+    dt = dtmax
+    fac = 1.001
     while (current_time < final_time): 
-        fc.calculate_cooling_time()
-        dt = safety_factor * np.abs(fc["cooling_time"][0])
- 
-        time_interval = final_time - current_time
-        #time_interval = 2.00e+12 * sec_per_year / my_chemistry.time_units - current_time
-        nsteps = time_interval/dt
-        current_Z = fc["metal"][0]/my_chemistry.SolarMetalFractionByMass/\
-                fc["density"]
-        #pretending final metallicity isn't final metallicity
-        Z_interval = final_metallicity - current_Z
-        #Z_interval = final_metallicity - current_Z
-        dt_Z = Z_interval/nsteps
 
         for field in fc.density_fields:
             data[field].append(fc[field][0] * my_chemistry.density_units)
-        for field in fc.n_density_fields:
+        for field in fc.n_density_fields: 
             data[field].append(fc[field][0])
 
-        # update hydrogen number density
         data["n_H"].append(fc["n_H"][0])
- 
-        # data["energy"].append(fc["energy"][0])
-
-        # removing temperature from the eqn...
         fc["temperature"][0] = 100 #K 
         data["temperature"].append(fc["temperature"][0])
-      
-        #fc.calculate_pressure()
         data["pressure"].append(fc["pressure"][0])
         data["time"].append(current_time * my_chemistry.time_units)
-
-        i = i+1
-        if (i%1.e4 == 0):
-          print("Evolve Metal Freefall - t: %e yr, T: %e K, Z = %e Zsol." %
-             ((current_time * my_chemistry.time_units / sec_per_year),
-              fc["temperature"][0], 
-               (fc["metal"][0]/my_chemistry.SolarMetalFractionByMass/\
-               fc["density"])))
+        i = i + 1
+        if (i%(1.e4) == 0):
+          print("Evolve Metal Freefall - dt: %e, t: %e yr, T: %e K, Z = %e Zsol." %
+               (dt*my_chemistry.time_units,
+                   (current_time * my_chemistry.time_units / sec_per_year),
+                fc["temperature"][0], 
+                 (fc["metal"][0]/my_chemistry.SolarMetalFractionByMass/\
+                 fc["density"])))
 
         fc.solve_chemistry(dt)
-
-        # update Hydrogen number density
-        #fc["n_H"] = fc.calculate_hydrogen_number_density()
-
-#        metal = metal + (safety_factor)*my_chemistry.SolarMetalFractionByMass*fc["density"]
-        metal = metal + dt_Z*my_chemistry.SolarMetalFractionByMass*fc["density"]
-        fc["metal"][0] = metal
-
-#        metal = metal + (safety_factor)*fc["density"]
-#        data["metal"].append(metal)
-
         # update time
         current_time += dt
+        #dt = min(dt*fac,dtmax)
 
     for field in data:
         if field in fc.density_fields:
-            data[field] = yt.YTArray(data[field], "g/cm**3")
+           data[field] = yt.YTArray(data[field], "g/cm**3")
         elif field == "energy":
-            data[field] = yt.YTArray(data[field], "erg/g")
+           data[field] = yt.YTArray(data[field], "erg/g")
         elif field == "time":
-            data[field] = yt.YTArray(data[field], "s")
+           data[field] = yt.YTArray(data[field], "s")
         elif field == "temperature":
-            data[field] = yt.YTArray(data[field], "K")
+           data[field] = yt.YTArray(data[field], "K")
         elif field == "pressure":
-            data[field] = yt.YTArray(data[field], "dyne/cm**2")
+           data[field] = yt.YTArray(data[field], "dyne/cm**2")
         elif (field == "n_H" or field in fc.n_density_fields):
-            data[field] = yt.YTArray(data[field], "cm**-3")
+           data[field] = yt.YTArray(data[field], "cm**-3")
         else:
-            data[field] = np.array(data[field])
+           data[field] = np.array(data[field])
 
     return data
 

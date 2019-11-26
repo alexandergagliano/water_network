@@ -25,12 +25,12 @@
      &                reHeII2a, reHeIIIa, brema, compa, gammaha,
      &                comp_xraya, comp_temp, piHI, piHeI, piHeII,
      &                HM, H2I, H2II, DI, DII, HDI, metal,
-     &                H2O, O, OH,
-     &                O2, Oplus, OHplus,
-     &                H2Oplus, H3Oplus, O2plus,
-     &                Cplus, C, CH,
-     &                CH2, CH3, CH4,
-     &                CO, COplus, CO2,
+     &                H2O, O, OH, O2, Oplus, OHplus,
+     &                H2Oplus, H3Oplus, O2plus, Cplus, C, CH,
+     &                CH2, CH3, CH4, CO, COplus, 
+     &                CO2, CHplus, CH2plus, H3plus,
+     &                HCOplus, HeHplus, CH3plus,
+     &                CH4plus, CH5plus, O2Hplus,
      &                hyd01ka, h2k01a, vibha, rotha, rotla, 
      &                gpldla, gphdla, hdltea, hdlowa,
      &                gaHIa, gaH2a, gaHea, gaHpa, gaela, 
@@ -199,7 +199,11 @@
      &        H2Oplus(in,jn,kn), H3Oplus(in,jn,kn), O2plus(in,jn,kn),
      &        Cplus(in,jn,kn), C(in,jn,kn), CH(in,jn,kn),
      &        CH2(in,jn,kn), CH3(in,jn,kn), CH4(in,jn,kn),
-     &        CO(in,jn,kn), COplus(in,jn,kn), CO2(in,jn,kn)
+     &        CO(in,jn,kn), COplus(in,jn,kn), CO2(in,jn,kn),
+     &        CHplus(in,jn,kn), CH2plus(in,jn,kn), H3plus(in,jn,kn),
+     &        HCOplus(in,jn,kn), HeHplus(in,jn,kn), CH3plus(in,jn,kn),
+     &        CH4plus(in,jn,kn), CH5plus(in,jn,kn), O2Hplus(in,jn,kn)
+
 
 !  Radiative transfer fields
 
@@ -356,7 +360,10 @@ c      chunit = (7.17775e-12_DKIND)/(2._DKIND*uvel*uvel*mh)   ! 4.5 eV per H2 fo
      &                  H2O, O, OH, O2, Oplus, OHplus,
      &                  H2Oplus, H3Oplus, O2plus,
      &                  Cplus, C, CH, CH2, CH3, CH4,
-     &                  CO, COplus, CO2,
+     &                  CO, COplus, CO2, CHplus,
+     &                  CH2plus, H3plus, HCOplus,
+     &                  HeHplus, CH3plus,
+     &                  CH4plus, CH5plus, O2Hplus,
      &                  is, ie, js, je, ks, ke,
      &                  in, jn, kn, ispecies, imetal, aye**(-3), iwater)
 
@@ -367,7 +374,10 @@ c      chunit = (7.17775e-12_DKIND)/(2._DKIND*uvel*uvel*mh)   ! 4.5 eV per H2 fo
      &                     H2O, O, OH, O2, Oplus, OHplus,
      &                     H2Oplus, H3Oplus, O2plus,
      &                     Cplus, C, CH, CH2, CH3, CH4,
-     &                     CO, COplus, CO2,
+     &                     CO, COplus, CO2, CHplus,
+     &                     CH2plus, H3plus,
+     &                     HCOplus, HeHplus, CH3plus,
+     &                     CH4plus, CH5plus, O2Hplus,
      &                     is, ie, js, je, ks, ke,
      &                     in, jn, kn, ispecies, imetal, iwater, urho,
      &                     aye**(3))
@@ -784,9 +794,12 @@ c      chunit = (7.17775e-12_DKIND)/(2._DKIND*uvel*uvel*mh)   ! 4.5 eV per H2 fo
             call step_rate_g(de, HI, HII, HeI, HeII, HeIII, d,
      &                     HM, H2I, H2II, DI, DII, HDI, dtit,
      &                     Oplus, OHplus, H2Oplus, H3Oplus, O2plus,
-     &                     Cplus, COplus,
+     &                     Cplus, COplus, CHplus,
+     &                     CH2plus, H3plus,
+     &                     HCOplus, HeHplus, CH3plus,
+     &                     CH4plus, CH5plus, O2Hplus,
      &                     in, jn, kn, is, ie, j, k, ispecies, idust,
-     &                     iwater,
+     &                     iwater, wrates,
      &                     k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11,
      &                     k12, k13, k14, k15, k16, k17, k18, k19, k22,
      &                     k24, k25, k26, k27, k28, k29, k30,
@@ -871,6 +884,9 @@ c            WARNING_MESSAGE
      &                  H2Oplus, H3Oplus, O2plus,
      &                  Cplus, C, CH, CH2, CH3, CH4,
      &                  CO, COplus, CO2,
+     &                  CHplus, CH2plus, H3plus,
+     &                  HCOplus, HeHplus, CH3plus,
+     &                  CH4plus, CH5plus, O2Hplus,
      &                  is, ie, js, je, ks, ke,
      &                  in, jn, kn, ispecies, imetal, aye**3, iwater)
 
@@ -883,9 +899,13 @@ c            WARNING_MESSAGE
       call make_consistent_g(de, HI, HII, HeI, HeII, HeIII,
      &                     HM, H2I, H2II, DI, DII, HDI, metal, 
      &                     Oplus, OHplus, H2Oplus, H3Oplus, O2plus,
-     &                     Cplus, COplus,
+     &                     Cplus, COplus, CHplus,
+     &                     CH2plus, H3plus,
+     &                     HCOplus, HeHplus, CH3plus,
+     &                     CH4plus, CH5plus, O2Hplus,
      &                     d, is, ie, js, je, ks, ke,
-     &                     in, jn, kn, ispecies, imetal, iwater, fh, dtoh)
+     &                     in, jn, kn, ispecies, imetal, iwater, fh,
+     &                     dtoh, wrates)
 
       endif
 
@@ -900,7 +920,10 @@ c -----------------------------------------------------------
      &                        HM, H2I, H2II, DI, DII, HDI, metal,
      &                        H2O, O, OH, O2, Oplus, OHplus,
      &                        H2Oplus, H3Oplus, O2plus, Cplus, C, CH,
-     &                        CH2, CH3, CH4, CO, COplus, CO2,
+     &                        CH2, CH3, CH4, CO, COplus, CO2, CHplus,
+     &                        CH2plus, H3plus,
+     &                        HCOplus, HeHplus, CH3plus,
+     &                        CH4plus, CH5plus, O2Hplus,
      &                        is, ie, js, je, ks, ke,
      &                        in, jn, kn, ispecies, imetal, factor, 
      &                        iwater)
@@ -923,7 +946,11 @@ c -------------------------------------------------------------------
      &        H3Oplus(in,jn,kn), O2plus(in,jn,kn), Cplus(in,jn,kn),
      &        C(in,jn,kn), CH(in,jn,kn), CH2(in,jn,kn), CH3(in,jn,kn),
      &        CH4(in,jn,kn), CO(in,jn,kn), COplus(in,jn,kn),
-     &        CO2(in,jn,kn)
+     &        CO2(in,jn,kn), CHplus(in,jn,kn),
+     &        CH2plus(in,jn,kn), H3plus(in,jn,kn),
+     &        HCOplus(in,jn,kn), HeHplus(in,jn,kn), CH3plus(in,jn,kn),
+     &        CH4plus(in,jn,kn), CH5plus(in,jn,kn), O2Hplus(in,jn,kn)
+
       real*8 factor
 
 !     locals
@@ -985,33 +1012,6 @@ c -------------------------------------------------------------------
             enddo
          enddo
       endif
-c      if (iwater .eq. 1) then
-c         do k = ks+1, ke+1
-c            do j = js+1, je+1
-c               do i = is+1, ie+1
-c                  O(i,j,k) = O(i,j,k)*factor
-c                  Oplus(i,j,k) = Oplus(i,j,k)*factor
-c                  C(i,j,k) = C(i,j,k)*factor
-c                  Cplus(i,j,k) = Cplus(i,j,k)*factor
-c                  OH(i,j,k) = OH(i,j,k)*factor
-c                  OHplus(i,j,k) = OHplus(i,j,k)*factor
-c                  O2(i,j,k) = O2(i,j,k)*factor
-c                  O2plus(i,j,k) = O2plus(i,j,k)*factor
-c                  H2O(i,j,k) = H2O(i,j,k)*factor
-c                  H2Oplus(i,j,k) = H2Oplus(i,j,k)*factor
-c                  H3Oplus(i,j,k) = H3Oplus(i,j,k)*factor
-c                  CH(i,j,k) = CH(i,j,k)*factor
-c                  CH2(i,j,k) = CH2(i,j,k)*factor
-c                  CH3(i,j,k) = CH3(i,j,k)*factor
-c                  CH4(i,j,k) = CH4(i,j,k)*factor
-c                  CO(i,j,k) = CO(i,j,k)*factor
-c                  COplus(i,j,k) = COplus(i,j,k)*factor
-c                  CO2(i,j,k) = CO2(i,j,k)*factor
-c               enddo
-c            enddo
-c         enddo
-c      endif
-
       return
       end
 
@@ -1023,7 +1023,10 @@ c -----------------------------------------------------------
      &                           H2O, O, OH, O2, Oplus, OHplus,
      &                           H2Oplus, H3Oplus, O2plus,
      &                           Cplus, C, CH, CH2, CH3, CH4,
-     &                           CO, COplus, CO2,
+     &                           CO, COplus, CO2, 
+     &                           CHplus, CH2plus, H3plus,
+     &                           HCOplus, HeHplus, CH3plus,
+     &                           CH4plus, CH5plus, O2Hplus,
      &                           is, ie, js, je, ks, ke,
      &                           in, jn, kn, ispecies, imetal, iwater,
      &                           urho, factor)
@@ -1047,6 +1050,10 @@ c -------------------------------------------------------------------
      &        Cplus(in,jn,kn), C(in,jn,kn), CH(in,jn,kn),
      &        CH2(in,jn,kn), CH3(in,jn,kn), CH4(in,jn,kn),
      &        CO(in,jn,kn), COplus(in,jn,kn), CO2(in,jn,kn),
+     &        CHplus(in,jn,kn), CH2plus(in,jn,kn), 
+     &        H3plus(in,jn,kn),
+     &        HCOplus(in,jn,kn), HeHplus(in,jn,kn), CH3plus(in,jn,kn),
+     &        CH4plus(in,jn,kn), CH5plus(in,jn,kn), O2Hplus(in,jn,kn),
      &        metal(in,jn,kn)
       real*8  urho, factor
 
@@ -1112,44 +1119,6 @@ c -------------------------------------------------------------------
                      C(i,j,k) = 0.0
                      O(i,j,k) = 0.0
                   endif
-c
-c                  H2O(i,j,k)     = min(max(H2O(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  O(i,j,k)       = min(max(O(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  OH(i,j,k)      = min(max(OH(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  O2(i,j,k)      = min(max(O2(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                 Oplus(i,j,k)   = min(max(Oplus(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k)) 
-c                  OHplus(i,j,k)  = min(max(OHplus(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                 H2Oplus(i,j,k) = min(max(H2Oplus(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  H3Oplus(i,j,k) = min(max(H3Oplus(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  O2plus(i,j,k)  = min(max(O2plus(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  Cplus(i,j,k)   = min(max(Cplus(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  C(i,j,k)       = min(max(C(i,j,k), tiny),
-c     &                0.781_RKIND*metal_cgs(i,j,k))
-c                  CH(i,j,k)      = min(max(CH(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  CH2(i,j,k)     = min(max(CH2(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  CH3(i,j,k)     = min(max(CH3(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  CH4(i,j,k)     = min(max(CH4(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  CO(i,j,k)      = min(max(CO(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  COplus(i,j,k)  =min(max(COplus(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-c                  CO2(i,j,k)     =min(max(CO2(i,j,k), tiny),
-c     &                 0.781_RKIND*metal_cgs(i,j,k))
-
                enddo
             enddo
           enddo
@@ -1169,7 +1138,7 @@ c     &                 0.781_RKIND*metal_cgs(i,j,k))
      &                ispecies, idust, iH2shield, iradshield,
      &                tgas1d, mmw, d, HI, HII, HeI, HeII, HeIII,
      &                HM, H2I, H2II, DI, DII, HDI,
-     &                tdust, metallicity, wrates,
+     &                tdust, metallicity, iwater,
      &                k1a, k2a, k3a, k4a, k5a, k6a, k7a, k8a, k9a, k10a,
      &                k11a, k12a, k13a, k13dda, k14a, k15a, k16a,
      &                k17a, k18a, k19a, k22a,
@@ -1194,7 +1163,7 @@ c     &                 0.781_RKIND*metal_cgs(i,j,k))
 
 !     Arguments
 
-      integer is, ie, nratec, wrates,
+      integer is, ie, nratec, iwater, wrates,
      &        in, jn, kn, ispecies, ithreebody, j, k,
      &        idust, ndratec, iH2shield, iradshield, iradtrans
       real*8 temstart, temend, tgas1d(in), mmw(in), dom,
@@ -1784,20 +1753,6 @@ c
             endif
 #endif /*  USE_DENSITY_DEPENDENT_H2_DISSOCIATION_RATE */
 
-c            if (wrates .eq. 1) then
-cc Omukai Rate - Commented out for cosmology
-c               do i = is+1, ie+1
-cc                  write(6,*), "Jumping into the correct k13! "
-c                  kl = 1.12d-10 * exp(-7.035d4 / tgas1d(i))
-c                  kh = 6.5d-7 * (tgas1d(i) ** (-5.0d-1)) *
-c     &               exp(-5.2d4/tgas1d(i))*(1-exp(-6.0d3/tgas1d(i)))
-c                  ep1 = 4.0d0 - 4.16d-1 * log10(tgas1d(i) * 1.0d-4)
-c     &               - 3.27d-1 * (log10(tgas1d(i)*1.0d-4))**2.0d0   
-c                  ncrit = 10.0d0**ep1
-c                  a = 1.0d0 / (1.0d0 + d(i,j,k) / ncrit )    
-c                  k13(i) = kh**(1.0d0 - a) * kl**(a)
-c               enddo
-c            endif
       return
       end
 
@@ -2025,9 +1980,12 @@ c            endif
       subroutine step_rate_g(de, HI, HII, HeI, HeII, HeIII, d,
      &                     HM, H2I, H2II, DI, DII, HDI, dtit,
      &                     Oplus, OHplus, H2Oplus, H3Oplus, O2plus,
-     &                     Cplus, COplus,
+     &                     Cplus, COplus, CHplus, 
+     &                     CH2plus, H3plus, 
+     &                     HCOplus, HeHplus, CH3plus,
+     &                     CH4plus, CH5plus, O2Hplus,
      &                     in, jn, kn, is, ie, j, k, ispecies, idust, 
-     &                     iwater,
+     &                     iwater, wrates,
      &                     k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11,
      &                     k12, k13, k14, k15, k16, k17, k18, k19, k22,
      &                     k24, k25, k26, k27, k28, k29, k30,
@@ -2049,7 +2007,7 @@ c -------------------------------------------------------------------
 !     arguments
 
       integer ispecies, idust, iwater, in, jn, kn, is, ie, j, k,
-     &        iradtrans, irt_honly
+     &        iradtrans, irt_honly, wrates
       real*8 dtit(in), dedot_prev(in), HIdot_prev(in)
       logical itmask(in)
 
@@ -2062,7 +2020,12 @@ c -------------------------------------------------------------------
      &        DI(in,jn,kn),  DII(in,jn,kn), HDI(in,jn,kn),
      &        Oplus(in,jn,kn), OHplus(in,jn,kn), H2Oplus(in,jn,kn),
      &        H3Oplus(in,jn,kn), O2plus(in,jn,kn), Cplus(in,jn,kn),
-     &        COplus(in,jn,kn)
+     &        COplus(in,jn,kn), 
+     &        CHplus(in,jn,kn), 
+     &        CH2plus(in,jn,kn), H3plus(in,jn,kn),
+     &        HCOplus(in,jn,kn), HeHplus(in,jn,kn), CH3plus(in,jn,kn),
+     &        CH4plus(in,jn,kn), CH5plus(in,jn,kn), O2Hplus(in,jn,kn)
+
 
 !     Radiation Fields
       R_PREC  kphHI(in,jn,kn), kphHeI(in,jn,kn), kphHeII(in,jn,kn)
@@ -2449,8 +2412,9 @@ c
      &        HeIII(i,j,k)/2._RKIND
          if (ispecies .gt. 1) 
      &        de(i,j,k) = de(i,j,k) - HM(i,j,k) + H2II(i,j,k)/2._RKIND
-c         if (ispecies .gt. 2)
-c     &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
+c  Uncomment for now
+         if (ispecies .gt. 2)
+     &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
          if (iwater .eq. 1) de(i,j,k) = de(i,j,k) +
      &          Oplus(i,j,k)/16._RKIND +
      &          OHplus(i,j,k)/17._RKIND +
@@ -2458,7 +2422,11 @@ c     &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
      &          H3Oplus(i,j,k)/19._RKIND +
      &          O2plus(i,j,k)/32._RKIND +
      &          Cplus(i,j,k)/12._RKIND +
-     &          COplus(i,j,k)/28._RKIND
+     &          COplus(i,j,k)/28._RKIND 
+      if (wrates .eq. 3) de (i,j,k) = de(i,j,k) +
+     &          HCOplus(i,j,k)/29._RKIND +
+     &          HeHplus(i,j,k)/5._RKIND +
+     &          CH3plus(i,j,k)/15._RKIND
 
          dedot_prev(i) = abs(de(i,j,k)-dedot_prev(i))/
      &        max(dtit(i),tiny8)
@@ -2499,10 +2467,13 @@ c     &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
       subroutine make_consistent_g(de, HI, HII, HeI, HeII, HeIII,
      &                        HM, H2I, H2II, DI, DII, HDI, metal, 
      &                        Oplus, OHplus, H2Oplus, H3Oplus, O2plus,
-     &                        Cplus, COplus,
+     &                        Cplus, COplus, CHplus,
+     &                        CH2plus, H3plus,
+     &                        HCOplus, HeHplus, CH3plus,
+     &                        CH4plus, CH5plus, O2Hplus,
      &                        d, is, ie, js, je, ks, ke,
      &                        in, jn, kn, ispecies, 
-     &                        imetal, iwater, fh, dtoh)
+     &                        imetal, iwater, fh, dtoh, wrates)
 ! -------------------------------------------------------------------
 
       implicit NONE
@@ -2511,7 +2482,7 @@ c     &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
 !     Arguments
 
       integer in, jn, kn, is, ie, js, je, ks, ke, ispecies, imetal,
-     &        iwater
+     &        iwater, wrates
       R_PREC  de(in,jn,kn),   HI(in,jn,kn),   HII(in,jn,kn),
      &        HeI(in,jn,kn), HeII(in,jn,kn), HeIII(in,jn,kn),
      &        d(in,jn,kn), metal(in,jn,kn),
@@ -2519,7 +2490,12 @@ c     &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
      &        DI(in,jn,kn),  DII(in,jn,kn), HDI(in,jn,kn),
      &        Oplus(in,jn,kn), OHplus(in,jn,kn), H2Oplus(in,jn,kn),
      &        H3Oplus(in,jn,kn), O2plus(in,jn,kn),
-     &        Cplus(in,jn,kn), COplus(in,jn,kn)
+     &        Cplus(in,jn,kn), COplus(in,jn,kn), 
+     &        CHplus(in,jn,kn), CH2plus(in,jn,kn), 
+     &        H3plus(in,jn,kn),
+     &        HCOplus(in,jn,kn), HeHplus(in,jn,kn), CH3plus(in,jn,kn),
+     &        CH4plus(in,jn,kn), CH5plus(in,jn,kn), O2Hplus(in,jn,kn)
+
       real*8 fh, dtoh
 
 !     locals
@@ -2613,16 +2589,23 @@ c     &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
      &        HeIII(i,j,k)/2._RKIND
          if (ispecies .gt. 1) de(i,j,k) = de(i,j,k)
      &        - HM(i,j,k) + H2II(i,j,k)/2._RKIND
-c         if (ispecies .gt. 2) de(i,j,k) = de(i,j,k)
-c     &        + DII(i,j,k)/2._RKIND
-         if (iwater .eq. 1) de (i,j,k) = de(i,j,k) +
+c Uncomment for now
+         if (ispecies .gt. 2) de(i,j,k) = de(i,j,k)
+     &        + DII(i,j,k)/2._RKIND
+
+      if (iwater .eq. 1) de (i,j,k) = de(i,j,k) +
      &         Oplus(i,j,k)/16._RKIND +
      &         OHplus(i,j,k)/17._RKIND +
      &         H2Oplus(i,j,k)/18._RKIND +
      &         H3Oplus(i,j,k)/19._RKIND +
      &         O2plus(i,j,k)/32._RKIND +
      &         Cplus(i,j,k)/12._RKIND +
-     &         COplus(i,j,k)/28._RKIND
+     &         COplus(i,j,k)/28._RKIND 
+      if (wrates .eq. 3) de (i,j,k) = de(i,j,k) +  
+     &         HCOplus(i,j,k)/29._RKIND +
+     &         HeHplus(i,j,k)/5._RKIND +
+     &         CH3plus(i,j,k)/15._RKIND
+
       enddo
 
       enddo  ! end loop over j

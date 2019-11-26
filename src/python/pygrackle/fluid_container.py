@@ -40,6 +40,9 @@ _fluid_names[3] = _fluid_names[2] + \
 _water_names = \
   ["Water_density", "O_density", "OH_density", "O2_density", "Oplus_density", "OHplus_density", "H2Oplus_density", "H3Oplus_density", "O2plus_density", "Cplus_density", "C_density", "CH_density", "CH2_density", "CH3_density", "CH4_density", "CO_density", "COplus_density", "CO2_density"]
 
+_bialy_names = \
+["CHplus_density", "CH2plus_density", "H3plus_density", "HCOplus_density", "HeHplus_density", "CH3plus_density", "CH4plus_density", "CH5plus_density", "O2Hplus_density"]
+
 _rad_trans_names = ['RT_heating_rate', 'RT_HI_ionization_rate',
                     'RT_HeI_ionization_rate', 'RT_HeII_ionization_rate',
                     'RT_H2_dissociation_rate']
@@ -63,8 +66,12 @@ class FluidContainer(dict):
             for fluid in _rad_trans_names:
                 self._setup_fluid(fluid)
         if self.chemistry_data.withWater:
-            for fluid in _water_names:
-                self._setup_fluid(fluid)
+            if (self.chemistry_data.water_rates == 3):
+                for fluid in (_water_names + _bialy_names):
+                   self._setup_fluid(fluid)
+            else: 
+                for fluid in _water_names:
+                   self._setup_fluid(fluid)
 
 #Set up number density of hydrogen as well!
         self._setup_fluid("n_H")
@@ -96,7 +103,10 @@ class FluidContainer(dict):
     @property
     def n_density_fields(self):
         if self.chemistry_data.withWater:
-            return _water_names
+            if (self.chemistry_data.water_rates == 3):
+               return _water_names + _bialy_names
+            else:
+               return _water_names
         else:
             return []
 
@@ -122,6 +132,10 @@ class FluidContainer(dict):
                 12.0*self["Cplus_density"] + 12.0*self["C_density"] + 13.0*self["CH_density"] + \
                 14.0*self["CH2_density"] + 15.0*self["CH3_density"] + 16.0*self["CH4_density"] + \
                 28.0*self["CO_density"] + 28.0*self["COplus_density"] + 44.0*self["CO2_density"] 
+        if my_chemistry.water_rates == 3:
+                metal_density += 13.0*self["CHplus_density"] + 14.0*self["CH2plus_density"] + \
+                29.0*self["HCOplus_density"] + 15.0*self["CH3plus_density"]
+
         return (metal_density / (self["density"] * my_chemistry.density_units))
 
 
@@ -198,7 +212,17 @@ _grackle_to_yt = {
     'CH4_density'      : ('gas', 'CH4I_density'),
     'CO_density'       : ('gas', 'COI_density'),
     'COplus_density'   : ('gas', 'COII_density'),
-    'CO2_density'      : ('gas', 'CO2I_density')
+    'CO2_density'      : ('gas', 'CO2I_density'),
+    'CHplus_density'   : ('gas', 'CHII_density'),
+    'CH2plus_density'  : ('gas', 'CH2II_density'),
+    'H3plus_density'   : ('gas', 'H3II_density'),
+    'HCOplus_density'  : ('gas', 'HCOplus_density'),
+    'HeHplus_density'  : ('gas', 'HeHplus_density'),
+    'CH3plus_density'  : ('gas', 'CH3plus_density'),
+    'CH4plus_density'  : ('gas', 'CH4plus_density'),
+    'CH5plus_density'  : ('gas', 'CH5plus_density'),
+    'O2Hplus_density'  : ('gas', 'O2Hplus_density')
+
 }
 
 _skip = ("pressure", "temperature", "cooling_time", "gamma")
