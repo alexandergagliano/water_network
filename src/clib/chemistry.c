@@ -138,7 +138,7 @@ void setup_rxns(int ispecies, int UV, int water_rates)
       }
    }
      
-//   if (UV) {
+   if (UV) {
       UV1 = ++rxn_counter;
       UV2 = ++rxn_counter;
       UV3 = ++rxn_counter;
@@ -179,7 +179,7 @@ void setup_rxns(int ispecies, int UV, int water_rates)
       UV38 = ++rxn_counter;
       UV39 = ++rxn_counter;
       UV40 = ++rxn_counter;
-//   }
+   }
     
    if (water_rates == 3){
       H9  = ++rxn_counter;
@@ -757,6 +757,7 @@ void build_reactions(reaction_t *reactions,int ispecies, int UV, int water_rates
   }
 
   // UV Reactions
+  if (UV){
   build_reaction(&reactions[UV1],UV1,
                  1,0,OH,NRXN,
                  1,1,0,0,O,H,NRXN,NRXN);
@@ -916,6 +917,7 @@ void build_reactions(reaction_t *reactions,int ispecies, int UV, int water_rates
   build_reaction(&reactions[UV40],UV40,
 		  1,0,CH5plus,NRXN,
 		  1,1,0,0,CH3plus,H2m,NRXN,NRXN);
+  }
 
   // Bialy reactions
   if(water_rates == 3){

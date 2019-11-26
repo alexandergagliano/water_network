@@ -86,7 +86,8 @@ if __name__=="__main__":
         my_chemistry.use_grackle = 1
         my_chemistry.with_radiative_cooling = 1
         my_chemistry.primordial_chemistry = 2
-        my_chemistry.UVbackground = 1
+        #turning UV background off for now!
+        #my_chemistry.UVbackground = 1
         my_chemistry.self_shielding_method = 0
         my_chemistry.H2_self_shielding = 0
         my_chemistry.Gamma = 5. / 3.

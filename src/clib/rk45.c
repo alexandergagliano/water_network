@@ -269,9 +269,11 @@ int rk45_integrate(double *r, double *Y, double dt, double* dtrcmd, int ispecies
   if (ierr == E_TOL){
 	  printf("dttry = %.2e   dtrcmd = %.2e\n", dt, *dtrcmd);
   }
- // if (ierr != ALLOK){
-  //printf("RK45: dttry = %.2e  msg = %5s  err = %.2e  tol = %.2e  dtrcmd = %.2e\n", dt, errmsg[ierr], err, tol, *dtrcmd);
- // }
+  /*
+  if (ierr != ALLOK){
+  printf("RK45: dttry = %.2e  msg = %5s  err = %.2e  tol = %.2e  dtrcmd = %.2e\n", dt, errmsg[ierr], err, tol, *dtrcmd);
+  }
+  */
 
   return ierr;
 }
