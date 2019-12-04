@@ -430,6 +430,8 @@ void show_parameters(FILE *fp, chemistry_data *my_chemistry)
           my_chemistry->withWater);
   fprintf(fp, "water_rates                       = %d\n",
           my_chemistry->water_rates);
+  fprintf(fp, "crx_ionization                    = %d\n", 
+          my_chemistry->crx_ionization);
 
 # ifdef _OPENMP
   fprintf(fp, "omp_nthreads                      = %d\n",

@@ -234,9 +234,8 @@ double calc_H4(double alpha[], double nH, double temp){
       return gamma;
 }
 
-void get_rates(int water_rates, double *rate, double temp, double n, double t_dust, double Z, double UV, code_units *my_units, int ispecies, double Y[], int H2_shield, double crsHI, double k24, int water_only) 
+int get_rates(int water_rates, double *rate, double temp, double n, double t_dust, double Z, double UV, int CRX, code_units *my_units, int ispecies, double Y[], int H2_shield, double crsHI, double k24, int water_only) 
 {
-  
   double uxyz = my_units->length_units; 
   double utim = my_units->time_units;
   double urho = my_units->density_units;
@@ -249,7 +248,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
 
 //================================================================================================//
 
-  // DEUGGING TEMPERATURE FOR NOW
+  // DEBUGGING TEMPERATURE FOR NOW
   if (water_only){temp = 100.0;}
 
   double Tev = temp * 8.621738e-5;
@@ -646,6 +645,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[Z280] = 0.0;
       rate[Z281] = 0.0;
 
+      if (CRX > 0){
       rate[CRX1] = 0.0; 
       rate[CRX2] = 0.0;
       rate[CRX3] = 0.0;
@@ -664,6 +664,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[CRX19] = 0.0;
       rate[CRX20] = 0.0;
       rate[CRX21] = 0.0;
+      }
    }
 
   /* Hydrogen formation reactions */ 
@@ -689,8 +690,80 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
    if ((int) UV) {
       //double IUV_0 = 1.0;
       double IUV = 1.0;
-     // double IUV = 0.0;
       //double IUV = IUV_0 * exp( - 38.0 * Zdash);
+     
+      if (!water_only){
+      double f_shield_H;
+      if (H2_shield > 1){
+	 //calculate self-shielding factor
+	 //         Compute shielding factor for H
+	 //         WARNING - MAKE SURE THE UNITS ARE RIGHT!
+	 //         SHOULD SPECIES BE IN NDENS OR MASS DENS??
+            double nSSh = 6.73e-3 *
+                pow(crsHI /2.49e-18,-2./3.) *
+                pow(temp/1.0e4, 0.17) *
+                pow(k24/1.0e-12, 2.0/3.0);
+
+            // Compute the total Hydrogen number density
+            double nratio = Y[H] + Y[Hplus] + Y[Hmin] + Y[H2m] + Y[H2plus];
+            nratio = nratio/nSSh;
+
+	    // Compute H shielding factor
+            f_shield_H = (0.98*
+                pow(1.0 + pow(nratio, 1.64), -2.28) +
+                 0.02*pow(1.0+nratio, -0.84));
+      }
+      else{
+	 f_shield_H = 1.0;
+      }
+
+      // RATES CONSIDERING SELF-SHIELDED SCALING - NOT FULLY BLOCKED YET 
+      // TODO - FIND RATES FOR THESE THAT MAKE SENSE
+      rate[UV1] = 2.527e-10*IUV;
+      rate[UV2] = 3.221e-11*IUV;
+      rate[UV3] = 4.803e-10*IUV;
+      rate[UV4] = 5.126e-10*IUV;
+      rate[UV5] = 4.748e-10*IUV;
+      rate[UV6] = 0.00*IUV;
+      rate[UV7] = 0.00*IUV;
+      rate[UV8] = 0.00*IUV;
+      rate[UV9] = 2.07e-09*IUV;
+      rate[UV10] = 1.389e-10*IUV;
+      rate[UV11] = 3.36e-10*IUV;
+      rate[UV12] = 4.989e-11*IUV;
+      rate[UV13] = 2.343e-10*IUV;
+      rate[UV14] = 9.492e-10*IUV;
+      rate[UV15] = 1.104e-10*IUV;
+      rate[UV16] = 7.363e-12*IUV;
+      rate[UV17] = 1.087e-10*IUV;
+      rate[UV18] = 4.31e-10*IUV;
+      rate[UV19] = 0.0*IUV;
+      rate[UV20] = 2.631e-11*IUV;
+      rate[UV21] = 9.215e-16*IUV;
+      rate[UV22] = 0.0*IUV;
+      rate[UV23] = 0.0*IUV;
+      rate[UV24] = 0.0*IUV;
+      rate[UV25] = 5.00e-10*IUV;
+      rate[UV26] = 3.00e-10*IUV;
+      rate[UV27] = 1.00e-10*IUV;
+      rate[UV28] = 1.00e-10*IUV;
+      rate[UV29] = 3.00e-10*IUV;
+      rate[UV30] = 5.00e-11*IUV;
+      rate[UV31] = 5.00e-11*IUV;
+      rate[UV32] = 1.50e-11*IUV;
+      rate[UV33] = 3.50e-11*IUV;
+      rate[UV34] = 2.80e-10*IUV;
+      rate[UV35] = 5.00e-10*IUV;
+      rate[UV36] = 5.00e-10*IUV;
+      rate[UV37] = 5.60e-11*IUV;
+      rate[UV38] = 5.60e-11*IUV;
+      rate[UV39] = 5.00e-10*IUV;
+      rate[UV40] = 5.00e-10*IUV;
+      
+      for (int k = UV1; k <= UV40; k++){rate[k] *= f_shield_H;}
+
+      } else{
+
       // LW-BLOCKED 1.e5K BB
       rate[UV1] = 2.527e-10*IUV;
       rate[UV2] = 3.221e-11*IUV;
@@ -732,19 +805,31 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[UV38] = 5.60e-11*IUV;
       rate[UV39] = 5.00e-10*IUV;
       rate[UV40] = 5.00e-10*IUV;
+      }
    }
 
    if (water_rates == 3)
    {
-  /* Hydrogen formation reactions */
-  /* NOTE: H1-H6 rates are already calculated in calc_rates_g.F
+     /* Hydrogen formation reactions */
+     /* NOTE: H1-H6 rates are already calculated in calc_rates_g.F
            with updated values, so we provide the original 
            Omukai (2005) rates here only for the purposes of the 
-           One-zone freefall test.
-   */
-       double xH2 = (Y[H2m] + Y[H2plus])/n;
-       double zeta = 1.e-16; //s^-1
-       double zeta_16 = zeta/1.e-16; //s^-1
+           One-zone freefall test. */
+
+       double xH2,zeta, zeta_16; 
+       double zeta_set [3];
+       if (CRX > 0){
+	  // make sure our CRX flag is feasible
+	  if (CRX < 4){
+      	     xH2 = (Y[H2m] + Y[H2plus])/n;
+	     double zeta_set[] = {1.e-16, 1.e-15, 5.e-15};
+             zeta = zeta_set[(CRX-1)]; //s^-1
+	  } else {
+	     printf("Error: CRX flag not understood.\n");
+	     return -1;
+	  }
+	  zeta_16 = zeta/1.e-16; //s^-1
+       }
        
        /*
        // normalized dust-to-gas ratio (Eqn. 5 
@@ -758,7 +843,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
        } 
        */
        
-       
+
        /****** BIALY RATES **********/
       if(water_only){
         rate[H1] = 3.50e-12 * pow(tov300, -0.75);
@@ -825,7 +910,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       double gamma_dt = calc_H4(alpha, nH, temp);
 
       if (water_only){
-         //We combine these for the full collisional rate
+      // We combine these for the full collisional rate
          rate[H4] = gamma_CIE + gamma_dt;
       }
 
@@ -833,7 +918,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[H7] = 1.0e-8 * exp(-84100.0 * tinv);
       if(water_only){
          //Here we assume that Zd_dash = Zdash, 
-         //not the broken power law used in Bialy & Sternberg (2019)
+         //not the broken pow law used in Bialy & Sternberg (2019)
          rate[H8] = 3.00e-17 * pow(T2, 0.5) * Zdash;
          rate[H8] *= n / Y[H];
       }
@@ -907,14 +992,6 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[Z52] = 3.75e-08 * pow(tov300, -0.50);
       rate[Z53] = 1.36e-09 * pow(tov300, -0.14)* exp(3.40e+00 * tinv);
 
-      /* BEGIN DOUBLE COUNTED REACTIONS
-      rate[Z54] = 3.05e-07*pow(tov300, -0.50);
-      rate[Z55] = 1.00e-10;
-      rate[Z56] = 7.70e-10*pow(tov300, -0.50);
-      rate[Z57] = 2.10e-09*pow(tov300, -0.50);
-      // END OF DOUBLE COUNTED REACTIONS
-      */
-
       rate[Z58] = 9.00e-10*pow(tov300, -0.50);
       rate[Z59] = 2.50e-09*pow(tov300, -0.50);
       rate[Z60] = 5.90e-09*pow(tov300, -0.50);
@@ -930,10 +1007,6 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[Z70] = 4.03e-07*pow(tov300, -0.60);
       rate[Z71] = 7.68e-08*pow(tov300, -0.60);
       rate[Z72] = 9.06e-10*pow(tov300, -0.37)* exp(-2.91e+01 * tinv);
-
-      /* COMMENT THIS OUT FOREVER - DOUBLE-COUNTED
-      rate[Z73] = 1.31e-10* exp(-8.00e+01 * tinv);
-      */
 
       rate[Z74] = 7.50e-10;
       rate[Z75] = 2.40e-07*pow(tov300, -0.69);
@@ -1144,6 +1217,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[Z280] = 3.24e-12*pow(tov300, -0.66);
       rate[Z281] = 2.50e-10* exp(-2.12e+04 * tinv);
 
+      if (CRX > 0){
       rate[CRX1] = 1.02e+03 * zeta * (2*xH2) ;
       rate[CRX2] = 2.00e+01 * zeta * (2*xH2) ;
       rate[CRX3] = 3.52e+02 * zeta * (2*xH2) ;
@@ -1164,6 +1238,7 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[CRX20] = 4.35e-18 * zeta_16;
       
       rate[CRX21] = 1.00e+03 * zeta * (2*xH2) ;
+      }
 
     } else{
 
@@ -1223,4 +1298,5 @@ void get_rates(int water_rates, double *rate, double temp, double n, double t_du
       rate[Z39] = 5.82e-13 * pow(  tov300, 3.00) * exp( -4045.0 * tinv);
       rate[Z40] = 1.00e-17;
     }
+   return 0;
   }

@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include "jac_rhs_builder.h"
 
-void setup_rxns(int ispecies, int UV, int water_rates);
-void setup_species(int ispecies, int UV, int water_rates);
-void build_reactions(reaction_t *reactions, int ispecies, int UV, int water_rates);
+void setup_rxns(int ispecies, int UV, int CRX, int water_rates);
+void setup_species(int ispecies, int UV, int CRX, int water_rates);
+void build_reactions(reaction_t *reactions, int ispecies, int UV, int CRX, int water_rates);
 
 reaction_t *my_reactions;
 

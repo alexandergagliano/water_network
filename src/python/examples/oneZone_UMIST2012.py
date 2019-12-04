@@ -86,8 +86,7 @@ if __name__=="__main__":
         my_chemistry.use_grackle = 1
         my_chemistry.with_radiative_cooling = 1
         my_chemistry.primordial_chemistry = 2
-        #turning UV background off for now!
-        #my_chemistry.UVbackground = 1
+        my_chemistry.UVbackground = 1
         my_chemistry.self_shielding_method = 0
         my_chemistry.H2_self_shielding = 0
         my_chemistry.Gamma = 5. / 3.
@@ -99,6 +98,7 @@ if __name__=="__main__":
         my_chemistry.cmb_temperature_floor = 1
         my_chemistry.withWater = 1
         my_chemistry.water_only = 1
+        my_chemistry.crx_ionization = 1
         my_chemistry.metal_cooling = 1
         grackle_dir = os.path.dirname(os.path.dirname(os.path.dirname(
             os.path.dirname(os.path.abspath(__file__)))))

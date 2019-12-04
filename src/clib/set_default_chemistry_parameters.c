@@ -116,6 +116,8 @@ chemistry_data _set_default_chemistry_parameters(void)
   /* switch to use only water network */
   my_chemistry.water_only                             = 0;
 
+  my_chemistry.crx_ionization                         = 0; // options are 0, 1, 2, 3
+
 //number of OpenMP threads
 # ifdef _OPENMP
   my_chemistry.omp_nthreads = omp_get_max_threads(); // maximum allowed number

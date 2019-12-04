@@ -24,7 +24,7 @@ int do_network_step(double *Y, double *r, double dt, double *dtrcmd, int ispecie
   return ierr;
 }
 
-int integrate_network(int water_rates, double *Y, double T0, double T1, double n, double metl, double UV, double dtwant, int *nstp, code_units *my_units, int ispecies, int H2_shield, double crsHI, double k24,
+int integrate_network(int water_rates, double *Y, double T0, double T1, double n, double metl, double UV, int CRX, double dtwant, int *nstp, code_units *my_units, int ispecies, int H2_shield, double crsHI, double k24,
  int water_only)
   {
 
@@ -62,8 +62,9 @@ int integrate_network(int water_rates, double *Y, double T0, double T1, double n
 
     // the rates are updated based on the density and temp
     // of the cell
-    get_rates(water_rates, r, T0, n, T0, metl, UV, my_units, ispecies, Y, H2_shield, crsHI, k24, 
+    int rerr = get_rates(water_rates, r, T0, n, T0, metl, UV, CRX, my_units, ispecies, Y, H2_shield, crsHI, k24, 
               water_only);
+    if (rerr != 0){return rerr;}
 
     // perform one step integration
     ierr = do_network_step(Y, r, dttry, &dtrcmd, ispecies, UV, water_rates);

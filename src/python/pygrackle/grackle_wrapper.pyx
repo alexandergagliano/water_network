@@ -173,6 +173,13 @@ cdef class chemistry_data:
         def __set__(self, val):
             self.data.water_only = val
 
+    property crx_ionization:
+        def __get__(self):
+            return self.data.crx_ionization
+        def __set__(self, val):
+            self.data.crx_ionization = val
+
+
     property k24:
         def __get__(self):
             return self.rates.k24

@@ -127,6 +127,10 @@ typedef struct
      for testing purposes */
   int water_only;
 
+  /* flags to turn on a background field of cosmic ray ionization */
+  /* flag to specify the cosmic ray ionization levels */
+  int crx_ionization;
+
   /* number of OpenMP threads, if supported */
 # ifdef _OPENMP
   int omp_nthreads;

@@ -358,15 +358,15 @@ int _solve_chemistry(chemistry_data *my_chemistry,
 
   double d_to_n = co_density_units/mh;
 
-  setup_rxns(my_chemistry->primordial_chemistry, UV_water, my_chemistry->water_rates);
-  setup_species(my_chemistry->primordial_chemistry, UV_water, my_chemistry->water_rates);
+  setup_rxns(my_chemistry->primordial_chemistry, UV_water, my_chemistry->crx_ionization, my_chemistry->water_rates);
+  setup_species(my_chemistry->primordial_chemistry, UV_water, my_chemistry->crx_ionization, my_chemistry->water_rates);
 
   // Building the reactions is time consuming. We should only do it once.
   static int first = 1;
   static double *Y;
   if(first){
     my_reactions = (reaction_t*) malloc(nReactions*sizeof(reaction_t));
-    build_reactions(my_reactions,my_chemistry->primordial_chemistry,UV_water,my_chemistry->water_rates);
+    build_reactions(my_reactions,my_chemistry->primordial_chemistry,UV_water,my_chemistry->crx_ionization, my_chemistry->water_rates);
     Y = (double *) malloc(nSpecies * sizeof(double));
     first = 0;
   }
@@ -497,7 +497,7 @@ int _solve_chemistry(chemistry_data *my_chemistry,
 	       // Maybe indicate that you need to subcycle more? 
              
                // complete one iteration of the water network
-               ierr = integrate_network(my_chemistry->water_rates, Y, temperature, temperature, density[index], metallicity*Z_solar, UV_water, dt_value * my_units->time_units, &nstp, my_units, my_chemistry->primordial_chemistry, my_chemistry->H2_self_shielding, my_uvb_rates.crsHI, my_uvb_rates.k24,my_chemistry->water_only);
+               ierr = integrate_network(my_chemistry->water_rates, Y, temperature, temperature, density[index], metallicity*Z_solar, UV_water, my_chemistry->crx_ionization, dt_value * my_units->time_units, &nstp, my_units, my_chemistry->primordial_chemistry, my_chemistry->H2_self_shielding, my_uvb_rates.crsHI, my_uvb_rates.k24,my_chemistry->water_only);
 
                if (ierr != 0 && ierr != MXSTP)
                {

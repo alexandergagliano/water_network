@@ -70,7 +70,7 @@ int CRX1, CRX2, CRX3, CRX4, CRX5, CRX6, CRX7, CRX8, CRX9, CRX13, CRX14, CRX15, C
     CRX18, CRX19, CRX20, CRX21;
 
 /*************** Initializing variables for reactions and species *****************/ 
-void setup_rxns(int ispecies, int UV, int water_rates)
+void setup_rxns(int ispecies, int UV, int CRX, int water_rates)
 {
    int rxn_counter = 0;
 
@@ -444,7 +444,8 @@ void setup_rxns(int ispecies, int UV, int water_rates)
       Z280 = ++rxn_counter;
       Z281 = ++rxn_counter;
 
-      // If we have UV and metal reactions, we have to have CRX rates!
+      // cosmic-ray reactions for metals!
+      if (CRX > 0){
       CRX1 = ++rxn_counter;
       CRX2 = ++rxn_counter;
       CRX3 = ++rxn_counter;
@@ -463,12 +464,13 @@ void setup_rxns(int ispecies, int UV, int water_rates)
       CRX19 = ++rxn_counter;
       CRX20 = ++rxn_counter;
       CRX21 = ++rxn_counter;
+      }
    }
    
    nReactions = ++rxn_counter;
 }
 
-void setup_species(int ispecies, int UV, int water_rates)
+void setup_species(int ispecies, int UV, int CRX, int water_rates)
 {
   int sp_counter = 0;
 
@@ -523,7 +525,7 @@ void setup_species(int ispecies, int UV, int water_rates)
   nSpecies = ++sp_counter;
 }
 
-void build_reactions(reaction_t *reactions,int ispecies, int UV, int water_rates){
+void build_reactions(reaction_t *reactions,int ispecies, int UV, int CRX, int water_rates){
   // water_rates = 1, multispecies = 1
   build_reaction(&reactions[H1],H1,
                  1,1,Hplus,el,
@@ -1949,6 +1951,7 @@ void build_reactions(reaction_t *reactions,int ispecies, int UV, int water_rates
 		    1,1,0,0,H2plus,H,NRXN,NRXN);
 
     // CRX Reactions
+    if (CRX > 0){
     build_reaction(&reactions[CRX1],CRX1,
                    1,0,C,NRXN,
                    1,1,0,0,Cplus,el,NRXN,NRXN);
@@ -2020,5 +2023,6 @@ void build_reactions(reaction_t *reactions,int ispecies, int UV, int water_rates
     build_reaction(&reactions[CRX21],CRX21,
 		    1,0,CH3,NRXN,
 		    1,1,0,0,CH3plus,el,NRXN,NRXN);
+    }
   }
 }
