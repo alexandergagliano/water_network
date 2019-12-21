@@ -117,6 +117,8 @@ chemistry_data _set_default_chemistry_parameters(void)
   my_chemistry.water_only                             = 0;
 
   my_chemistry.crx_ionization                         = 0; // options are 0, 1, 2, 3
+  my_chemistry.grackle_molecular_data                 = "";
+
 
 //number of OpenMP threads
 # ifdef _OPENMP

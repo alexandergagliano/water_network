@@ -28,6 +28,7 @@ cdef extern from "grackle_chemistry_data.h":
         int water_only
         int water_rates
         int crx_ionization
+        char *grackle_molecular_data
 
     ctypedef struct c_chemistry_data_storage "chemistry_data_storage":
         double k24

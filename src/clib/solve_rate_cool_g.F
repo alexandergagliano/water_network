@@ -2415,7 +2415,8 @@ c
 c  Uncomment for now
          if (ispecies .gt. 2)
      &        de(i,j,k) = de(i,j,k) + DII(i,j,k)/2._RKIND
-         if (iwater .eq. 1) de(i,j,k) = de(i,j,k) +
+         if (iwater .eq. 1) then 
+                de(i,j,k) = de(i,j,k) +
      &          Oplus(i,j,k)/16._RKIND +
      &          OHplus(i,j,k)/17._RKIND +
      &          H2Oplus(i,j,k)/18._RKIND +
@@ -2423,10 +2424,11 @@ c  Uncomment for now
      &          O2plus(i,j,k)/32._RKIND +
      &          Cplus(i,j,k)/12._RKIND +
      &          COplus(i,j,k)/28._RKIND 
-      if (wrates .eq. 3) de (i,j,k) = de(i,j,k) +
-     &          HCOplus(i,j,k)/29._RKIND +
-     &          HeHplus(i,j,k)/5._RKIND +
-     &          CH3plus(i,j,k)/15._RKIND
+                if (wrates .eq. 3) de (i,j,k) = de(i,j,k) +
+     &               HCOplus(i,j,k)/29._RKIND +
+     &               HeHplus(i,j,k)/5._RKIND +
+     &               CH3plus(i,j,k)/15._RKIND
+         endif
 
          dedot_prev(i) = abs(de(i,j,k)-dedot_prev(i))/
      &        max(dtit(i),tiny8)
@@ -2593,7 +2595,8 @@ c Uncomment for now
          if (ispecies .gt. 2) de(i,j,k) = de(i,j,k)
      &        + DII(i,j,k)/2._RKIND
 
-      if (iwater .eq. 1) de (i,j,k) = de(i,j,k) +
+      if (iwater .eq. 1) then
+               de (i,j,k) = de(i,j,k) +
      &         Oplus(i,j,k)/16._RKIND +
      &         OHplus(i,j,k)/17._RKIND +
      &         H2Oplus(i,j,k)/18._RKIND +
@@ -2601,10 +2604,11 @@ c Uncomment for now
      &         O2plus(i,j,k)/32._RKIND +
      &         Cplus(i,j,k)/12._RKIND +
      &         COplus(i,j,k)/28._RKIND 
-      if (wrates .eq. 3) de (i,j,k) = de(i,j,k) +  
-     &         HCOplus(i,j,k)/29._RKIND +
-     &         HeHplus(i,j,k)/5._RKIND +
-     &         CH3plus(i,j,k)/15._RKIND
+               if (wrates .eq. 3) de (i,j,k) = de(i,j,k) +  
+     &               HCOplus(i,j,k)/29._RKIND +
+     &               HeHplus(i,j,k)/5._RKIND +
+     &               CH3plus(i,j,k)/15._RKIND
+      endif
 
       enddo
 

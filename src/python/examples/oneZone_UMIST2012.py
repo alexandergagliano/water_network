@@ -134,7 +134,7 @@ if __name__=="__main__":
         fc["HeII"][:] = tiny_number * fc["density"]
         fc["HeIII"][:] = tiny_number * fc["density"]
         if my_chemistry.primordial_chemistry > 1:
-            fc["H2I"][:] = 0.25 * fc["density"]
+            fc["H2I"][:] = 0.30 * fc["density"]
             fc["H2II"][:] = tiny_number * fc["density"]
             fc["HM"][:] = tiny_number * fc["density"]
         if my_chemistry.primordial_chemistry > 2:
@@ -306,7 +306,7 @@ if __name__=="__main__":
                     p = line.split(',')
                     bialy_Z.append(float(p[0]))
                     bialy_C.append(float(p[1]))
-                pyplot.loglog(bialy_Z, bialy_C, color=cols_metl[1], linestyle=':')
+                pyplot.plot(np.log10(bialy_Z), np.log10(bialy_C), color=cols_metl[1], linestyle=':')
                 bialy_Z = []
 
             with open('fCH_v_Z_UMIST2012.csv') as bialyData:
@@ -317,7 +317,7 @@ if __name__=="__main__":
                     p = line.split(',')
                     bialy_Z.append(float(p[0]))
                     bialy_CH.append(float(p[1]))
-                pyplot.loglog(bialy_Z, bialy_CH, color=cols_metl[6], linestyle=':')
+                pyplot.plot(np.log10(bialy_Z), np.log10(bialy_CH), color=cols_metl[6], linestyle=':')
                 bialy_Z = []
 
             with open('fO_v_Z_UMIST2012.csv') as bialyData:
@@ -328,7 +328,7 @@ if __name__=="__main__":
                     p = line.split(',')
                     bialy_Z.append(float(p[0]))
                     bialy_O.append(float(p[1]))
-                pyplot.loglog(bialy_Z, bialy_O, color=cols_metl[0], linestyle=':')
+                pyplot.plot(np.log10(bialy_Z), np.log10(bialy_O), color=cols_metl[0], linestyle=':')
                 bialy_Z = []
 
                 with open('fH2O_v_Z_UMIST2012.csv') as bialyData:
@@ -339,7 +339,7 @@ if __name__=="__main__":
                         p = line.split(',')
                         bialy_Z.append(float(p[0]))
                         bialy_H2O.append(float(p[1]))
-                    pyplot.loglog(bialy_Z, bialy_H2O, color=cols_metl[3], linestyle=':')
+                    pyplot.plot(np.log10(bialy_Z), np.log10(bialy_H2O), color=cols_metl[3], linestyle=':')
                     bialy_Z = []
 
                 with open('fO2_v_Z_UMIST2012.csv') as bialyData:
@@ -350,7 +350,7 @@ if __name__=="__main__":
                         p = line.split(',')
                         bialy_Z.append(float(p[0]))
                         bialy_O2.append(float(p[1]))
-                    pyplot.loglog(bialy_Z, bialy_O2, color=cols_metl[5], linestyle=':')
+                    pyplot.plot(np.log10(bialy_Z), np.log10(bialy_O2), color=cols_metl[5], linestyle=':')
                     bialy_Z = []
 
                 with open('fCO_v_Z_UMIST2012.csv') as bialyData:
@@ -361,7 +361,7 @@ if __name__=="__main__":
                         p = line.split(',')
                         bialy_Z.append(float(p[0]))
                         bialy_CO.append(float(p[1]))
-                    pyplot.loglog(bialy_Z, bialy_CO, color=cols_metl[2], linestyle=':')
+                    pyplot.plot(np.log10(bialy_Z), np.log10(bialy_CO), color=cols_metl[2], linestyle=':')
                     bialy_Z = []
 
                 with open('fOH_v_Z_UMIST2012.csv') as bialyData:
@@ -372,35 +372,36 @@ if __name__=="__main__":
                         p = line.split(',')
                         bialy_Z.append(float(p[0]))
                         bialy_OH.append(float(p[1]))
-                    pyplot.loglog(bialy_Z, bialy_OH, color=cols_metl[4], linestyle=':')
+                    pyplot.plot(np.log10(bialy_Z), np.log10(bialy_OH), color=cols_metl[4], linestyle=':')
 
                 metals_final = pd.DataFrame({'Z':metallicity, 'O':np.divide(XO,XO_tot), 'C':np.divide(XC,XC_tot), 'CO':np.divide(XCO,XC_tot), 'H2O':np.divide(XH2O,XO_tot), 'OH':np.divide(XOH,XO_tot), 'O2':np.divide(XO2,XO_tot), 'CH':np.divide(XCH,XC_tot)})
                 metals_final.to_csv("BialyTest_metals_%.2e.csv" % dtmax, index=False)
 
-                pyplot.loglog(metallicity, (np.divide(XO,XO_tot)), label ='O', color=cols_metl[0])
-                pyplot.loglog(metallicity, (np.divide(XC,XC_tot)), label ='C', color=cols_metl[1])
-                pyplot.loglog(metallicity, (np.divide(XCO,XC_tot)), label ='CO', color=cols_metl[2])
-                pyplot.loglog(metallicity, (np.divide(XH2O,XO_tot)),label ='H2O', color=cols_metl[3])
-                pyplot.loglog(metallicity, (np.divide(XOH,XO_tot)), label ='OH', color=cols_metl[4])
-                pyplot.loglog(metallicity, (np.divide(XO2,XO_tot)), label ='O2', color=cols_metl[5])
-                pyplot.loglog(metallicity, (np.divide(XCH,XC_tot)), label ='CH', color=cols_metl[6])
+                pyplot.plot(np.log10(metallicity), np.log10(np.divide(XO,XO_tot)), label ='O', color=cols_metl[0])
+                pyplot.plot(np.log10(metallicity), np.log10(np.divide(XC,XC_tot)), label ='C', color=cols_metl[1])
+                pyplot.plot(np.log10(metallicity), np.log10(np.divide(XCO,XC_tot)), label ='CO', color=cols_metl[2])
+                pyplot.plot(np.log10(metallicity), np.log10(np.divide(XH2O,XO_tot)),label ='H2O', color=cols_metl[3])
+                pyplot.plot(np.log10(metallicity), np.log10(np.divide(XOH,XO_tot)), label ='OH', color=cols_metl[4])
+                pyplot.plot(np.log10(metallicity), np.log10(np.divide(XO2,XO_tot)), label ='O2', color=cols_metl[5])
+                pyplot.plot(np.log10(metallicity), np.log10(np.divide(XCH,XC_tot)), label ='CH', color=cols_metl[6])
 
-                pyplot.xlabel("Z'",fontsize=22)
-                pyplot.ylabel(r"X$_i$",fontsize=22)
+                pyplot.xlabel("log Z'",fontsize=22)
+                pyplot.ylabel(r"log f$_i$",fontsize=22)
 
                 # Add pyplot.text for each of the species
-                pyplot.text(1.e-2, 2.e-1, 'C', fontsize=14)
-                pyplot.text(1.5e-5, 1.5e0, 'O', fontsize=14)
-                pyplot.text(1.e-4, 2.e-9, r'O$_2$', fontsize=14)
-                pyplot.text(2.e-5, 3.e-5, r'H$_2$O', fontsize=14)
-                pyplot.text(1.5e-5, 5.e-3, 'OH', fontsize=14)
-                pyplot.text(5.e-5, 5.e-8, 'CH', fontsize=14)
-                pyplot.text(1.5e-1, 6.e-3, 'CO', fontsize=14)
+                pyplot.text(-2, -0.7, 'C', fontsize=14)
+                pyplot.text(-4.824, 0.176, 'O', fontsize=14)
+                pyplot.text(-4, -8.7, r'O$_2$', fontsize=14)
+                pyplot.text(-4.7, -4.52, r'H$_2$O', fontsize=14)
+                pyplot.text(-4.82, -2.3, 'OH', fontsize=14)
+                pyplot.text(-4.30, -7.3, 'CH', fontsize=14)
+                pyplot.text(-0.82, -2.22, 'CO', fontsize=14)
+
 
                 #leg = pyplot.legend(fancybox = True, labelspacing=0.0, loc='best')
                 #leg.get_frame().set_alpha(0.5)
-                pyplot.ylim(ymin=1.e-10,top=1.e1)
-                pyplot.xlim(left=1.e-5, right=1.e0)
+                pyplot.ylim(ymin=-10,top=1)
+                pyplot.xlim(left=-5, right=0)
                 pyplot.tight_layout()
                 pyplot.savefig("p_oneZone_UMIST_metals_t%iGyr_N%i_UMIST.pdf" %(int(np.log10(final_time/1.e3)),N_pts),dpi=300)
                 pyplot.clf()
@@ -421,7 +422,7 @@ if __name__=="__main__":
                             p = line.split(',')
                             bialy_Z.append(float(p[0]))
                             bialy_H.append(float(p[1]))
-                    pyplot.loglog(bialy_Z, bialy_H, label='H, Bialy', color=cols_h2[1], linestyle=':')
+                    pyplot.plot(np.log10(bialy_Z), np.log10(bialy_H), label='H, Bialy', color=cols_h2[1], linestyle=':')
                     bialy_Z = []
 
             with open('yH2_v_Z_UMIST2012.csv') as bialyData:
@@ -432,13 +433,13 @@ if __name__=="__main__":
                             p = line.split(',')
                             bialy_Z.append(float(p[0]))
                             bialy_H2.append(float(p[1]))
-                    pyplot.loglog(bialy_Z, bialy_H2, label='H2, Bialy', color=cols_h2[0], linestyle=':')
+                    pyplot.plot(np.log10(bialy_Z), np.log10(bialy_H2), label='H2, Bialy', color=cols_h2[0], linestyle=':')
                     bialy_Z = []
 
 #            pyplot.loglog(metallicity, np.divide(H2 + H2plus, (2*(H2+H2plus) + H + HM + Hplus)), label ='H2', color='black')
 #            pyplot.loglog(metallicity, np.divide(H, (2*(H2+H2plus) + H + HM + Hplus)), label ='H', color='coral')
-            pyplot.loglog(metallicity, np.divide(H2, 2*H2 + H), label ='H2', color=cols_h2[0])
-            pyplot.loglog(metallicity, np.divide(H, 2*H2 + H), label ='H',color=cols_h2[1])
+            pyplot.plot(np.log10(metallicity), np.log10(np.divide(H2, 2*H2 + H)), label ='H2', color=cols_h2[0])
+            pyplot.plot(np.log10(metallicity), np.log10(np.divide(H, 2*H2 + H)), label ='H',color=cols_h2[1])
 
             #create pandas dataframe
             H2_final = pd.DataFrame({'Z': metallicity, 'H2': np.divide(H2, 2*H2 + H), 'H': np.divide(H, 2*H2 + H)})
@@ -446,17 +447,18 @@ if __name__=="__main__":
             #pyplot.loglog(metallicity, XH, label='H', color='coral')
             #pyplot.loglog(metallicity, XH2, label='H2', color='black')
 
-            pyplot.xlabel("Z'",fontsize=22)
-            pyplot.ylabel(r"X$_i$",fontsize=22)
+            pyplot.xlabel("log Z'",fontsize=22)
+            pyplot.ylabel(r" log f$_i$",fontsize=22)
 
             # Add pyplot.text for each of the species 
-            pyplot.text(3.e-5, 7.e-2, r'H$_2$', fontsize=14)
-            pyplot.text(3.e-5, 6.e-1, 'H', fontsize=14)
+            pyplot.text(-4.52, -1.15, r'H$_2$', fontsize=14)
+            pyplot.text(-4.52, -0.22, 'H', fontsize=14)
+
 
            # leg = pyplot.legend(fancybox = True, labelspacing=0.0, loc='best')
            # leg.get_frame().set_alpha(0.5)
-            pyplot.ylim(ymin=1.e-2,top=1.e0)
-            pyplot.xlim(left=1.e-5,right=1.e0)
+            pyplot.ylim(ymin=-2,top=0)
+            pyplot.xlim(left=-5,right=0)
             pyplot.tight_layout()
             pyplot.savefig("p_oneZone_UMIST_H2_t%iGyr_N%i_UMIST.pdf" %(int(np.log10(final_time/1.e3)),N_pts),dpi=300)
 

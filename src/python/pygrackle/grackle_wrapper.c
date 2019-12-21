@@ -836,7 +836,7 @@ static const char *__pyx_f[] = {
   "type.pxd",
 };
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":776
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":776
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -845,7 +845,7 @@ static const char *__pyx_f[] = {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":777
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":777
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -854,7 +854,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":778
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":778
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -863,7 +863,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":779
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":779
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -872,7 +872,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":783
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":783
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -881,7 +881,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":784
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":784
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -890,7 +890,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":785
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":785
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -899,7 +899,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":786
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":786
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -908,7 +908,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":790
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":790
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -917,7 +917,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":791
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":791
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -926,7 +926,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":800
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":800
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -935,7 +935,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":801
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":801
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -944,7 +944,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":802
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":802
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -953,7 +953,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":804
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":804
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -962,7 +962,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":805
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":805
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -971,7 +971,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":806
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":806
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -980,7 +980,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":808
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":808
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -989,7 +989,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":809
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":809
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -998,7 +998,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":811
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":811
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1007,7 +1007,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":812
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":812
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1016,7 +1016,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":813
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":813
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1052,7 +1052,7 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 /*--- Type declarations ---*/
 struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":815
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":815
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1061,7 +1061,7 @@ struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":816
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":816
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1070,7 +1070,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":817
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":817
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1079,7 +1079,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":819
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":819
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1951,6 +1951,8 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_21photoe
 static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_21photoelectric_heating_2__set__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self, PyObject *__pyx_v_val); /* proto */
 static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17grackle_data_file___get__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self); /* proto */
 static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17grackle_data_file_2__set__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self, PyObject *__pyx_v_val); /* proto */
+static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data___get__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self); /* proto */
+static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_2__set__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self, PyObject *__pyx_v_val); /* proto */
 static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_18CaseBRecombination___get__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self); /* proto */
 static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_18CaseBRecombination_2__set__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self, PyObject *__pyx_v_val); /* proto */
 static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12UVbackground___get__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self); /* proto */
@@ -3622,7 +3624,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17grackle_data
  *                 val = val.encode('utf-8')
  *             self.data.grackle_data_file = val             # <<<<<<<<<<<<<<
  * 
- *     property CaseBRecombination:
+ *     property grackle_molecular_data:
  */
   __pyx_t_6 = __Pyx_PyObject_AsWritableString(__pyx_v_val); if (unlikely((!__pyx_t_6) && PyErr_Occurred())) __PYX_ERR(0, 108, __pyx_L1_error)
   __pyx_v_self->data.grackle_data_file = __pyx_t_6;
@@ -3652,6 +3654,179 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17grackle_data
 
 /* "pygrackle/grackle_wrapper.pyx":111
  * 
+ *     property grackle_molecular_data:
+ *         def __get__(self):             # <<<<<<<<<<<<<<
+ *             return self.data.grackle_molecular_data
+ *         def __set__(self, val):
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_1__get__(PyObject *__pyx_v_self) {
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data___get__(((struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *)__pyx_v_self));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data___get__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  __Pyx_RefNannySetupContext("__get__", 0);
+
+  /* "pygrackle/grackle_wrapper.pyx":112
+ *     property grackle_molecular_data:
+ *         def __get__(self):
+ *             return self.data.grackle_molecular_data             # <<<<<<<<<<<<<<
+ *         def __set__(self, val):
+ *             if isinstance(val, str):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_1 = __Pyx_PyBytes_FromString(__pyx_v_self->data.grackle_molecular_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* "pygrackle/grackle_wrapper.pyx":111
+ * 
+ *     property grackle_molecular_data:
+ *         def __get__(self):             # <<<<<<<<<<<<<<
+ *             return self.data.grackle_molecular_data
+ *         def __set__(self, val):
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("pygrackle.grackle_wrapper.chemistry_data.grackle_molecular_data.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "pygrackle/grackle_wrapper.pyx":113
+ *         def __get__(self):
+ *             return self.data.grackle_molecular_data
+ *         def __set__(self, val):             # <<<<<<<<<<<<<<
+ *             if isinstance(val, str):
+ *                 val = val.encode('utf-8')
+ */
+
+/* Python wrapper */
+static int __pyx_pw_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_val); /*proto*/
+static int __pyx_pw_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_val) {
+  int __pyx_r;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_2__set__(((struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *)__pyx_v_self), ((PyObject *)__pyx_v_val));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_2__set__(struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *__pyx_v_self, PyObject *__pyx_v_val) {
+  int __pyx_r;
+  __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
+  int __pyx_t_2;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  char *__pyx_t_6;
+  __Pyx_RefNannySetupContext("__set__", 0);
+  __Pyx_INCREF(__pyx_v_val);
+
+  /* "pygrackle/grackle_wrapper.pyx":114
+ *             return self.data.grackle_molecular_data
+ *         def __set__(self, val):
+ *             if isinstance(val, str):             # <<<<<<<<<<<<<<
+ *                 val = val.encode('utf-8')
+ *             self.data.grackle_molecular_data = val
+ */
+  __pyx_t_1 = PyString_Check(__pyx_v_val); 
+  __pyx_t_2 = (__pyx_t_1 != 0);
+  if (__pyx_t_2) {
+
+    /* "pygrackle/grackle_wrapper.pyx":115
+ *         def __set__(self, val):
+ *             if isinstance(val, str):
+ *                 val = val.encode('utf-8')             # <<<<<<<<<<<<<<
+ *             self.data.grackle_molecular_data = val
+ * 
+ */
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_val, __pyx_n_s_encode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
+      }
+    }
+    __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_kp_s_utf_8) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_kp_s_utf_8);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF_SET(__pyx_v_val, __pyx_t_3);
+    __pyx_t_3 = 0;
+
+    /* "pygrackle/grackle_wrapper.pyx":114
+ *             return self.data.grackle_molecular_data
+ *         def __set__(self, val):
+ *             if isinstance(val, str):             # <<<<<<<<<<<<<<
+ *                 val = val.encode('utf-8')
+ *             self.data.grackle_molecular_data = val
+ */
+  }
+
+  /* "pygrackle/grackle_wrapper.pyx":116
+ *             if isinstance(val, str):
+ *                 val = val.encode('utf-8')
+ *             self.data.grackle_molecular_data = val             # <<<<<<<<<<<<<<
+ * 
+ *     property CaseBRecombination:
+ */
+  __pyx_t_6 = __Pyx_PyObject_AsWritableString(__pyx_v_val); if (unlikely((!__pyx_t_6) && PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L1_error)
+  __pyx_v_self->data.grackle_molecular_data = __pyx_t_6;
+
+  /* "pygrackle/grackle_wrapper.pyx":113
+ *         def __get__(self):
+ *             return self.data.grackle_molecular_data
+ *         def __set__(self, val):             # <<<<<<<<<<<<<<
+ *             if isinstance(val, str):
+ *                 val = val.encode('utf-8')
+ */
+
+  /* function exit code */
+  __pyx_r = 0;
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_AddTraceback("pygrackle.grackle_wrapper.chemistry_data.grackle_molecular_data.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = -1;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_val);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "pygrackle/grackle_wrapper.pyx":119
+ * 
  *     property CaseBRecombination:
  *         def __get__(self):             # <<<<<<<<<<<<<<
  *             return self.data.CaseBRecombination
@@ -3677,7 +3852,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_18CaseBR
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":112
+  /* "pygrackle/grackle_wrapper.pyx":120
  *     property CaseBRecombination:
  *         def __get__(self):
  *             return self.data.CaseBRecombination             # <<<<<<<<<<<<<<
@@ -3685,13 +3860,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_18CaseBR
  *             self.data.CaseBRecombination = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.CaseBRecombination); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.CaseBRecombination); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":111
+  /* "pygrackle/grackle_wrapper.pyx":119
  * 
  *     property CaseBRecombination:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -3710,7 +3885,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_18CaseBR
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":113
+/* "pygrackle/grackle_wrapper.pyx":121
  *         def __get__(self):
  *             return self.data.CaseBRecombination
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -3737,17 +3912,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_18CaseBRecombi
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":114
+  /* "pygrackle/grackle_wrapper.pyx":122
  *             return self.data.CaseBRecombination
  *         def __set__(self, val):
  *             self.data.CaseBRecombination = val             # <<<<<<<<<<<<<<
  * 
  *     property UVbackground:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 114, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L1_error)
   __pyx_v_self->data.CaseBRecombination = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":113
+  /* "pygrackle/grackle_wrapper.pyx":121
  *         def __get__(self):
  *             return self.data.CaseBRecombination
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -3766,7 +3941,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_18CaseBRecombi
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":117
+/* "pygrackle/grackle_wrapper.pyx":125
  * 
  *     property UVbackground:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -3793,7 +3968,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12UVback
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":118
+  /* "pygrackle/grackle_wrapper.pyx":126
  *     property UVbackground:
  *         def __get__(self):
  *             return self.data.UVbackground             # <<<<<<<<<<<<<<
@@ -3801,13 +3976,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12UVback
  *             self.data.UVbackground = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.UVbackground); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.UVbackground); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":117
+  /* "pygrackle/grackle_wrapper.pyx":125
  * 
  *     property UVbackground:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -3826,7 +4001,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12UVback
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":119
+/* "pygrackle/grackle_wrapper.pyx":127
  *         def __get__(self):
  *             return self.data.UVbackground
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -3853,17 +4028,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12UVbackground
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":120
+  /* "pygrackle/grackle_wrapper.pyx":128
  *             return self.data.UVbackground
  *         def __set__(self, val):
  *             self.data.UVbackground = val             # <<<<<<<<<<<<<<
  * 
  *     property SolarMetalFractionByMass:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 128, __pyx_L1_error)
   __pyx_v_self->data.UVbackground = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":119
+  /* "pygrackle/grackle_wrapper.pyx":127
  *         def __get__(self):
  *             return self.data.UVbackground
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -3882,7 +4057,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12UVbackground
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":123
+/* "pygrackle/grackle_wrapper.pyx":131
  * 
  *     property SolarMetalFractionByMass:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -3909,7 +4084,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_24SolarM
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":124
+  /* "pygrackle/grackle_wrapper.pyx":132
  *     property SolarMetalFractionByMass:
  *         def __get__(self):
  *             return self.data.SolarMetalFractionByMass             # <<<<<<<<<<<<<<
@@ -3917,13 +4092,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_24SolarM
  *             self.data.SolarMetalFractionByMass = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->data.SolarMetalFractionByMass); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->data.SolarMetalFractionByMass); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":123
+  /* "pygrackle/grackle_wrapper.pyx":131
  * 
  *     property SolarMetalFractionByMass:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -3942,7 +4117,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_24SolarM
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":125
+/* "pygrackle/grackle_wrapper.pyx":133
  *         def __get__(self):
  *             return self.data.SolarMetalFractionByMass
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -3969,17 +4144,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_24SolarMetalFr
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":126
+  /* "pygrackle/grackle_wrapper.pyx":134
  *             return self.data.SolarMetalFractionByMass
  *         def __set__(self, val):
  *             self.data.SolarMetalFractionByMass = val             # <<<<<<<<<<<<<<
  * 
  *     property use_volumetric_heating_rate:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 134, __pyx_L1_error)
   __pyx_v_self->data.SolarMetalFractionByMass = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":125
+  /* "pygrackle/grackle_wrapper.pyx":133
  *         def __get__(self):
  *             return self.data.SolarMetalFractionByMass
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -3998,7 +4173,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_24SolarMetalFr
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":129
+/* "pygrackle/grackle_wrapper.pyx":137
  * 
  *     property use_volumetric_heating_rate:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4025,7 +4200,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_27use_vo
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":130
+  /* "pygrackle/grackle_wrapper.pyx":138
  *     property use_volumetric_heating_rate:
  *         def __get__(self):
  *             return self.data.use_volumetric_heating_rate             # <<<<<<<<<<<<<<
@@ -4033,13 +4208,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_27use_vo
  *             self.data.use_volumetric_heating_rate = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.use_volumetric_heating_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.use_volumetric_heating_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":129
+  /* "pygrackle/grackle_wrapper.pyx":137
  * 
  *     property use_volumetric_heating_rate:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4058,7 +4233,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_27use_vo
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":131
+/* "pygrackle/grackle_wrapper.pyx":139
  *         def __get__(self):
  *             return self.data.use_volumetric_heating_rate
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4085,17 +4260,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_27use_volumetr
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":132
+  /* "pygrackle/grackle_wrapper.pyx":140
  *             return self.data.use_volumetric_heating_rate
  *         def __set__(self, val):
  *             self.data.use_volumetric_heating_rate = val             # <<<<<<<<<<<<<<
  * 
  *     property use_specific_heating_rate:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 140, __pyx_L1_error)
   __pyx_v_self->data.use_volumetric_heating_rate = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":131
+  /* "pygrackle/grackle_wrapper.pyx":139
  *         def __get__(self):
  *             return self.data.use_volumetric_heating_rate
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4114,7 +4289,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_27use_volumetr
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":135
+/* "pygrackle/grackle_wrapper.pyx":143
  * 
  *     property use_specific_heating_rate:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4141,7 +4316,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_25use_sp
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":136
+  /* "pygrackle/grackle_wrapper.pyx":144
  *     property use_specific_heating_rate:
  *         def __get__(self):
  *             return self.data.use_specific_heating_rate             # <<<<<<<<<<<<<<
@@ -4149,13 +4324,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_25use_sp
  *             self.data.use_specific_heating_rate = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.use_specific_heating_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.use_specific_heating_rate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":135
+  /* "pygrackle/grackle_wrapper.pyx":143
  * 
  *     property use_specific_heating_rate:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4174,7 +4349,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_25use_sp
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":137
+/* "pygrackle/grackle_wrapper.pyx":145
  *         def __get__(self):
  *             return self.data.use_specific_heating_rate
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4201,17 +4376,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_25use_specific
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":138
+  /* "pygrackle/grackle_wrapper.pyx":146
  *             return self.data.use_specific_heating_rate
  *         def __set__(self, val):
  *             self.data.use_specific_heating_rate = val             # <<<<<<<<<<<<<<
  * 
  *     property use_radiative_transfer:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 146, __pyx_L1_error)
   __pyx_v_self->data.use_specific_heating_rate = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":137
+  /* "pygrackle/grackle_wrapper.pyx":145
  *         def __get__(self):
  *             return self.data.use_specific_heating_rate
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4230,7 +4405,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_25use_specific
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":141
+/* "pygrackle/grackle_wrapper.pyx":149
  * 
  *     property use_radiative_transfer:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4257,7 +4432,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22use_ra
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":142
+  /* "pygrackle/grackle_wrapper.pyx":150
  *     property use_radiative_transfer:
  *         def __get__(self):
  *             return self.data.use_radiative_transfer             # <<<<<<<<<<<<<<
@@ -4265,13 +4440,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22use_ra
  *             self.data.use_radiative_transfer = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.use_radiative_transfer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.use_radiative_transfer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":141
+  /* "pygrackle/grackle_wrapper.pyx":149
  * 
  *     property use_radiative_transfer:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4290,7 +4465,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22use_ra
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":143
+/* "pygrackle/grackle_wrapper.pyx":151
  *         def __get__(self):
  *             return self.data.use_radiative_transfer
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4317,17 +4492,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22use_radiativ
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":144
+  /* "pygrackle/grackle_wrapper.pyx":152
  *             return self.data.use_radiative_transfer
  *         def __set__(self, val):
  *             self.data.use_radiative_transfer = val             # <<<<<<<<<<<<<<
  * 
  *     property self_shielding_method:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 152, __pyx_L1_error)
   __pyx_v_self->data.use_radiative_transfer = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":143
+  /* "pygrackle/grackle_wrapper.pyx":151
  *         def __get__(self):
  *             return self.data.use_radiative_transfer
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4346,7 +4521,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_22use_radiativ
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":147
+/* "pygrackle/grackle_wrapper.pyx":155
  * 
  *     property self_shielding_method:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4373,7 +4548,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_21self_s
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":148
+  /* "pygrackle/grackle_wrapper.pyx":156
  *     property self_shielding_method:
  *         def __get__(self):
  *             return self.data.self_shielding_method             # <<<<<<<<<<<<<<
@@ -4381,13 +4556,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_21self_s
  *             self.data.self_shielding_method = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.self_shielding_method); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.self_shielding_method); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":147
+  /* "pygrackle/grackle_wrapper.pyx":155
  * 
  *     property self_shielding_method:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4406,7 +4581,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_21self_s
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":149
+/* "pygrackle/grackle_wrapper.pyx":157
  *         def __get__(self):
  *             return self.data.self_shielding_method
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4433,17 +4608,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_21self_shieldi
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":150
+  /* "pygrackle/grackle_wrapper.pyx":158
  *             return self.data.self_shielding_method
  *         def __set__(self, val):
  *             self.data.self_shielding_method = val             # <<<<<<<<<<<<<<
  * 
  *     property H2_self_shielding:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 158, __pyx_L1_error)
   __pyx_v_self->data.self_shielding_method = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":149
+  /* "pygrackle/grackle_wrapper.pyx":157
  *         def __get__(self):
  *             return self.data.self_shielding_method
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4462,7 +4637,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_21self_shieldi
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":153
+/* "pygrackle/grackle_wrapper.pyx":161
  * 
  *     property H2_self_shielding:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4489,7 +4664,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17H2_sel
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":154
+  /* "pygrackle/grackle_wrapper.pyx":162
  *     property H2_self_shielding:
  *         def __get__(self):
  *             return self.data.H2_self_shielding             # <<<<<<<<<<<<<<
@@ -4497,13 +4672,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17H2_sel
  *             self.data.H2_self_shielding = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.H2_self_shielding); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 154, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.H2_self_shielding); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":153
+  /* "pygrackle/grackle_wrapper.pyx":161
  * 
  *     property H2_self_shielding:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4522,7 +4697,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17H2_sel
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":155
+/* "pygrackle/grackle_wrapper.pyx":163
  *         def __get__(self):
  *             return self.data.H2_self_shielding
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4549,17 +4724,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17H2_self_shie
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":156
+  /* "pygrackle/grackle_wrapper.pyx":164
  *             return self.data.H2_self_shielding
  *         def __set__(self, val):
  *             self.data.H2_self_shielding = val             # <<<<<<<<<<<<<<
  * 
  *     property withWater:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 164, __pyx_L1_error)
   __pyx_v_self->data.H2_self_shielding = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":155
+  /* "pygrackle/grackle_wrapper.pyx":163
  *         def __get__(self):
  *             return self.data.H2_self_shielding
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4578,7 +4753,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17H2_self_shie
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":159
+/* "pygrackle/grackle_wrapper.pyx":167
  * 
  *     property withWater:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4605,7 +4780,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_9withWat
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":160
+  /* "pygrackle/grackle_wrapper.pyx":168
  *     property withWater:
  *         def __get__(self):
  *             return self.data.withWater             # <<<<<<<<<<<<<<
@@ -4613,13 +4788,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_9withWat
  *             self.data.withWater = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.withWater); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.withWater); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":159
+  /* "pygrackle/grackle_wrapper.pyx":167
  * 
  *     property withWater:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4638,7 +4813,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_9withWat
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":161
+/* "pygrackle/grackle_wrapper.pyx":169
  *         def __get__(self):
  *             return self.data.withWater
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4665,17 +4840,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_9withWater_2__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":162
+  /* "pygrackle/grackle_wrapper.pyx":170
  *             return self.data.withWater
  *         def __set__(self, val):
  *             self.data.withWater = val             # <<<<<<<<<<<<<<
  * 
  *     property water_rates:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L1_error)
   __pyx_v_self->data.withWater = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":161
+  /* "pygrackle/grackle_wrapper.pyx":169
  *         def __get__(self):
  *             return self.data.withWater
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4694,7 +4869,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_9withWater_2__
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":165
+/* "pygrackle/grackle_wrapper.pyx":173
  * 
  *     property water_rates:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4721,7 +4896,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_11water_
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":166
+  /* "pygrackle/grackle_wrapper.pyx":174
  *     property water_rates:
  *         def __get__(self):
  *             return self.data.water_rates             # <<<<<<<<<<<<<<
@@ -4729,13 +4904,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_11water_
  *             self.data.water_rates = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.water_rates); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.water_rates); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":165
+  /* "pygrackle/grackle_wrapper.pyx":173
  * 
  *     property water_rates:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4754,7 +4929,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_11water_
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":167
+/* "pygrackle/grackle_wrapper.pyx":175
  *         def __get__(self):
  *             return self.data.water_rates
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4781,17 +4956,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_11water_rates_
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":168
+  /* "pygrackle/grackle_wrapper.pyx":176
  *             return self.data.water_rates
  *         def __set__(self, val):
  *             self.data.water_rates = val             # <<<<<<<<<<<<<<
  * 
  *     property water_only:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 176, __pyx_L1_error)
   __pyx_v_self->data.water_rates = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":167
+  /* "pygrackle/grackle_wrapper.pyx":175
  *         def __get__(self):
  *             return self.data.water_rates
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4810,7 +4985,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_11water_rates_
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":171
+/* "pygrackle/grackle_wrapper.pyx":179
  * 
  *     property water_only:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4837,7 +5012,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10water_
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":172
+  /* "pygrackle/grackle_wrapper.pyx":180
  *     property water_only:
  *         def __get__(self):
  *             return self.data.water_only             # <<<<<<<<<<<<<<
@@ -4845,13 +5020,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10water_
  *             self.data.water_only = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.water_only); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.water_only); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":171
+  /* "pygrackle/grackle_wrapper.pyx":179
  * 
  *     property water_only:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4870,7 +5045,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10water_
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":173
+/* "pygrackle/grackle_wrapper.pyx":181
  *         def __get__(self):
  *             return self.data.water_only
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4897,17 +5072,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10water_only_2
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":174
+  /* "pygrackle/grackle_wrapper.pyx":182
  *             return self.data.water_only
  *         def __set__(self, val):
  *             self.data.water_only = val             # <<<<<<<<<<<<<<
  * 
  *     property crx_ionization:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 182, __pyx_L1_error)
   __pyx_v_self->data.water_only = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":173
+  /* "pygrackle/grackle_wrapper.pyx":181
  *         def __get__(self):
  *             return self.data.water_only
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -4926,7 +5101,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10water_only_2
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":177
+/* "pygrackle/grackle_wrapper.pyx":185
  * 
  *     property crx_ionization:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4953,7 +5128,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14crx_io
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":178
+  /* "pygrackle/grackle_wrapper.pyx":186
  *     property crx_ionization:
  *         def __get__(self):
  *             return self.data.crx_ionization             # <<<<<<<<<<<<<<
@@ -4961,13 +5136,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14crx_io
  *             self.data.crx_ionization = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.crx_ionization); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->data.crx_ionization); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":177
+  /* "pygrackle/grackle_wrapper.pyx":185
  * 
  *     property crx_ionization:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -4986,7 +5161,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14crx_io
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":179
+/* "pygrackle/grackle_wrapper.pyx":187
  *         def __get__(self):
  *             return self.data.crx_ionization
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5013,17 +5188,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14crx_ionizati
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":180
+  /* "pygrackle/grackle_wrapper.pyx":188
  *             return self.data.crx_ionization
  *         def __set__(self, val):
  *             self.data.crx_ionization = val             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 188, __pyx_L1_error)
   __pyx_v_self->data.crx_ionization = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":179
+  /* "pygrackle/grackle_wrapper.pyx":187
  *         def __get__(self):
  *             return self.data.crx_ionization
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5042,7 +5217,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14crx_ionizati
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":184
+/* "pygrackle/grackle_wrapper.pyx":192
  * 
  *     property k24:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5069,7 +5244,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k24___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":185
+  /* "pygrackle/grackle_wrapper.pyx":193
  *     property k24:
  *         def __get__(self):
  *             return self.rates.k24             # <<<<<<<<<<<<<<
@@ -5077,13 +5252,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k24___g
  *             self.rates.k24 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k24); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k24); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":184
+  /* "pygrackle/grackle_wrapper.pyx":192
  * 
  *     property k24:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5102,7 +5277,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k24___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":186
+/* "pygrackle/grackle_wrapper.pyx":194
  *         def __get__(self):
  *             return self.rates.k24
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5129,17 +5304,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k24_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":187
+  /* "pygrackle/grackle_wrapper.pyx":195
  *             return self.rates.k24
  *         def __set__(self, val):
  *             self.rates.k24 = val             # <<<<<<<<<<<<<<
  * 
  *     property k25:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 187, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 195, __pyx_L1_error)
   __pyx_v_self->rates.k24 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":186
+  /* "pygrackle/grackle_wrapper.pyx":194
  *         def __get__(self):
  *             return self.rates.k24
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5158,7 +5333,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k24_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":190
+/* "pygrackle/grackle_wrapper.pyx":198
  * 
  *     property k25:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5185,7 +5360,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k25___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":191
+  /* "pygrackle/grackle_wrapper.pyx":199
  *     property k25:
  *         def __get__(self):
  *             return self.rates.k25             # <<<<<<<<<<<<<<
@@ -5193,13 +5368,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k25___g
  *             self.rates.k25 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k25); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k25); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":190
+  /* "pygrackle/grackle_wrapper.pyx":198
  * 
  *     property k25:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5218,7 +5393,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k25___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":192
+/* "pygrackle/grackle_wrapper.pyx":200
  *         def __get__(self):
  *             return self.rates.k25
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5245,17 +5420,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k25_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":193
+  /* "pygrackle/grackle_wrapper.pyx":201
  *             return self.rates.k25
  *         def __set__(self, val):
  *             self.rates.k25 = val             # <<<<<<<<<<<<<<
  * 
  *     property k26:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 193, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 201, __pyx_L1_error)
   __pyx_v_self->rates.k25 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":192
+  /* "pygrackle/grackle_wrapper.pyx":200
  *         def __get__(self):
  *             return self.rates.k25
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5274,7 +5449,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k25_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":196
+/* "pygrackle/grackle_wrapper.pyx":204
  * 
  *     property k26:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5301,7 +5476,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k26___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":197
+  /* "pygrackle/grackle_wrapper.pyx":205
  *     property k26:
  *         def __get__(self):
  *             return self.rates.k26             # <<<<<<<<<<<<<<
@@ -5309,13 +5484,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k26___g
  *             self.rates.k26 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k26); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k26); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":196
+  /* "pygrackle/grackle_wrapper.pyx":204
  * 
  *     property k26:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5334,7 +5509,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k26___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":198
+/* "pygrackle/grackle_wrapper.pyx":206
  *         def __get__(self):
  *             return self.rates.k26
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5361,17 +5536,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k26_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":199
+  /* "pygrackle/grackle_wrapper.pyx":207
  *             return self.rates.k26
  *         def __set__(self, val):
  *             self.rates.k26 = val             # <<<<<<<<<<<<<<
  * 
  *     property k27:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 199, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L1_error)
   __pyx_v_self->rates.k26 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":198
+  /* "pygrackle/grackle_wrapper.pyx":206
  *         def __get__(self):
  *             return self.rates.k26
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5390,7 +5565,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k26_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":202
+/* "pygrackle/grackle_wrapper.pyx":210
  * 
  *     property k27:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5417,7 +5592,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k27___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":203
+  /* "pygrackle/grackle_wrapper.pyx":211
  *     property k27:
  *         def __get__(self):
  *             return self.rates.k27             # <<<<<<<<<<<<<<
@@ -5425,13 +5600,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k27___g
  *             self.rates.k27 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k27); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k27); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":202
+  /* "pygrackle/grackle_wrapper.pyx":210
  * 
  *     property k27:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5450,7 +5625,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k27___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":204
+/* "pygrackle/grackle_wrapper.pyx":212
  *         def __get__(self):
  *             return self.rates.k27
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5477,17 +5652,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k27_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":205
+  /* "pygrackle/grackle_wrapper.pyx":213
  *             return self.rates.k27
  *         def __set__(self, val):
  *             self.rates.k27 = val             # <<<<<<<<<<<<<<
  * 
  *     property k28:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 213, __pyx_L1_error)
   __pyx_v_self->rates.k27 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":204
+  /* "pygrackle/grackle_wrapper.pyx":212
  *         def __get__(self):
  *             return self.rates.k27
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5506,7 +5681,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k27_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":208
+/* "pygrackle/grackle_wrapper.pyx":216
  * 
  *     property k28:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5533,7 +5708,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k28___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":209
+  /* "pygrackle/grackle_wrapper.pyx":217
  *     property k28:
  *         def __get__(self):
  *             return self.rates.k28             # <<<<<<<<<<<<<<
@@ -5541,13 +5716,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k28___g
  *             self.rates.k28 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k28); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k28); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":208
+  /* "pygrackle/grackle_wrapper.pyx":216
  * 
  *     property k28:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5566,7 +5741,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k28___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":210
+/* "pygrackle/grackle_wrapper.pyx":218
  *         def __get__(self):
  *             return self.rates.k28
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5593,17 +5768,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k28_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":211
+  /* "pygrackle/grackle_wrapper.pyx":219
  *             return self.rates.k28
  *         def __set__(self, val):
  *             self.rates.k28 = val             # <<<<<<<<<<<<<<
  * 
  *     property k29:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 219, __pyx_L1_error)
   __pyx_v_self->rates.k28 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":210
+  /* "pygrackle/grackle_wrapper.pyx":218
  *         def __get__(self):
  *             return self.rates.k28
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5622,7 +5797,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k28_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":214
+/* "pygrackle/grackle_wrapper.pyx":222
  * 
  *     property k29:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5649,7 +5824,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k29___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":215
+  /* "pygrackle/grackle_wrapper.pyx":223
  *     property k29:
  *         def __get__(self):
  *             return self.rates.k29             # <<<<<<<<<<<<<<
@@ -5657,13 +5832,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k29___g
  *             self.rates.k29 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k29); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k29); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":214
+  /* "pygrackle/grackle_wrapper.pyx":222
  * 
  *     property k29:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5682,7 +5857,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k29___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":216
+/* "pygrackle/grackle_wrapper.pyx":224
  *         def __get__(self):
  *             return self.rates.k29
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5709,17 +5884,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k29_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":217
+  /* "pygrackle/grackle_wrapper.pyx":225
  *             return self.rates.k29
  *         def __set__(self, val):
  *             self.rates.k29 = val             # <<<<<<<<<<<<<<
  * 
  *     property k30:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 225, __pyx_L1_error)
   __pyx_v_self->rates.k29 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":216
+  /* "pygrackle/grackle_wrapper.pyx":224
  *         def __get__(self):
  *             return self.rates.k29
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5738,7 +5913,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k29_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":220
+/* "pygrackle/grackle_wrapper.pyx":228
  * 
  *     property k30:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5765,7 +5940,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k30___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":221
+  /* "pygrackle/grackle_wrapper.pyx":229
  *     property k30:
  *         def __get__(self):
  *              return self.rates.k30             # <<<<<<<<<<<<<<
@@ -5773,13 +5948,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k30___g
  *              self.rates.k30 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k30); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k30); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":220
+  /* "pygrackle/grackle_wrapper.pyx":228
  * 
  *     property k30:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5798,7 +5973,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k30___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":222
+/* "pygrackle/grackle_wrapper.pyx":230
  *         def __get__(self):
  *              return self.rates.k30
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5825,17 +6000,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k30_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":223
+  /* "pygrackle/grackle_wrapper.pyx":231
  *              return self.rates.k30
  *         def __set__(self, val):
  *              self.rates.k30 = val             # <<<<<<<<<<<<<<
  * 
  *     property k31:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 231, __pyx_L1_error)
   __pyx_v_self->rates.k30 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":222
+  /* "pygrackle/grackle_wrapper.pyx":230
  *         def __get__(self):
  *              return self.rates.k30
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5854,7 +6029,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k30_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":226
+/* "pygrackle/grackle_wrapper.pyx":234
  * 
  *     property k31:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5881,7 +6056,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k31___g
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":227
+  /* "pygrackle/grackle_wrapper.pyx":235
  *     property k31:
  *         def __get__(self):
  *              return self.rates.k31             # <<<<<<<<<<<<<<
@@ -5889,13 +6064,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k31___g
  *              self.rates.k31 = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k31); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rates.k31); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":226
+  /* "pygrackle/grackle_wrapper.pyx":234
  * 
  *     property k31:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5914,7 +6089,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k31___g
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":228
+/* "pygrackle/grackle_wrapper.pyx":236
  *         def __get__(self):
  *              return self.rates.k31
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5941,17 +6116,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k31_2__set__(
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":229
+  /* "pygrackle/grackle_wrapper.pyx":237
  *              return self.rates.k31
  *         def __set__(self, val):
  *              self.rates.k31 = val             # <<<<<<<<<<<<<<
  * 
  *     property comoving_coordinates:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 237, __pyx_L1_error)
   __pyx_v_self->rates.k31 = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":228
+  /* "pygrackle/grackle_wrapper.pyx":236
  *         def __get__(self):
  *              return self.rates.k31
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -5970,7 +6145,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_3k31_2__set__(
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":232
+/* "pygrackle/grackle_wrapper.pyx":240
  * 
  *     property comoving_coordinates:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -5997,7 +6172,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_20comovi
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":233
+  /* "pygrackle/grackle_wrapper.pyx":241
  *     property comoving_coordinates:
  *         def __get__(self):
  *             return self.units.comoving_coordinates             # <<<<<<<<<<<<<<
@@ -6005,13 +6180,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_20comovi
  *             self.units.comoving_coordinates = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->units.comoving_coordinates); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_self->units.comoving_coordinates); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":232
+  /* "pygrackle/grackle_wrapper.pyx":240
  * 
  *     property comoving_coordinates:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6030,7 +6205,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_20comovi
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":234
+/* "pygrackle/grackle_wrapper.pyx":242
  *         def __get__(self):
  *             return self.units.comoving_coordinates
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6057,17 +6232,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_20comoving_coo
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":235
+  /* "pygrackle/grackle_wrapper.pyx":243
  *             return self.units.comoving_coordinates
  *         def __set__(self, val):
  *             self.units.comoving_coordinates = val             # <<<<<<<<<<<<<<
  * 
  *     property density_units:
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 235, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_val); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 243, __pyx_L1_error)
   __pyx_v_self->units.comoving_coordinates = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":234
+  /* "pygrackle/grackle_wrapper.pyx":242
  *         def __get__(self):
  *             return self.units.comoving_coordinates
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6086,7 +6261,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_20comoving_coo
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":238
+/* "pygrackle/grackle_wrapper.pyx":246
  * 
  *     property density_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6113,7 +6288,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_13densit
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":239
+  /* "pygrackle/grackle_wrapper.pyx":247
  *     property density_units:
  *         def __get__(self):
  *             return self.units.density_units             # <<<<<<<<<<<<<<
@@ -6121,13 +6296,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_13densit
  *             self.units.density_units = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.density_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 239, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.density_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":238
+  /* "pygrackle/grackle_wrapper.pyx":246
  * 
  *     property density_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6146,7 +6321,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_13densit
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":240
+/* "pygrackle/grackle_wrapper.pyx":248
  *         def __get__(self):
  *             return self.units.density_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6173,17 +6348,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_13density_unit
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":241
+  /* "pygrackle/grackle_wrapper.pyx":249
  *             return self.units.density_units
  *         def __set__(self, val):
  *             self.units.density_units = val             # <<<<<<<<<<<<<<
  * 
  *     property length_units:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 249, __pyx_L1_error)
   __pyx_v_self->units.density_units = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":240
+  /* "pygrackle/grackle_wrapper.pyx":248
  *         def __get__(self):
  *             return self.units.density_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6202,7 +6377,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_13density_unit
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":244
+/* "pygrackle/grackle_wrapper.pyx":252
  * 
  *     property length_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6229,7 +6404,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12length
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":245
+  /* "pygrackle/grackle_wrapper.pyx":253
  *     property length_units:
  *         def __get__(self):
  *             return self.units.length_units             # <<<<<<<<<<<<<<
@@ -6237,13 +6412,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12length
  *             self.units.length_units = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.length_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.length_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 253, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":244
+  /* "pygrackle/grackle_wrapper.pyx":252
  * 
  *     property length_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6262,7 +6437,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12length
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":246
+/* "pygrackle/grackle_wrapper.pyx":254
  *         def __get__(self):
  *             return self.units.length_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6289,17 +6464,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12length_units
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":247
+  /* "pygrackle/grackle_wrapper.pyx":255
  *             return self.units.length_units
  *         def __set__(self, val):
  *             self.units.length_units = val             # <<<<<<<<<<<<<<
  * 
  *     property time_units:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 247, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 255, __pyx_L1_error)
   __pyx_v_self->units.length_units = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":246
+  /* "pygrackle/grackle_wrapper.pyx":254
  *         def __get__(self):
  *             return self.units.length_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6318,7 +6493,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_12length_units
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":250
+/* "pygrackle/grackle_wrapper.pyx":258
  * 
  *     property time_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6345,7 +6520,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10time_u
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":251
+  /* "pygrackle/grackle_wrapper.pyx":259
  *     property time_units:
  *         def __get__(self):
  *             return self.units.time_units             # <<<<<<<<<<<<<<
@@ -6353,13 +6528,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10time_u
  *             self.units.time_units = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.time_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 251, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.time_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":250
+  /* "pygrackle/grackle_wrapper.pyx":258
  * 
  *     property time_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6378,7 +6553,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10time_u
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":252
+/* "pygrackle/grackle_wrapper.pyx":260
  *         def __get__(self):
  *             return self.units.time_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6405,17 +6580,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10time_units_2
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":253
+  /* "pygrackle/grackle_wrapper.pyx":261
  *             return self.units.time_units
  *         def __set__(self, val):
  *             self.units.time_units = val             # <<<<<<<<<<<<<<
  * 
  *     property velocity_units:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 253, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 261, __pyx_L1_error)
   __pyx_v_self->units.time_units = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":252
+  /* "pygrackle/grackle_wrapper.pyx":260
  *         def __get__(self):
  *             return self.units.time_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6434,7 +6609,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_10time_units_2
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":256
+/* "pygrackle/grackle_wrapper.pyx":264
  * 
  *     property velocity_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6461,7 +6636,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14veloci
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":257
+  /* "pygrackle/grackle_wrapper.pyx":265
  *     property velocity_units:
  *         def __get__(self):
  *             return self.units.velocity_units             # <<<<<<<<<<<<<<
@@ -6469,13 +6644,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14veloci
  *             self.units.velocity_units = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.velocity_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.velocity_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 265, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":256
+  /* "pygrackle/grackle_wrapper.pyx":264
  * 
  *     property velocity_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6494,7 +6669,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14veloci
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":258
+/* "pygrackle/grackle_wrapper.pyx":266
  *         def __get__(self):
  *             return self.units.velocity_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6521,17 +6696,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14velocity_uni
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":259
+  /* "pygrackle/grackle_wrapper.pyx":267
  *             return self.units.velocity_units
  *         def __set__(self, val):
  *             self.units.velocity_units = val             # <<<<<<<<<<<<<<
  * 
  *     property a_units:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 259, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 267, __pyx_L1_error)
   __pyx_v_self->units.velocity_units = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":258
+  /* "pygrackle/grackle_wrapper.pyx":266
  *         def __get__(self):
  *             return self.units.velocity_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6550,7 +6725,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_14velocity_uni
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":262
+/* "pygrackle/grackle_wrapper.pyx":270
  * 
  *     property a_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6577,7 +6752,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_units
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":263
+  /* "pygrackle/grackle_wrapper.pyx":271
  *     property a_units:
  *         def __get__(self):
  *             return self.units.a_units             # <<<<<<<<<<<<<<
@@ -6585,13 +6760,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_units
  *             self.units.a_units = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.a_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 263, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.a_units); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":262
+  /* "pygrackle/grackle_wrapper.pyx":270
  * 
  *     property a_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6610,7 +6785,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_units
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":264
+/* "pygrackle/grackle_wrapper.pyx":272
  *         def __get__(self):
  *             return self.units.a_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6637,17 +6812,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_units_2__se
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":265
+  /* "pygrackle/grackle_wrapper.pyx":273
  *             return self.units.a_units
  *         def __set__(self, val):
  *             self.units.a_units = val             # <<<<<<<<<<<<<<
  * 
  *     property a_value:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 265, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 273, __pyx_L1_error)
   __pyx_v_self->units.a_units = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":264
+  /* "pygrackle/grackle_wrapper.pyx":272
  *         def __get__(self):
  *             return self.units.a_units
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6666,7 +6841,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_units_2__se
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":268
+/* "pygrackle/grackle_wrapper.pyx":276
  * 
  *     property a_value:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6693,7 +6868,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_value
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":269
+  /* "pygrackle/grackle_wrapper.pyx":277
  *     property a_value:
  *         def __get__(self):
  *             return self.units.a_value             # <<<<<<<<<<<<<<
@@ -6701,13 +6876,13 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_value
  *             self.units.a_value = val
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.a_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->units.a_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":268
+  /* "pygrackle/grackle_wrapper.pyx":276
  * 
  *     property a_value:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6726,7 +6901,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_value
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":270
+/* "pygrackle/grackle_wrapper.pyx":278
  *         def __get__(self):
  *             return self.units.a_value
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6753,17 +6928,17 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_value_2__se
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":271
+  /* "pygrackle/grackle_wrapper.pyx":279
  *             return self.units.a_value
  *         def __set__(self, val):
  *             self.units.a_value = val             # <<<<<<<<<<<<<<
  * 
  *     property temperature_units:
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 271, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_val); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 279, __pyx_L1_error)
   __pyx_v_self->units.a_value = __pyx_t_1;
 
-  /* "pygrackle/grackle_wrapper.pyx":270
+  /* "pygrackle/grackle_wrapper.pyx":278
  *         def __get__(self):
  *             return self.units.a_value
  *         def __set__(self, val):             # <<<<<<<<<<<<<<
@@ -6782,7 +6957,7 @@ static int __pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_7a_value_2__se
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":274
+/* "pygrackle/grackle_wrapper.pyx":282
  * 
  *     property temperature_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6811,7 +6986,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17temper
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":275
+  /* "pygrackle/grackle_wrapper.pyx":283
  *     property temperature_units:
  *         def __get__(self):
  *             return mass_hydrogen_cgs * \             # <<<<<<<<<<<<<<
@@ -6819,44 +6994,44 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17temper
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_mass_hydrogen_cgs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 275, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_mass_hydrogen_cgs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 283, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "pygrackle/grackle_wrapper.pyx":276
+  /* "pygrackle/grackle_wrapper.pyx":284
  *         def __get__(self):
  *             return mass_hydrogen_cgs * \
  *               self.velocity_units**2 / boltzmann_constant_cgs             # <<<<<<<<<<<<<<
  * 
  * cdef gr_float* get_field(fc, name):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_velocity_units); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_velocity_units); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Power(__pyx_t_2, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Power(__pyx_t_2, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":275
+  /* "pygrackle/grackle_wrapper.pyx":283
  *     property temperature_units:
  *         def __get__(self):
  *             return mass_hydrogen_cgs * \             # <<<<<<<<<<<<<<
  *               self.velocity_units**2 / boltzmann_constant_cgs
  * 
  */
-  __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 275, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":276
+  /* "pygrackle/grackle_wrapper.pyx":284
  *         def __get__(self):
  *             return mass_hydrogen_cgs * \
  *               self.velocity_units**2 / boltzmann_constant_cgs             # <<<<<<<<<<<<<<
  * 
  * cdef gr_float* get_field(fc, name):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_boltzmann_constant_cgs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_boltzmann_constant_cgs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6864,7 +7039,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_17temper
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pygrackle/grackle_wrapper.pyx":274
+  /* "pygrackle/grackle_wrapper.pyx":282
  * 
  *     property temperature_units:
  *         def __get__(self):             # <<<<<<<<<<<<<<
@@ -6992,7 +7167,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_14chemistry_data_6__setst
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":278
+/* "pygrackle/grackle_wrapper.pyx":286
  *               self.velocity_units**2 / boltzmann_constant_cgs
  * 
  * cdef gr_float* get_field(fc, name):             # <<<<<<<<<<<<<<
@@ -7013,14 +7188,14 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
   int __pyx_t_7;
   __Pyx_RefNannySetupContext("get_field", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":279
+  /* "pygrackle/grackle_wrapper.pyx":287
  * 
  * cdef gr_float* get_field(fc, name):
  *     cdef np.ndarray rv = fc.get(name, None)             # <<<<<<<<<<<<<<
  *     if rv is None:
  *         return NULL
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_get); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_get); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -7037,7 +7212,7 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_name, Py_None};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
@@ -7045,13 +7220,13 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_name, Py_None};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -7062,16 +7237,16 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, Py_None);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 279, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 287, __pyx_L1_error)
   __pyx_v_rv = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":280
+  /* "pygrackle/grackle_wrapper.pyx":288
  * cdef gr_float* get_field(fc, name):
  *     cdef np.ndarray rv = fc.get(name, None)
  *     if rv is None:             # <<<<<<<<<<<<<<
@@ -7082,7 +7257,7 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "pygrackle/grackle_wrapper.pyx":281
+    /* "pygrackle/grackle_wrapper.pyx":289
  *     cdef np.ndarray rv = fc.get(name, None)
  *     if rv is None:
  *         return NULL             # <<<<<<<<<<<<<<
@@ -7092,7 +7267,7 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
     __pyx_r = NULL;
     goto __pyx_L0;
 
-    /* "pygrackle/grackle_wrapper.pyx":280
+    /* "pygrackle/grackle_wrapper.pyx":288
  * cdef gr_float* get_field(fc, name):
  *     cdef np.ndarray rv = fc.get(name, None)
  *     if rv is None:             # <<<<<<<<<<<<<<
@@ -7101,7 +7276,7 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
  */
   }
 
-  /* "pygrackle/grackle_wrapper.pyx":283
+  /* "pygrackle/grackle_wrapper.pyx":291
  *         return NULL
  *     else:
  *         return <gr_float *> rv.data             # <<<<<<<<<<<<<<
@@ -7113,7 +7288,7 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
     goto __pyx_L0;
   }
 
-  /* "pygrackle/grackle_wrapper.pyx":278
+  /* "pygrackle/grackle_wrapper.pyx":286
  *               self.velocity_units**2 / boltzmann_constant_cgs
  * 
  * cdef gr_float* get_field(fc, name):             # <<<<<<<<<<<<<<
@@ -7135,7 +7310,7 @@ static gr_float *__pyx_f_9pygrackle_15grackle_wrapper_get_field(PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":285
+/* "pygrackle/grackle_wrapper.pyx":293
  *         return <gr_float *> rv.data
  * 
  * def solve_chemistry(fc, my_dt):             # <<<<<<<<<<<<<<
@@ -7175,11 +7350,11 @@ static PyObject *__pyx_pw_9pygrackle_15grackle_wrapper_1solve_chemistry(PyObject
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_my_dt)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("solve_chemistry", 1, 2, 2, 1); __PYX_ERR(0, 285, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("solve_chemistry", 1, 2, 2, 1); __PYX_ERR(0, 293, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "solve_chemistry") < 0)) __PYX_ERR(0, 285, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "solve_chemistry") < 0)) __PYX_ERR(0, 293, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -7192,7 +7367,7 @@ static PyObject *__pyx_pw_9pygrackle_15grackle_wrapper_1solve_chemistry(PyObject
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("solve_chemistry", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 285, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("solve_chemistry", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 293, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pygrackle.grackle_wrapper.solve_chemistry", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7283,7 +7458,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
   code_units __pyx_t_8;
   __Pyx_RefNannySetupContext("solve_chemistry", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":286
+  /* "pygrackle/grackle_wrapper.pyx":294
  * 
  * def solve_chemistry(fc, my_dt):
  *     cdef int grid_rank = 1             # <<<<<<<<<<<<<<
@@ -7292,84 +7467,84 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_grid_rank = 1;
 
-  /* "pygrackle/grackle_wrapper.pyx":288
+  /* "pygrackle/grackle_wrapper.pyx":296
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  *     grid_dimension = fc["density"].shape[0]             # <<<<<<<<<<<<<<
  * 
  *     cdef np.ndarray ref_gs, ref_ge
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 288, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 296, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_grid_dimension = __pyx_t_3;
 
-  /* "pygrackle/grackle_wrapper.pyx":291
+  /* "pygrackle/grackle_wrapper.pyx":299
  * 
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension - 1
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 299, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 291, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 299, __pyx_L1_error)
   __pyx_v_ref_gs = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":292
+  /* "pygrackle/grackle_wrapper.pyx":300
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge[0] = grid_dimension - 1
  *     cdef int *grid_start
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 292, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 300, __pyx_L1_error)
   __pyx_v_ref_ge = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":293
+  /* "pygrackle/grackle_wrapper.pyx":301
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension - 1             # <<<<<<<<<<<<<<
  *     cdef int *grid_start
  *     cdef int *grid_end
  */
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 301, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 293, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 301, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":296
+  /* "pygrackle/grackle_wrapper.pyx":304
  *     cdef int *grid_start
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data             # <<<<<<<<<<<<<<
@@ -7378,7 +7553,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_grid_start = ((int *)__pyx_v_ref_gs->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":297
+  /* "pygrackle/grackle_wrapper.pyx":305
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data
  *     grid_end = <int *> ref_ge.data             # <<<<<<<<<<<<<<
@@ -7387,7 +7562,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_grid_end = ((int *)__pyx_v_ref_ge->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":299
+  /* "pygrackle/grackle_wrapper.pyx":307
  *     grid_end = <int *> ref_ge.data
  * 
  *     cdef double grid_dx = <double> 0.0             # <<<<<<<<<<<<<<
@@ -7396,30 +7571,30 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_grid_dx = ((double)0.0);
 
-  /* "pygrackle/grackle_wrapper.pyx":301
+  /* "pygrackle/grackle_wrapper.pyx":309
  *     cdef double grid_dx = <double> 0.0
  * 
  *     cdef double dt_value = <double> my_dt             # <<<<<<<<<<<<<<
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data
  */
-  __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_my_dt); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 301, __pyx_L1_error)
+  __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_my_dt); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 309, __pyx_L1_error)
   __pyx_v_dt_value = ((double)__pyx_t_5);
 
-  /* "pygrackle/grackle_wrapper.pyx":303
+  /* "pygrackle/grackle_wrapper.pyx":311
  *     cdef double dt_value = <double> my_dt
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data             # <<<<<<<<<<<<<<
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 303, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 311, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 303, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 311, __pyx_L1_error)
   __pyx_v_chem_data = ((struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":304
+  /* "pygrackle/grackle_wrapper.pyx":312
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data             # <<<<<<<<<<<<<<
@@ -7429,7 +7604,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
   __pyx_t_6 = __pyx_v_chem_data->data;
   __pyx_v_my_chemistry = __pyx_t_6;
 
-  /* "pygrackle/grackle_wrapper.pyx":305
+  /* "pygrackle/grackle_wrapper.pyx":313
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates             # <<<<<<<<<<<<<<
@@ -7439,7 +7614,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
   __pyx_t_7 = __pyx_v_chem_data->rates;
   __pyx_v_my_rates = __pyx_t_7;
 
-  /* "pygrackle/grackle_wrapper.pyx":306
+  /* "pygrackle/grackle_wrapper.pyx":314
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units             # <<<<<<<<<<<<<<
@@ -7449,7 +7624,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
   __pyx_t_8 = __pyx_v_chem_data->units;
   __pyx_v_my_units = __pyx_t_8;
 
-  /* "pygrackle/grackle_wrapper.pyx":307
+  /* "pygrackle/grackle_wrapper.pyx":315
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")             # <<<<<<<<<<<<<<
@@ -7458,7 +7633,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":308
+  /* "pygrackle/grackle_wrapper.pyx":316
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")             # <<<<<<<<<<<<<<
@@ -7467,7 +7642,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_internal_energy = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_energy);
 
-  /* "pygrackle/grackle_wrapper.pyx":309
+  /* "pygrackle/grackle_wrapper.pyx":317
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *x_velocity = get_field(fc, "x-velocity")             # <<<<<<<<<<<<<<
@@ -7476,7 +7651,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_x_velocity = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_kp_s_x_velocity);
 
-  /* "pygrackle/grackle_wrapper.pyx":310
+  /* "pygrackle/grackle_wrapper.pyx":318
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *x_velocity = get_field(fc, "x-velocity")
  *     cdef gr_float *y_velocity = get_field(fc, "y-velocity")             # <<<<<<<<<<<<<<
@@ -7485,7 +7660,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_y_velocity = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_kp_s_y_velocity);
 
-  /* "pygrackle/grackle_wrapper.pyx":311
+  /* "pygrackle/grackle_wrapper.pyx":319
  *     cdef gr_float *x_velocity = get_field(fc, "x-velocity")
  *     cdef gr_float *y_velocity = get_field(fc, "y-velocity")
  *     cdef gr_float *z_velocity = get_field(fc, "z-velocity")             # <<<<<<<<<<<<<<
@@ -7494,7 +7669,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_z_velocity = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_kp_s_z_velocity);
 
-  /* "pygrackle/grackle_wrapper.pyx":312
+  /* "pygrackle/grackle_wrapper.pyx":320
  *     cdef gr_float *y_velocity = get_field(fc, "y-velocity")
  *     cdef gr_float *z_velocity = get_field(fc, "z-velocity")
  *     cdef gr_float *HI_density = get_field(fc, "HI")             # <<<<<<<<<<<<<<
@@ -7503,7 +7678,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HI);
 
-  /* "pygrackle/grackle_wrapper.pyx":313
+  /* "pygrackle/grackle_wrapper.pyx":321
  *     cdef gr_float *z_velocity = get_field(fc, "z-velocity")
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")             # <<<<<<<<<<<<<<
@@ -7512,7 +7687,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HII);
 
-  /* "pygrackle/grackle_wrapper.pyx":314
+  /* "pygrackle/grackle_wrapper.pyx":322
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")             # <<<<<<<<<<<<<<
@@ -7521,7 +7696,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HM_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HM);
 
-  /* "pygrackle/grackle_wrapper.pyx":315
+  /* "pygrackle/grackle_wrapper.pyx":323
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")             # <<<<<<<<<<<<<<
@@ -7530,7 +7705,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HeI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeI);
 
-  /* "pygrackle/grackle_wrapper.pyx":316
+  /* "pygrackle/grackle_wrapper.pyx":324
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")             # <<<<<<<<<<<<<<
@@ -7539,7 +7714,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HeII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeII);
 
-  /* "pygrackle/grackle_wrapper.pyx":317
+  /* "pygrackle/grackle_wrapper.pyx":325
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")             # <<<<<<<<<<<<<<
@@ -7548,7 +7723,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HeIII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeIII);
 
-  /* "pygrackle/grackle_wrapper.pyx":318
+  /* "pygrackle/grackle_wrapper.pyx":326
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")             # <<<<<<<<<<<<<<
@@ -7557,7 +7732,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_Water_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Water_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":319
+  /* "pygrackle/grackle_wrapper.pyx":327
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")             # <<<<<<<<<<<<<<
@@ -7566,7 +7741,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_H2I_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2I);
 
-  /* "pygrackle/grackle_wrapper.pyx":320
+  /* "pygrackle/grackle_wrapper.pyx":328
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")             # <<<<<<<<<<<<<<
@@ -7575,7 +7750,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_H2II_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2II);
 
-  /* "pygrackle/grackle_wrapper.pyx":321
+  /* "pygrackle/grackle_wrapper.pyx":329
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")             # <<<<<<<<<<<<<<
@@ -7584,7 +7759,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_DI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DI);
 
-  /* "pygrackle/grackle_wrapper.pyx":322
+  /* "pygrackle/grackle_wrapper.pyx":330
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")             # <<<<<<<<<<<<<<
@@ -7593,7 +7768,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_DII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DII);
 
-  /* "pygrackle/grackle_wrapper.pyx":323
+  /* "pygrackle/grackle_wrapper.pyx":331
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")             # <<<<<<<<<<<<<<
@@ -7602,7 +7777,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HDI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HDI);
 
-  /* "pygrackle/grackle_wrapper.pyx":324
+  /* "pygrackle/grackle_wrapper.pyx":332
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *e_density = get_field(fc, "de")             # <<<<<<<<<<<<<<
@@ -7611,7 +7786,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_e_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_de);
 
-  /* "pygrackle/grackle_wrapper.pyx":325
+  /* "pygrackle/grackle_wrapper.pyx":333
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")             # <<<<<<<<<<<<<<
@@ -7620,7 +7795,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_metal_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_metal);
 
-  /* "pygrackle/grackle_wrapper.pyx":326
+  /* "pygrackle/grackle_wrapper.pyx":334
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")
  *     cdef gr_float *volumetric_heating_rate = get_field(fc, "volumetric_heating_rate")             # <<<<<<<<<<<<<<
@@ -7629,7 +7804,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_volumetric_heating_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_volumetric_heating_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":327
+  /* "pygrackle/grackle_wrapper.pyx":335
  *     cdef gr_float *metal_density = get_field(fc, "metal")
  *     cdef gr_float *volumetric_heating_rate = get_field(fc, "volumetric_heating_rate")
  *     cdef gr_float *specific_heating_rate = get_field(fc, "specific_heating_rate")             # <<<<<<<<<<<<<<
@@ -7638,7 +7813,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_specific_heating_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_specific_heating_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":328
+  /* "pygrackle/grackle_wrapper.pyx":336
  *     cdef gr_float *volumetric_heating_rate = get_field(fc, "volumetric_heating_rate")
  *     cdef gr_float *specific_heating_rate = get_field(fc, "specific_heating_rate")
  *     cdef gr_float *RT_heating_rate = get_field(fc, "RT_heating_rate")             # <<<<<<<<<<<<<<
@@ -7647,7 +7822,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_RT_heating_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_RT_heating_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":329
+  /* "pygrackle/grackle_wrapper.pyx":337
  *     cdef gr_float *specific_heating_rate = get_field(fc, "specific_heating_rate")
  *     cdef gr_float *RT_heating_rate = get_field(fc, "RT_heating_rate")
  *     cdef gr_float *RT_HI_ionization_rate = get_field(fc, "RT_HI_ionization_rate")             # <<<<<<<<<<<<<<
@@ -7656,7 +7831,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_RT_HI_ionization_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_RT_HI_ionization_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":330
+  /* "pygrackle/grackle_wrapper.pyx":338
  *     cdef gr_float *RT_heating_rate = get_field(fc, "RT_heating_rate")
  *     cdef gr_float *RT_HI_ionization_rate = get_field(fc, "RT_HI_ionization_rate")
  *     cdef gr_float *RT_HeI_ionization_rate = get_field(fc, "RT_HeI_ionization_rate")             # <<<<<<<<<<<<<<
@@ -7665,7 +7840,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_RT_HeI_ionization_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_RT_HeI_ionization_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":331
+  /* "pygrackle/grackle_wrapper.pyx":339
  *     cdef gr_float *RT_HI_ionization_rate = get_field(fc, "RT_HI_ionization_rate")
  *     cdef gr_float *RT_HeI_ionization_rate = get_field(fc, "RT_HeI_ionization_rate")
  *     cdef gr_float *RT_HeII_ionization_rate = get_field(fc, "RT_HeII_ionization_rate")             # <<<<<<<<<<<<<<
@@ -7674,7 +7849,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_RT_HeII_ionization_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_RT_HeII_ionization_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":332
+  /* "pygrackle/grackle_wrapper.pyx":340
  *     cdef gr_float *RT_HeI_ionization_rate = get_field(fc, "RT_HeI_ionization_rate")
  *     cdef gr_float *RT_HeII_ionization_rate = get_field(fc, "RT_HeII_ionization_rate")
  *     cdef gr_float *RT_H2_dissociation_rate = get_field(fc, "RT_H2_dissociation_rate")             # <<<<<<<<<<<<<<
@@ -7683,7 +7858,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_RT_H2_dissociation_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_RT_H2_dissociation_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":333
+  /* "pygrackle/grackle_wrapper.pyx":341
  *     cdef gr_float *RT_HeII_ionization_rate = get_field(fc, "RT_HeII_ionization_rate")
  *     cdef gr_float *RT_H2_dissociation_rate = get_field(fc, "RT_H2_dissociation_rate")
  *     cdef gr_float *H2_self_shielding_length = get_field(fc, "H2_self_shielding_length")             # <<<<<<<<<<<<<<
@@ -7692,7 +7867,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_H2_self_shielding_length = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2_self_shielding_length);
 
-  /* "pygrackle/grackle_wrapper.pyx":334
+  /* "pygrackle/grackle_wrapper.pyx":342
  *     cdef gr_float *RT_H2_dissociation_rate = get_field(fc, "RT_H2_dissociation_rate")
  *     cdef gr_float *H2_self_shielding_length = get_field(fc, "H2_self_shielding_length")
  *     cdef gr_float *O_density = get_field(fc, "O_density")             # <<<<<<<<<<<<<<
@@ -7701,7 +7876,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_O_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":335
+  /* "pygrackle/grackle_wrapper.pyx":343
  *     cdef gr_float *H2_self_shielding_length = get_field(fc, "H2_self_shielding_length")
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")             # <<<<<<<<<<<<<<
@@ -7710,7 +7885,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_OH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":336
+  /* "pygrackle/grackle_wrapper.pyx":344
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")             # <<<<<<<<<<<<<<
@@ -7719,7 +7894,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_O2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":337
+  /* "pygrackle/grackle_wrapper.pyx":345
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")             # <<<<<<<<<<<<<<
@@ -7728,7 +7903,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":338
+  /* "pygrackle/grackle_wrapper.pyx":346
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")             # <<<<<<<<<<<<<<
@@ -7737,7 +7912,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_OHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":339
+  /* "pygrackle/grackle_wrapper.pyx":347
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")             # <<<<<<<<<<<<<<
@@ -7746,7 +7921,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_H2Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":340
+  /* "pygrackle/grackle_wrapper.pyx":348
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")             # <<<<<<<<<<<<<<
@@ -7755,7 +7930,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_H3Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":341
+  /* "pygrackle/grackle_wrapper.pyx":349
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")             # <<<<<<<<<<<<<<
@@ -7764,7 +7939,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_O2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":342
+  /* "pygrackle/grackle_wrapper.pyx":350
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")             # <<<<<<<<<<<<<<
@@ -7773,7 +7948,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_Cplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Cplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":343
+  /* "pygrackle/grackle_wrapper.pyx":351
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")             # <<<<<<<<<<<<<<
@@ -7782,7 +7957,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_C_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_C_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":344
+  /* "pygrackle/grackle_wrapper.pyx":352
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")             # <<<<<<<<<<<<<<
@@ -7791,7 +7966,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":345
+  /* "pygrackle/grackle_wrapper.pyx":353
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")             # <<<<<<<<<<<<<<
@@ -7800,7 +7975,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":346
+  /* "pygrackle/grackle_wrapper.pyx":354
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")             # <<<<<<<<<<<<<<
@@ -7809,7 +7984,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH3_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH3_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":347
+  /* "pygrackle/grackle_wrapper.pyx":355
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")             # <<<<<<<<<<<<<<
@@ -7818,7 +7993,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH4_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH4_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":348
+  /* "pygrackle/grackle_wrapper.pyx":356
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")             # <<<<<<<<<<<<<<
@@ -7827,7 +8002,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CO_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":349
+  /* "pygrackle/grackle_wrapper.pyx":357
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")             # <<<<<<<<<<<<<<
@@ -7836,7 +8011,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_COplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_COplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":350
+  /* "pygrackle/grackle_wrapper.pyx":358
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")             # <<<<<<<<<<<<<<
@@ -7845,7 +8020,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CO2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":351
+  /* "pygrackle/grackle_wrapper.pyx":359
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")             # <<<<<<<<<<<<<<
@@ -7854,7 +8029,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":352
+  /* "pygrackle/grackle_wrapper.pyx":360
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")             # <<<<<<<<<<<<<<
@@ -7863,7 +8038,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":353
+  /* "pygrackle/grackle_wrapper.pyx":361
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")             # <<<<<<<<<<<<<<
@@ -7872,7 +8047,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_H3plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":354
+  /* "pygrackle/grackle_wrapper.pyx":362
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *HCOplus_density = get_field(fc, "HCOplus_density")             # <<<<<<<<<<<<<<
@@ -7881,7 +8056,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HCOplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HCOplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":355
+  /* "pygrackle/grackle_wrapper.pyx":363
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *HCOplus_density = get_field(fc, "HCOplus_density")
  *     cdef gr_float *HeHplus_density = get_field(fc, "HeHplus_density")             # <<<<<<<<<<<<<<
@@ -7890,7 +8065,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_HeHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":356
+  /* "pygrackle/grackle_wrapper.pyx":364
  *     cdef gr_float *HCOplus_density = get_field(fc, "HCOplus_density")
  *     cdef gr_float *HeHplus_density = get_field(fc, "HeHplus_density")
  *     cdef gr_float *CH3plus_density = get_field(fc, "CH3plus_density")             # <<<<<<<<<<<<<<
@@ -7899,7 +8074,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH3plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH3plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":357
+  /* "pygrackle/grackle_wrapper.pyx":365
  *     cdef gr_float *HeHplus_density = get_field(fc, "HeHplus_density")
  *     cdef gr_float *CH3plus_density = get_field(fc, "CH3plus_density")
  *     cdef gr_float *CH4plus_density = get_field(fc, "CH4plus_density")             # <<<<<<<<<<<<<<
@@ -7908,7 +8083,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH4plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH4plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":358
+  /* "pygrackle/grackle_wrapper.pyx":366
  *     cdef gr_float *CH3plus_density = get_field(fc, "CH3plus_density")
  *     cdef gr_float *CH4plus_density = get_field(fc, "CH4plus_density")
  *     cdef gr_float *CH5plus_density = get_field(fc, "CH5plus_density")             # <<<<<<<<<<<<<<
@@ -7917,7 +8092,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_CH5plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH5plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":359
+  /* "pygrackle/grackle_wrapper.pyx":367
  *     cdef gr_float *CH4plus_density = get_field(fc, "CH4plus_density")
  *     cdef gr_float *CH5plus_density = get_field(fc, "CH5plus_density")
  *     cdef gr_float *O2Hplus_density = get_field(fc, "O2Hplus_density")             # <<<<<<<<<<<<<<
@@ -7926,7 +8101,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   __pyx_v_O2Hplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2Hplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":362
+  /* "pygrackle/grackle_wrapper.pyx":370
  * 
  * 
  *     c_solve_chemistry (             # <<<<<<<<<<<<<<
@@ -7935,7 +8110,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
  */
   (void)(_solve_chemistry((&__pyx_v_my_chemistry), (&__pyx_v_my_rates), (&__pyx_v_my_units), __pyx_v_dt_value, __pyx_v_grid_dx, __pyx_v_grid_rank, (&__pyx_v_grid_dimension), __pyx_v_grid_start, __pyx_v_grid_end, __pyx_v_density, __pyx_v_internal_energy, __pyx_v_x_velocity, __pyx_v_y_velocity, __pyx_v_z_velocity, __pyx_v_HI_density, __pyx_v_HII_density, __pyx_v_HM_density, __pyx_v_HeI_density, __pyx_v_HeII_density, __pyx_v_HeIII_density, __pyx_v_Water_density, __pyx_v_H2I_density, __pyx_v_H2II_density, __pyx_v_DI_density, __pyx_v_DII_density, __pyx_v_HDI_density, __pyx_v_e_density, __pyx_v_metal_density, __pyx_v_volumetric_heating_rate, __pyx_v_specific_heating_rate, __pyx_v_RT_heating_rate, __pyx_v_RT_HI_ionization_rate, __pyx_v_RT_HeI_ionization_rate, __pyx_v_RT_HeII_ionization_rate, __pyx_v_RT_H2_dissociation_rate, __pyx_v_H2_self_shielding_length, __pyx_v_O_density, __pyx_v_OH_density, __pyx_v_O2_density, __pyx_v_Oplus_density, __pyx_v_OHplus_density, __pyx_v_H2Oplus_density, __pyx_v_H3Oplus_density, __pyx_v_O2plus_density, __pyx_v_Cplus_density, __pyx_v_C_density, __pyx_v_CH_density, __pyx_v_CH2_density, __pyx_v_CH3_density, __pyx_v_CH4_density, __pyx_v_CO_density, __pyx_v_COplus_density, __pyx_v_CO2_density, __pyx_v_CHplus_density, __pyx_v_CH2plus_density, __pyx_v_H3plus_density, __pyx_v_HCOplus_density, __pyx_v_HeHplus_density, __pyx_v_CH3plus_density, __pyx_v_CH4plus_density, __pyx_v_CH5plus_density, __pyx_v_O2Hplus_density));
 
-  /* "pygrackle/grackle_wrapper.pyx":285
+  /* "pygrackle/grackle_wrapper.pyx":293
  *         return <gr_float *> rv.data
  * 
  * def solve_chemistry(fc, my_dt):             # <<<<<<<<<<<<<<
@@ -7961,7 +8136,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_solve_chemistry(CYTHON_UN
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":426
+/* "pygrackle/grackle_wrapper.pyx":434
  *                 O2Hplus_density)
  * 
  * def calculate_cooling_time(fc):             # <<<<<<<<<<<<<<
@@ -8027,7 +8202,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
   code_units __pyx_t_7;
   __Pyx_RefNannySetupContext("calculate_cooling_time", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":427
+  /* "pygrackle/grackle_wrapper.pyx":435
  * 
  * def calculate_cooling_time(fc):
  *     cdef int grid_rank = 1             # <<<<<<<<<<<<<<
@@ -8036,84 +8211,84 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_grid_rank = 1;
 
-  /* "pygrackle/grackle_wrapper.pyx":429
+  /* "pygrackle/grackle_wrapper.pyx":437
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  *     grid_dimension = fc["density"].shape[0]             # <<<<<<<<<<<<<<
  * 
  *     cdef np.ndarray ref_gs, ref_ge
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 429, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 429, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 429, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 429, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_grid_dimension = __pyx_t_3;
 
-  /* "pygrackle/grackle_wrapper.pyx":432
+  /* "pygrackle/grackle_wrapper.pyx":440
  * 
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 432, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 440, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 432, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 440, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 432, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 440, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 432, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 432, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 440, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 440, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 432, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 440, __pyx_L1_error)
   __pyx_v_ref_gs = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":433
+  /* "pygrackle/grackle_wrapper.pyx":441
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge[0] = grid_dimension -1
  *     cdef int *grid_start
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 433, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 433, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 433, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 433, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 433, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 441, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 433, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 441, __pyx_L1_error)
   __pyx_v_ref_ge = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":434
+  /* "pygrackle/grackle_wrapper.pyx":442
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1             # <<<<<<<<<<<<<<
  *     cdef int *grid_start
  *     cdef int *grid_end
  */
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 434, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 442, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 434, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 442, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":437
+  /* "pygrackle/grackle_wrapper.pyx":445
  *     cdef int *grid_start
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data             # <<<<<<<<<<<<<<
@@ -8122,7 +8297,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_grid_start = ((int *)__pyx_v_ref_gs->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":438
+  /* "pygrackle/grackle_wrapper.pyx":446
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data
  *     grid_end = <int *> ref_ge.data             # <<<<<<<<<<<<<<
@@ -8131,20 +8306,20 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_grid_end = ((int *)__pyx_v_ref_ge->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":440
+  /* "pygrackle/grackle_wrapper.pyx":448
  *     grid_end = <int *> ref_ge.data
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data             # <<<<<<<<<<<<<<
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 440, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 440, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 448, __pyx_L1_error)
   __pyx_v_chem_data = ((struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":441
+  /* "pygrackle/grackle_wrapper.pyx":449
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data             # <<<<<<<<<<<<<<
@@ -8154,7 +8329,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
   __pyx_t_5 = __pyx_v_chem_data->data;
   __pyx_v_my_chemistry = __pyx_t_5;
 
-  /* "pygrackle/grackle_wrapper.pyx":442
+  /* "pygrackle/grackle_wrapper.pyx":450
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates             # <<<<<<<<<<<<<<
@@ -8164,7 +8339,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
   __pyx_t_6 = __pyx_v_chem_data->rates;
   __pyx_v_my_rates = __pyx_t_6;
 
-  /* "pygrackle/grackle_wrapper.pyx":443
+  /* "pygrackle/grackle_wrapper.pyx":451
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units             # <<<<<<<<<<<<<<
@@ -8174,7 +8349,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
   __pyx_t_7 = __pyx_v_chem_data->units;
   __pyx_v_my_units = __pyx_t_7;
 
-  /* "pygrackle/grackle_wrapper.pyx":444
+  /* "pygrackle/grackle_wrapper.pyx":452
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")             # <<<<<<<<<<<<<<
@@ -8183,7 +8358,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":445
+  /* "pygrackle/grackle_wrapper.pyx":453
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")             # <<<<<<<<<<<<<<
@@ -8192,7 +8367,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_internal_energy = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_energy);
 
-  /* "pygrackle/grackle_wrapper.pyx":446
+  /* "pygrackle/grackle_wrapper.pyx":454
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *x_velocity = get_field(fc, "x-velocity")             # <<<<<<<<<<<<<<
@@ -8201,7 +8376,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_x_velocity = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_kp_s_x_velocity);
 
-  /* "pygrackle/grackle_wrapper.pyx":447
+  /* "pygrackle/grackle_wrapper.pyx":455
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *x_velocity = get_field(fc, "x-velocity")
  *     cdef gr_float *y_velocity = get_field(fc, "y-velocity")             # <<<<<<<<<<<<<<
@@ -8210,7 +8385,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_y_velocity = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_kp_s_y_velocity);
 
-  /* "pygrackle/grackle_wrapper.pyx":448
+  /* "pygrackle/grackle_wrapper.pyx":456
  *     cdef gr_float *x_velocity = get_field(fc, "x-velocity")
  *     cdef gr_float *y_velocity = get_field(fc, "y-velocity")
  *     cdef gr_float *z_velocity = get_field(fc, "z-velocity")             # <<<<<<<<<<<<<<
@@ -8219,7 +8394,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_z_velocity = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_kp_s_z_velocity);
 
-  /* "pygrackle/grackle_wrapper.pyx":449
+  /* "pygrackle/grackle_wrapper.pyx":457
  *     cdef gr_float *y_velocity = get_field(fc, "y-velocity")
  *     cdef gr_float *z_velocity = get_field(fc, "z-velocity")
  *     cdef gr_float *HI_density = get_field(fc, "HI")             # <<<<<<<<<<<<<<
@@ -8228,7 +8403,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_HI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HI);
 
-  /* "pygrackle/grackle_wrapper.pyx":450
+  /* "pygrackle/grackle_wrapper.pyx":458
  *     cdef gr_float *z_velocity = get_field(fc, "z-velocity")
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")             # <<<<<<<<<<<<<<
@@ -8237,7 +8412,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_HII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HII);
 
-  /* "pygrackle/grackle_wrapper.pyx":451
+  /* "pygrackle/grackle_wrapper.pyx":459
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")             # <<<<<<<<<<<<<<
@@ -8246,7 +8421,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_HM_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HM);
 
-  /* "pygrackle/grackle_wrapper.pyx":452
+  /* "pygrackle/grackle_wrapper.pyx":460
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")             # <<<<<<<<<<<<<<
@@ -8255,7 +8430,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_HeI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeI);
 
-  /* "pygrackle/grackle_wrapper.pyx":453
+  /* "pygrackle/grackle_wrapper.pyx":461
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")             # <<<<<<<<<<<<<<
@@ -8264,7 +8439,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_HeII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeII);
 
-  /* "pygrackle/grackle_wrapper.pyx":454
+  /* "pygrackle/grackle_wrapper.pyx":462
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")             # <<<<<<<<<<<<<<
@@ -8273,7 +8448,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_HeIII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeIII);
 
-  /* "pygrackle/grackle_wrapper.pyx":455
+  /* "pygrackle/grackle_wrapper.pyx":463
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")             # <<<<<<<<<<<<<<
@@ -8282,7 +8457,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_H2I_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2I);
 
-  /* "pygrackle/grackle_wrapper.pyx":456
+  /* "pygrackle/grackle_wrapper.pyx":464
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")             # <<<<<<<<<<<<<<
@@ -8291,7 +8466,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_H2II_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2II);
 
-  /* "pygrackle/grackle_wrapper.pyx":457
+  /* "pygrackle/grackle_wrapper.pyx":465
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")             # <<<<<<<<<<<<<<
@@ -8300,7 +8475,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_DI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DI);
 
-  /* "pygrackle/grackle_wrapper.pyx":458
+  /* "pygrackle/grackle_wrapper.pyx":466
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")             # <<<<<<<<<<<<<<
@@ -8309,7 +8484,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_DII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DII);
 
-  /* "pygrackle/grackle_wrapper.pyx":459
+  /* "pygrackle/grackle_wrapper.pyx":467
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")             # <<<<<<<<<<<<<<
@@ -8318,7 +8493,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_HDI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HDI);
 
-  /* "pygrackle/grackle_wrapper.pyx":460
+  /* "pygrackle/grackle_wrapper.pyx":468
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *e_density = get_field(fc, "de")             # <<<<<<<<<<<<<<
@@ -8327,7 +8502,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_e_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_de);
 
-  /* "pygrackle/grackle_wrapper.pyx":461
+  /* "pygrackle/grackle_wrapper.pyx":469
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")             # <<<<<<<<<<<<<<
@@ -8336,7 +8511,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_metal_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_metal);
 
-  /* "pygrackle/grackle_wrapper.pyx":462
+  /* "pygrackle/grackle_wrapper.pyx":470
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")
  *     cdef gr_float *cooling_time = get_field(fc, "cooling_time")             # <<<<<<<<<<<<<<
@@ -8345,7 +8520,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_cooling_time = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_cooling_time);
 
-  /* "pygrackle/grackle_wrapper.pyx":463
+  /* "pygrackle/grackle_wrapper.pyx":471
  *     cdef gr_float *metal_density = get_field(fc, "metal")
  *     cdef gr_float *cooling_time = get_field(fc, "cooling_time")
  *     cdef gr_float *RT_heating_rate = get_field(fc, "RT_heating_rate")             # <<<<<<<<<<<<<<
@@ -8354,7 +8529,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_RT_heating_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_RT_heating_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":464
+  /* "pygrackle/grackle_wrapper.pyx":472
  *     cdef gr_float *cooling_time = get_field(fc, "cooling_time")
  *     cdef gr_float *RT_heating_rate = get_field(fc, "RT_heating_rate")
  *     cdef gr_float *volumetric_heating_rate = get_field(fc, "volumetric_heating_rate")             # <<<<<<<<<<<<<<
@@ -8363,7 +8538,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_volumetric_heating_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_volumetric_heating_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":465
+  /* "pygrackle/grackle_wrapper.pyx":473
  *     cdef gr_float *RT_heating_rate = get_field(fc, "RT_heating_rate")
  *     cdef gr_float *volumetric_heating_rate = get_field(fc, "volumetric_heating_rate")
  *     cdef gr_float *specific_heating_rate = get_field(fc, "specific_heating_rate")             # <<<<<<<<<<<<<<
@@ -8372,7 +8547,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   __pyx_v_specific_heating_rate = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_specific_heating_rate);
 
-  /* "pygrackle/grackle_wrapper.pyx":467
+  /* "pygrackle/grackle_wrapper.pyx":475
  *     cdef gr_float *specific_heating_rate = get_field(fc, "specific_heating_rate")
  * 
  *     c_calculate_cooling_time (             # <<<<<<<<<<<<<<
@@ -8381,7 +8556,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
  */
   (void)(_calculate_cooling_time((&__pyx_v_my_chemistry), (&__pyx_v_my_rates), (&__pyx_v_my_units), __pyx_v_grid_rank, (&__pyx_v_grid_dimension), __pyx_v_grid_start, __pyx_v_grid_end, __pyx_v_density, __pyx_v_internal_energy, __pyx_v_x_velocity, __pyx_v_y_velocity, __pyx_v_z_velocity, __pyx_v_HI_density, __pyx_v_HII_density, __pyx_v_HM_density, __pyx_v_HeI_density, __pyx_v_HeII_density, __pyx_v_HeIII_density, __pyx_v_H2I_density, __pyx_v_H2II_density, __pyx_v_DI_density, __pyx_v_DII_density, __pyx_v_HDI_density, __pyx_v_e_density, __pyx_v_metal_density, __pyx_v_cooling_time, __pyx_v_RT_heating_rate, __pyx_v_volumetric_heating_rate, __pyx_v_specific_heating_rate));
 
-  /* "pygrackle/grackle_wrapper.pyx":426
+  /* "pygrackle/grackle_wrapper.pyx":434
  *                 O2Hplus_density)
  * 
  * def calculate_cooling_time(fc):             # <<<<<<<<<<<<<<
@@ -8407,7 +8582,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_2calculate_cooling_time(C
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":498
+/* "pygrackle/grackle_wrapper.pyx":506
  *                 specific_heating_rate)
  * 
  * def calculate_gamma(fc):             # <<<<<<<<<<<<<<
@@ -8488,7 +8663,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
   code_units __pyx_t_7;
   __Pyx_RefNannySetupContext("calculate_gamma", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":499
+  /* "pygrackle/grackle_wrapper.pyx":507
  * 
  * def calculate_gamma(fc):
  *     cdef int grid_rank = 1             # <<<<<<<<<<<<<<
@@ -8497,84 +8672,84 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_grid_rank = 1;
 
-  /* "pygrackle/grackle_wrapper.pyx":501
+  /* "pygrackle/grackle_wrapper.pyx":509
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  *     grid_dimension = fc["density"].shape[0]             # <<<<<<<<<<<<<<
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 501, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 509, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 501, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 509, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 501, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 509, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 501, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 509, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_grid_dimension = __pyx_t_3;
 
-  /* "pygrackle/grackle_wrapper.pyx":503
+  /* "pygrackle/grackle_wrapper.pyx":511
  *     grid_dimension = fc["density"].shape[0]
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 503, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 511, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 503, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 511, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 503, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 511, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 503, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 503, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 511, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 511, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 503, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 511, __pyx_L1_error)
   __pyx_v_ref_gs = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":504
+  /* "pygrackle/grackle_wrapper.pyx":512
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge[0] = grid_dimension -1
  *     cdef int *grid_start
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 504, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 504, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 504, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 504, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 504, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 512, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 504, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 512, __pyx_L1_error)
   __pyx_v_ref_ge = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":505
+  /* "pygrackle/grackle_wrapper.pyx":513
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1             # <<<<<<<<<<<<<<
  *     cdef int *grid_start
  *     cdef int *grid_end
  */
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 505, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 513, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 505, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 513, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":508
+  /* "pygrackle/grackle_wrapper.pyx":516
  *     cdef int *grid_start
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data             # <<<<<<<<<<<<<<
@@ -8583,7 +8758,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_grid_start = ((int *)__pyx_v_ref_gs->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":509
+  /* "pygrackle/grackle_wrapper.pyx":517
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data
  *     grid_end = <int *> ref_ge.data             # <<<<<<<<<<<<<<
@@ -8592,20 +8767,20 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_grid_end = ((int *)__pyx_v_ref_ge->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":511
+  /* "pygrackle/grackle_wrapper.pyx":519
  *     grid_end = <int *> ref_ge.data
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data             # <<<<<<<<<<<<<<
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 511, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 511, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 519, __pyx_L1_error)
   __pyx_v_chem_data = ((struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":512
+  /* "pygrackle/grackle_wrapper.pyx":520
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data             # <<<<<<<<<<<<<<
@@ -8615,7 +8790,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
   __pyx_t_5 = __pyx_v_chem_data->data;
   __pyx_v_my_chemistry = __pyx_t_5;
 
-  /* "pygrackle/grackle_wrapper.pyx":513
+  /* "pygrackle/grackle_wrapper.pyx":521
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates             # <<<<<<<<<<<<<<
@@ -8625,7 +8800,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
   __pyx_t_6 = __pyx_v_chem_data->rates;
   __pyx_v_my_rates = __pyx_t_6;
 
-  /* "pygrackle/grackle_wrapper.pyx":514
+  /* "pygrackle/grackle_wrapper.pyx":522
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units             # <<<<<<<<<<<<<<
@@ -8635,7 +8810,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
   __pyx_t_7 = __pyx_v_chem_data->units;
   __pyx_v_my_units = __pyx_t_7;
 
-  /* "pygrackle/grackle_wrapper.pyx":515
+  /* "pygrackle/grackle_wrapper.pyx":523
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")             # <<<<<<<<<<<<<<
@@ -8644,7 +8819,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":516
+  /* "pygrackle/grackle_wrapper.pyx":524
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")             # <<<<<<<<<<<<<<
@@ -8653,7 +8828,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_internal_energy = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_energy);
 
-  /* "pygrackle/grackle_wrapper.pyx":517
+  /* "pygrackle/grackle_wrapper.pyx":525
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *HI_density = get_field(fc, "HI")             # <<<<<<<<<<<<<<
@@ -8662,7 +8837,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_HI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HI);
 
-  /* "pygrackle/grackle_wrapper.pyx":518
+  /* "pygrackle/grackle_wrapper.pyx":526
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")             # <<<<<<<<<<<<<<
@@ -8671,7 +8846,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_HII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HII);
 
-  /* "pygrackle/grackle_wrapper.pyx":519
+  /* "pygrackle/grackle_wrapper.pyx":527
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")             # <<<<<<<<<<<<<<
@@ -8680,7 +8855,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_HM_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HM);
 
-  /* "pygrackle/grackle_wrapper.pyx":520
+  /* "pygrackle/grackle_wrapper.pyx":528
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")             # <<<<<<<<<<<<<<
@@ -8689,7 +8864,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_HeI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeI);
 
-  /* "pygrackle/grackle_wrapper.pyx":521
+  /* "pygrackle/grackle_wrapper.pyx":529
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")             # <<<<<<<<<<<<<<
@@ -8698,7 +8873,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_HeII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeII);
 
-  /* "pygrackle/grackle_wrapper.pyx":522
+  /* "pygrackle/grackle_wrapper.pyx":530
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")             # <<<<<<<<<<<<<<
@@ -8707,7 +8882,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_HeIII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeIII);
 
-  /* "pygrackle/grackle_wrapper.pyx":523
+  /* "pygrackle/grackle_wrapper.pyx":531
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")             # <<<<<<<<<<<<<<
@@ -8716,7 +8891,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_H2I_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2I);
 
-  /* "pygrackle/grackle_wrapper.pyx":524
+  /* "pygrackle/grackle_wrapper.pyx":532
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")             # <<<<<<<<<<<<<<
@@ -8725,7 +8900,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_H2II_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2II);
 
-  /* "pygrackle/grackle_wrapper.pyx":525
+  /* "pygrackle/grackle_wrapper.pyx":533
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")             # <<<<<<<<<<<<<<
@@ -8734,7 +8909,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_DI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DI);
 
-  /* "pygrackle/grackle_wrapper.pyx":526
+  /* "pygrackle/grackle_wrapper.pyx":534
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")             # <<<<<<<<<<<<<<
@@ -8743,7 +8918,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_DII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DII);
 
-  /* "pygrackle/grackle_wrapper.pyx":527
+  /* "pygrackle/grackle_wrapper.pyx":535
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")             # <<<<<<<<<<<<<<
@@ -8752,7 +8927,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_HDI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HDI);
 
-  /* "pygrackle/grackle_wrapper.pyx":528
+  /* "pygrackle/grackle_wrapper.pyx":536
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")             # <<<<<<<<<<<<<<
@@ -8761,7 +8936,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_Water_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Water_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":529
+  /* "pygrackle/grackle_wrapper.pyx":537
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *O_density = get_field(fc, "O_density")             # <<<<<<<<<<<<<<
@@ -8770,7 +8945,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_O_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":530
+  /* "pygrackle/grackle_wrapper.pyx":538
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")             # <<<<<<<<<<<<<<
@@ -8779,7 +8954,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_OH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":531
+  /* "pygrackle/grackle_wrapper.pyx":539
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")             # <<<<<<<<<<<<<<
@@ -8788,7 +8963,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_O2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":532
+  /* "pygrackle/grackle_wrapper.pyx":540
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")             # <<<<<<<<<<<<<<
@@ -8797,7 +8972,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":533
+  /* "pygrackle/grackle_wrapper.pyx":541
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")             # <<<<<<<<<<<<<<
@@ -8806,7 +8981,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_OHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":534
+  /* "pygrackle/grackle_wrapper.pyx":542
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")             # <<<<<<<<<<<<<<
@@ -8815,7 +8990,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_H2Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":535
+  /* "pygrackle/grackle_wrapper.pyx":543
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")             # <<<<<<<<<<<<<<
@@ -8824,7 +8999,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_H3Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":536
+  /* "pygrackle/grackle_wrapper.pyx":544
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")             # <<<<<<<<<<<<<<
@@ -8833,7 +9008,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_O2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":537
+  /* "pygrackle/grackle_wrapper.pyx":545
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")             # <<<<<<<<<<<<<<
@@ -8842,7 +9017,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_Cplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Cplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":538
+  /* "pygrackle/grackle_wrapper.pyx":546
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")             # <<<<<<<<<<<<<<
@@ -8851,7 +9026,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_C_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_C_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":539
+  /* "pygrackle/grackle_wrapper.pyx":547
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")             # <<<<<<<<<<<<<<
@@ -8860,7 +9035,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":540
+  /* "pygrackle/grackle_wrapper.pyx":548
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")             # <<<<<<<<<<<<<<
@@ -8869,7 +9044,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CH2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":541
+  /* "pygrackle/grackle_wrapper.pyx":549
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")             # <<<<<<<<<<<<<<
@@ -8878,7 +9053,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CH3_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH3_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":542
+  /* "pygrackle/grackle_wrapper.pyx":550
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")             # <<<<<<<<<<<<<<
@@ -8887,7 +9062,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CH4_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH4_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":543
+  /* "pygrackle/grackle_wrapper.pyx":551
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")             # <<<<<<<<<<<<<<
@@ -8896,7 +9071,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CO_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":544
+  /* "pygrackle/grackle_wrapper.pyx":552
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")             # <<<<<<<<<<<<<<
@@ -8905,7 +9080,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_COplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_COplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":545
+  /* "pygrackle/grackle_wrapper.pyx":553
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")             # <<<<<<<<<<<<<<
@@ -8914,7 +9089,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CO2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":546
+  /* "pygrackle/grackle_wrapper.pyx":554
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")             # <<<<<<<<<<<<<<
@@ -8923,7 +9098,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":547
+  /* "pygrackle/grackle_wrapper.pyx":555
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")             # <<<<<<<<<<<<<<
@@ -8932,7 +9107,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_CH2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":548
+  /* "pygrackle/grackle_wrapper.pyx":556
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")             # <<<<<<<<<<<<<<
@@ -8941,7 +9116,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_H3plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":549
+  /* "pygrackle/grackle_wrapper.pyx":557
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *e_density = get_field(fc, "de")             # <<<<<<<<<<<<<<
@@ -8950,7 +9125,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_e_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_de);
 
-  /* "pygrackle/grackle_wrapper.pyx":550
+  /* "pygrackle/grackle_wrapper.pyx":558
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")             # <<<<<<<<<<<<<<
@@ -8959,7 +9134,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_metal_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_metal);
 
-  /* "pygrackle/grackle_wrapper.pyx":551
+  /* "pygrackle/grackle_wrapper.pyx":559
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")
  *     cdef gr_float *gamma = get_field(fc, "gamma")             # <<<<<<<<<<<<<<
@@ -8968,7 +9143,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   __pyx_v_gamma = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_gamma);
 
-  /* "pygrackle/grackle_wrapper.pyx":553
+  /* "pygrackle/grackle_wrapper.pyx":561
  *     cdef gr_float *gamma = get_field(fc, "gamma")
  * 
  *     c_calculate_gamma (             # <<<<<<<<<<<<<<
@@ -8977,7 +9152,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
  */
   (void)(_calculate_gamma((&__pyx_v_my_chemistry), (&__pyx_v_my_rates), (&__pyx_v_my_units), __pyx_v_grid_rank, (&__pyx_v_grid_dimension), __pyx_v_grid_start, __pyx_v_grid_end, __pyx_v_density, __pyx_v_internal_energy, __pyx_v_HI_density, __pyx_v_HII_density, __pyx_v_HM_density, __pyx_v_HeI_density, __pyx_v_HeII_density, __pyx_v_HeIII_density, __pyx_v_H2I_density, __pyx_v_H2II_density, __pyx_v_DI_density, __pyx_v_DII_density, __pyx_v_HDI_density, __pyx_v_Water_density, __pyx_v_O_density, __pyx_v_OH_density, __pyx_v_O2_density, __pyx_v_Oplus_density, __pyx_v_OHplus_density, __pyx_v_H2Oplus_density, __pyx_v_H3Oplus_density, __pyx_v_O2plus_density, __pyx_v_Cplus_density, __pyx_v_C_density, __pyx_v_CH_density, __pyx_v_CH2_density, __pyx_v_CH3_density, __pyx_v_CH4_density, __pyx_v_CO_density, __pyx_v_COplus_density, __pyx_v_CO2_density, __pyx_v_CHplus_density, __pyx_v_CH2plus_density, __pyx_v_H3plus_density, __pyx_v_e_density, __pyx_v_metal_density, __pyx_v_gamma));
 
-  /* "pygrackle/grackle_wrapper.pyx":498
+  /* "pygrackle/grackle_wrapper.pyx":506
  *                 specific_heating_rate)
  * 
  * def calculate_gamma(fc):             # <<<<<<<<<<<<<<
@@ -9003,7 +9178,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_4calculate_gamma(CYTHON_U
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":599
+/* "pygrackle/grackle_wrapper.pyx":607
  *                 gamma)
  * 
  * def calculate_pressure(fc):             # <<<<<<<<<<<<<<
@@ -9084,7 +9259,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
   code_units __pyx_t_7;
   __Pyx_RefNannySetupContext("calculate_pressure", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":600
+  /* "pygrackle/grackle_wrapper.pyx":608
  * 
  * def calculate_pressure(fc):
  *     cdef int grid_rank = 1             # <<<<<<<<<<<<<<
@@ -9093,84 +9268,84 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_grid_rank = 1;
 
-  /* "pygrackle/grackle_wrapper.pyx":602
+  /* "pygrackle/grackle_wrapper.pyx":610
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  *     grid_dimension = fc["density"].shape[0]             # <<<<<<<<<<<<<<
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 602, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 610, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 602, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 610, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 602, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 610, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 602, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 610, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_grid_dimension = __pyx_t_3;
 
-  /* "pygrackle/grackle_wrapper.pyx":604
+  /* "pygrackle/grackle_wrapper.pyx":612
  *     grid_dimension = fc["density"].shape[0]
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 604, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 612, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 604, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 612, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 604, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 612, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 604, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 604, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 612, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 612, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 604, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 612, __pyx_L1_error)
   __pyx_v_ref_gs = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":605
+  /* "pygrackle/grackle_wrapper.pyx":613
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge[0] = grid_dimension -1
  *     cdef int *grid_start
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 605, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 613, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 605, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 613, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 605, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 613, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 605, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 605, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 613, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 613, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 605, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 613, __pyx_L1_error)
   __pyx_v_ref_ge = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":606
+  /* "pygrackle/grackle_wrapper.pyx":614
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1             # <<<<<<<<<<<<<<
  *     cdef int *grid_start
  *     cdef int *grid_end
  */
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 606, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 614, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 606, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 614, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":609
+  /* "pygrackle/grackle_wrapper.pyx":617
  *     cdef int *grid_start
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data             # <<<<<<<<<<<<<<
@@ -9179,7 +9354,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_grid_start = ((int *)__pyx_v_ref_gs->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":610
+  /* "pygrackle/grackle_wrapper.pyx":618
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data
  *     grid_end = <int *> ref_ge.data             # <<<<<<<<<<<<<<
@@ -9188,20 +9363,20 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_grid_end = ((int *)__pyx_v_ref_ge->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":612
+  /* "pygrackle/grackle_wrapper.pyx":620
  *     grid_end = <int *> ref_ge.data
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data             # <<<<<<<<<<<<<<
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 612, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 620, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 612, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 620, __pyx_L1_error)
   __pyx_v_chem_data = ((struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":613
+  /* "pygrackle/grackle_wrapper.pyx":621
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data             # <<<<<<<<<<<<<<
@@ -9211,7 +9386,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
   __pyx_t_5 = __pyx_v_chem_data->data;
   __pyx_v_my_chemistry = __pyx_t_5;
 
-  /* "pygrackle/grackle_wrapper.pyx":614
+  /* "pygrackle/grackle_wrapper.pyx":622
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates             # <<<<<<<<<<<<<<
@@ -9221,7 +9396,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
   __pyx_t_6 = __pyx_v_chem_data->rates;
   __pyx_v_my_rates = __pyx_t_6;
 
-  /* "pygrackle/grackle_wrapper.pyx":615
+  /* "pygrackle/grackle_wrapper.pyx":623
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units             # <<<<<<<<<<<<<<
@@ -9231,7 +9406,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
   __pyx_t_7 = __pyx_v_chem_data->units;
   __pyx_v_my_units = __pyx_t_7;
 
-  /* "pygrackle/grackle_wrapper.pyx":616
+  /* "pygrackle/grackle_wrapper.pyx":624
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")             # <<<<<<<<<<<<<<
@@ -9240,7 +9415,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":617
+  /* "pygrackle/grackle_wrapper.pyx":625
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")             # <<<<<<<<<<<<<<
@@ -9249,7 +9424,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_internal_energy = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_energy);
 
-  /* "pygrackle/grackle_wrapper.pyx":618
+  /* "pygrackle/grackle_wrapper.pyx":626
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *HI_density = get_field(fc, "HI")             # <<<<<<<<<<<<<<
@@ -9258,7 +9433,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_HI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HI);
 
-  /* "pygrackle/grackle_wrapper.pyx":619
+  /* "pygrackle/grackle_wrapper.pyx":627
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")             # <<<<<<<<<<<<<<
@@ -9267,7 +9442,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_HII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HII);
 
-  /* "pygrackle/grackle_wrapper.pyx":620
+  /* "pygrackle/grackle_wrapper.pyx":628
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")             # <<<<<<<<<<<<<<
@@ -9276,7 +9451,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_HM_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HM);
 
-  /* "pygrackle/grackle_wrapper.pyx":621
+  /* "pygrackle/grackle_wrapper.pyx":629
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")             # <<<<<<<<<<<<<<
@@ -9285,7 +9460,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_HeI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeI);
 
-  /* "pygrackle/grackle_wrapper.pyx":622
+  /* "pygrackle/grackle_wrapper.pyx":630
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")             # <<<<<<<<<<<<<<
@@ -9294,7 +9469,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_HeII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeII);
 
-  /* "pygrackle/grackle_wrapper.pyx":623
+  /* "pygrackle/grackle_wrapper.pyx":631
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")             # <<<<<<<<<<<<<<
@@ -9303,7 +9478,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_HeIII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeIII);
 
-  /* "pygrackle/grackle_wrapper.pyx":624
+  /* "pygrackle/grackle_wrapper.pyx":632
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")             # <<<<<<<<<<<<<<
@@ -9312,7 +9487,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_H2I_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2I);
 
-  /* "pygrackle/grackle_wrapper.pyx":625
+  /* "pygrackle/grackle_wrapper.pyx":633
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")             # <<<<<<<<<<<<<<
@@ -9321,7 +9496,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_H2II_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2II);
 
-  /* "pygrackle/grackle_wrapper.pyx":626
+  /* "pygrackle/grackle_wrapper.pyx":634
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")             # <<<<<<<<<<<<<<
@@ -9330,7 +9505,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_DI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DI);
 
-  /* "pygrackle/grackle_wrapper.pyx":627
+  /* "pygrackle/grackle_wrapper.pyx":635
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")             # <<<<<<<<<<<<<<
@@ -9339,7 +9514,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_DII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DII);
 
-  /* "pygrackle/grackle_wrapper.pyx":628
+  /* "pygrackle/grackle_wrapper.pyx":636
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")             # <<<<<<<<<<<<<<
@@ -9348,7 +9523,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_HDI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HDI);
 
-  /* "pygrackle/grackle_wrapper.pyx":629
+  /* "pygrackle/grackle_wrapper.pyx":637
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")             # <<<<<<<<<<<<<<
@@ -9357,7 +9532,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_Water_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Water_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":630
+  /* "pygrackle/grackle_wrapper.pyx":638
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *O_density = get_field(fc, "O_density")             # <<<<<<<<<<<<<<
@@ -9366,7 +9541,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_O_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":631
+  /* "pygrackle/grackle_wrapper.pyx":639
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")             # <<<<<<<<<<<<<<
@@ -9375,7 +9550,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_OH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":632
+  /* "pygrackle/grackle_wrapper.pyx":640
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")             # <<<<<<<<<<<<<<
@@ -9384,7 +9559,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_O2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":633
+  /* "pygrackle/grackle_wrapper.pyx":641
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")             # <<<<<<<<<<<<<<
@@ -9393,7 +9568,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":634
+  /* "pygrackle/grackle_wrapper.pyx":642
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")             # <<<<<<<<<<<<<<
@@ -9402,7 +9577,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_OHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":635
+  /* "pygrackle/grackle_wrapper.pyx":643
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")             # <<<<<<<<<<<<<<
@@ -9411,7 +9586,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_H2Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":636
+  /* "pygrackle/grackle_wrapper.pyx":644
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")             # <<<<<<<<<<<<<<
@@ -9420,7 +9595,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_H3Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":637
+  /* "pygrackle/grackle_wrapper.pyx":645
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")             # <<<<<<<<<<<<<<
@@ -9429,7 +9604,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_O2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":638
+  /* "pygrackle/grackle_wrapper.pyx":646
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")             # <<<<<<<<<<<<<<
@@ -9438,7 +9613,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_Cplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Cplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":639
+  /* "pygrackle/grackle_wrapper.pyx":647
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")             # <<<<<<<<<<<<<<
@@ -9447,7 +9622,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_C_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_C_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":640
+  /* "pygrackle/grackle_wrapper.pyx":648
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")             # <<<<<<<<<<<<<<
@@ -9456,7 +9631,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":641
+  /* "pygrackle/grackle_wrapper.pyx":649
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")             # <<<<<<<<<<<<<<
@@ -9465,7 +9640,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CH2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":642
+  /* "pygrackle/grackle_wrapper.pyx":650
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")             # <<<<<<<<<<<<<<
@@ -9474,7 +9649,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CH3_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH3_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":643
+  /* "pygrackle/grackle_wrapper.pyx":651
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")             # <<<<<<<<<<<<<<
@@ -9483,7 +9658,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CH4_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH4_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":644
+  /* "pygrackle/grackle_wrapper.pyx":652
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")             # <<<<<<<<<<<<<<
@@ -9492,7 +9667,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CO_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":645
+  /* "pygrackle/grackle_wrapper.pyx":653
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")             # <<<<<<<<<<<<<<
@@ -9501,7 +9676,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_COplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_COplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":646
+  /* "pygrackle/grackle_wrapper.pyx":654
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")             # <<<<<<<<<<<<<<
@@ -9510,7 +9685,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CO2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":647
+  /* "pygrackle/grackle_wrapper.pyx":655
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")             # <<<<<<<<<<<<<<
@@ -9519,7 +9694,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":648
+  /* "pygrackle/grackle_wrapper.pyx":656
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")             # <<<<<<<<<<<<<<
@@ -9528,7 +9703,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_CH2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":649
+  /* "pygrackle/grackle_wrapper.pyx":657
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")             # <<<<<<<<<<<<<<
@@ -9537,7 +9712,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_H3plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":650
+  /* "pygrackle/grackle_wrapper.pyx":658
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *e_density = get_field(fc, "de")             # <<<<<<<<<<<<<<
@@ -9546,7 +9721,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_e_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_de);
 
-  /* "pygrackle/grackle_wrapper.pyx":651
+  /* "pygrackle/grackle_wrapper.pyx":659
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")             # <<<<<<<<<<<<<<
@@ -9555,7 +9730,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_metal_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_metal);
 
-  /* "pygrackle/grackle_wrapper.pyx":652
+  /* "pygrackle/grackle_wrapper.pyx":660
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")
  *     cdef gr_float *pressure = get_field(fc, "pressure")             # <<<<<<<<<<<<<<
@@ -9564,7 +9739,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   __pyx_v_pressure = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_pressure);
 
-  /* "pygrackle/grackle_wrapper.pyx":654
+  /* "pygrackle/grackle_wrapper.pyx":662
  *     cdef gr_float *pressure = get_field(fc, "pressure")
  * 
  *     c_calculate_pressure (             # <<<<<<<<<<<<<<
@@ -9573,7 +9748,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
  */
   (void)(_calculate_pressure((&__pyx_v_my_chemistry), (&__pyx_v_my_rates), (&__pyx_v_my_units), __pyx_v_grid_rank, (&__pyx_v_grid_dimension), __pyx_v_grid_start, __pyx_v_grid_end, __pyx_v_density, __pyx_v_internal_energy, __pyx_v_HI_density, __pyx_v_HII_density, __pyx_v_HM_density, __pyx_v_HeI_density, __pyx_v_HeII_density, __pyx_v_HeIII_density, __pyx_v_H2I_density, __pyx_v_H2II_density, __pyx_v_DI_density, __pyx_v_DII_density, __pyx_v_HDI_density, __pyx_v_Water_density, __pyx_v_O_density, __pyx_v_OH_density, __pyx_v_O2_density, __pyx_v_Oplus_density, __pyx_v_OHplus_density, __pyx_v_H2Oplus_density, __pyx_v_H3Oplus_density, __pyx_v_O2plus_density, __pyx_v_Cplus_density, __pyx_v_C_density, __pyx_v_CH_density, __pyx_v_CH2_density, __pyx_v_CH3_density, __pyx_v_CH4_density, __pyx_v_CO_density, __pyx_v_COplus_density, __pyx_v_CO2_density, __pyx_v_CHplus_density, __pyx_v_CH2plus_density, __pyx_v_H3plus_density, __pyx_v_e_density, __pyx_v_metal_density, __pyx_v_pressure));
 
-  /* "pygrackle/grackle_wrapper.pyx":599
+  /* "pygrackle/grackle_wrapper.pyx":607
  *                 gamma)
  * 
  * def calculate_pressure(fc):             # <<<<<<<<<<<<<<
@@ -9599,7 +9774,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_6calculate_pressure(CYTHO
   return __pyx_r;
 }
 
-/* "pygrackle/grackle_wrapper.pyx":700
+/* "pygrackle/grackle_wrapper.pyx":708
  *                 pressure)
  * 
  * def calculate_temperature(fc):             # <<<<<<<<<<<<<<
@@ -9680,7 +9855,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
   code_units __pyx_t_7;
   __Pyx_RefNannySetupContext("calculate_temperature", 0);
 
-  /* "pygrackle/grackle_wrapper.pyx":701
+  /* "pygrackle/grackle_wrapper.pyx":709
  * 
  * def calculate_temperature(fc):
  *     cdef int grid_rank = 1             # <<<<<<<<<<<<<<
@@ -9689,84 +9864,84 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_grid_rank = 1;
 
-  /* "pygrackle/grackle_wrapper.pyx":703
+  /* "pygrackle/grackle_wrapper.pyx":711
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  *     grid_dimension = fc["density"].shape[0]             # <<<<<<<<<<<<<<
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 703, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_fc, __pyx_n_s_density); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 711, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 703, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 711, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 703, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 711, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 703, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 711, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_grid_dimension = __pyx_t_3;
 
-  /* "pygrackle/grackle_wrapper.pyx":705
+  /* "pygrackle/grackle_wrapper.pyx":713
  *     grid_dimension = fc["density"].shape[0]
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 705, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 713, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 705, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 713, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 705, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 713, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 705, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 705, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 713, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 713, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 705, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 713, __pyx_L1_error)
   __pyx_v_ref_gs = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":706
+  /* "pygrackle/grackle_wrapper.pyx":714
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge[0] = grid_dimension -1
  *     cdef int *grid_start
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 706, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 706, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 706, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 706, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 706, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_n_s_int64) < 0) __PYX_ERR(0, 714, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 706, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 714, __pyx_L1_error)
   __pyx_v_ref_ge = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":707
+  /* "pygrackle/grackle_wrapper.pyx":715
  *     ref_gs = np.zeros(3, dtype="int64")
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension -1             # <<<<<<<<<<<<<<
  *     cdef int *grid_start
  *     cdef int *grid_end
  */
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 707, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_grid_dimension - 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 715, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 707, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_ref_ge), 0, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 715, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":710
+  /* "pygrackle/grackle_wrapper.pyx":718
  *     cdef int *grid_start
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data             # <<<<<<<<<<<<<<
@@ -9775,7 +9950,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_grid_start = ((int *)__pyx_v_ref_gs->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":711
+  /* "pygrackle/grackle_wrapper.pyx":719
  *     cdef int *grid_end
  *     grid_start = <int *> ref_gs.data
  *     grid_end = <int *> ref_ge.data             # <<<<<<<<<<<<<<
@@ -9784,20 +9959,20 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_grid_end = ((int *)__pyx_v_ref_ge->data);
 
-  /* "pygrackle/grackle_wrapper.pyx":713
+  /* "pygrackle/grackle_wrapper.pyx":721
  *     grid_end = <int *> ref_ge.data
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data             # <<<<<<<<<<<<<<
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 713, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_fc, __pyx_n_s_chemistry_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 721, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 713, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_9pygrackle_15grackle_wrapper_chemistry_data))))) __PYX_ERR(0, 721, __pyx_L1_error)
   __pyx_v_chem_data = ((struct __pyx_obj_9pygrackle_15grackle_wrapper_chemistry_data *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":714
+  /* "pygrackle/grackle_wrapper.pyx":722
  * 
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data             # <<<<<<<<<<<<<<
@@ -9807,7 +9982,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
   __pyx_t_5 = __pyx_v_chem_data->data;
   __pyx_v_my_chemistry = __pyx_t_5;
 
-  /* "pygrackle/grackle_wrapper.pyx":715
+  /* "pygrackle/grackle_wrapper.pyx":723
  *     cdef chemistry_data chem_data = fc.chemistry_data
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates             # <<<<<<<<<<<<<<
@@ -9817,7 +9992,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
   __pyx_t_6 = __pyx_v_chem_data->rates;
   __pyx_v_my_rates = __pyx_t_6;
 
-  /* "pygrackle/grackle_wrapper.pyx":716
+  /* "pygrackle/grackle_wrapper.pyx":724
  *     cdef c_chemistry_data my_chemistry = chem_data.data
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units             # <<<<<<<<<<<<<<
@@ -9827,7 +10002,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
   __pyx_t_7 = __pyx_v_chem_data->units;
   __pyx_v_my_units = __pyx_t_7;
 
-  /* "pygrackle/grackle_wrapper.pyx":717
+  /* "pygrackle/grackle_wrapper.pyx":725
  *     cdef c_chemistry_data_storage my_rates = chem_data.rates
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")             # <<<<<<<<<<<<<<
@@ -9836,7 +10011,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":718
+  /* "pygrackle/grackle_wrapper.pyx":726
  *     cdef c_code_units my_units = chem_data.units
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")             # <<<<<<<<<<<<<<
@@ -9845,7 +10020,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_internal_energy = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_energy);
 
-  /* "pygrackle/grackle_wrapper.pyx":719
+  /* "pygrackle/grackle_wrapper.pyx":727
  *     cdef gr_float *density = get_field(fc, "density")
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *HI_density = get_field(fc, "HI")             # <<<<<<<<<<<<<<
@@ -9854,7 +10029,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_HI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HI);
 
-  /* "pygrackle/grackle_wrapper.pyx":720
+  /* "pygrackle/grackle_wrapper.pyx":728
  *     cdef gr_float *internal_energy = get_field(fc, "energy")
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")             # <<<<<<<<<<<<<<
@@ -9863,7 +10038,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_HII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HII);
 
-  /* "pygrackle/grackle_wrapper.pyx":721
+  /* "pygrackle/grackle_wrapper.pyx":729
  *     cdef gr_float *HI_density = get_field(fc, "HI")
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")             # <<<<<<<<<<<<<<
@@ -9872,7 +10047,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_HM_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HM);
 
-  /* "pygrackle/grackle_wrapper.pyx":722
+  /* "pygrackle/grackle_wrapper.pyx":730
  *     cdef gr_float *HII_density = get_field(fc, "HII")
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")             # <<<<<<<<<<<<<<
@@ -9881,7 +10056,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_HeI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeI);
 
-  /* "pygrackle/grackle_wrapper.pyx":723
+  /* "pygrackle/grackle_wrapper.pyx":731
  *     cdef gr_float *HM_density = get_field(fc, "HM")
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")             # <<<<<<<<<<<<<<
@@ -9890,7 +10065,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_HeII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeII);
 
-  /* "pygrackle/grackle_wrapper.pyx":724
+  /* "pygrackle/grackle_wrapper.pyx":732
  *     cdef gr_float *HeI_density = get_field(fc, "HeI")
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")             # <<<<<<<<<<<<<<
@@ -9899,7 +10074,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_HeIII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HeIII);
 
-  /* "pygrackle/grackle_wrapper.pyx":725
+  /* "pygrackle/grackle_wrapper.pyx":733
  *     cdef gr_float *HeII_density = get_field(fc, "HeII")
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")             # <<<<<<<<<<<<<<
@@ -9908,7 +10083,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_H2I_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2I);
 
-  /* "pygrackle/grackle_wrapper.pyx":726
+  /* "pygrackle/grackle_wrapper.pyx":734
  *     cdef gr_float *HeIII_density = get_field(fc, "HeIII")
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")             # <<<<<<<<<<<<<<
@@ -9917,7 +10092,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_H2II_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2II);
 
-  /* "pygrackle/grackle_wrapper.pyx":727
+  /* "pygrackle/grackle_wrapper.pyx":735
  *     cdef gr_float *H2I_density = get_field(fc, "H2I")
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")             # <<<<<<<<<<<<<<
@@ -9926,7 +10101,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_DI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DI);
 
-  /* "pygrackle/grackle_wrapper.pyx":728
+  /* "pygrackle/grackle_wrapper.pyx":736
  *     cdef gr_float *H2II_density = get_field(fc, "H2II")
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")             # <<<<<<<<<<<<<<
@@ -9935,7 +10110,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_DII_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_DII);
 
-  /* "pygrackle/grackle_wrapper.pyx":729
+  /* "pygrackle/grackle_wrapper.pyx":737
  *     cdef gr_float *DI_density = get_field(fc, "DI")
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")             # <<<<<<<<<<<<<<
@@ -9944,7 +10119,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_HDI_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_HDI);
 
-  /* "pygrackle/grackle_wrapper.pyx":730
+  /* "pygrackle/grackle_wrapper.pyx":738
  *     cdef gr_float *DII_density = get_field(fc, "DII")
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")             # <<<<<<<<<<<<<<
@@ -9953,7 +10128,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_Water_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Water_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":731
+  /* "pygrackle/grackle_wrapper.pyx":739
  *     cdef gr_float *HDI_density = get_field(fc, "HDI")
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *O_density = get_field(fc, "O_density")             # <<<<<<<<<<<<<<
@@ -9962,7 +10137,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_O_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":732
+  /* "pygrackle/grackle_wrapper.pyx":740
  *     cdef gr_float *Water_density = get_field(fc, "Water_density")
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")             # <<<<<<<<<<<<<<
@@ -9971,7 +10146,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_OH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":733
+  /* "pygrackle/grackle_wrapper.pyx":741
  *     cdef gr_float *O_density = get_field(fc, "O_density")
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")             # <<<<<<<<<<<<<<
@@ -9980,7 +10155,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_O2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":734
+  /* "pygrackle/grackle_wrapper.pyx":742
  *     cdef gr_float *OH_density = get_field(fc, "OH_density")
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")             # <<<<<<<<<<<<<<
@@ -9989,7 +10164,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":735
+  /* "pygrackle/grackle_wrapper.pyx":743
  *     cdef gr_float *O2_density = get_field(fc, "O2_density")
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")             # <<<<<<<<<<<<<<
@@ -9998,7 +10173,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_OHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_OHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":736
+  /* "pygrackle/grackle_wrapper.pyx":744
  *     cdef gr_float *Oplus_density = get_field(fc, "Oplus_density")
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")             # <<<<<<<<<<<<<<
@@ -10007,7 +10182,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_H2Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H2Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":737
+  /* "pygrackle/grackle_wrapper.pyx":745
  *     cdef gr_float *OHplus_density = get_field(fc, "OHplus_density")
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")             # <<<<<<<<<<<<<<
@@ -10016,7 +10191,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_H3Oplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3Oplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":738
+  /* "pygrackle/grackle_wrapper.pyx":746
  *     cdef gr_float *H2Oplus_density = get_field(fc, "H2Oplus_density")
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")             # <<<<<<<<<<<<<<
@@ -10025,7 +10200,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_O2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_O2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":739
+  /* "pygrackle/grackle_wrapper.pyx":747
  *     cdef gr_float *H3Oplus_density = get_field(fc, "H3Oplus_density")
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")             # <<<<<<<<<<<<<<
@@ -10034,7 +10209,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_Cplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_Cplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":740
+  /* "pygrackle/grackle_wrapper.pyx":748
  *     cdef gr_float *O2plus_density = get_field(fc, "O2plus_density")
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")             # <<<<<<<<<<<<<<
@@ -10043,7 +10218,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_C_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_C_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":741
+  /* "pygrackle/grackle_wrapper.pyx":749
  *     cdef gr_float *Cplus_density = get_field(fc, "Cplus_density")
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")             # <<<<<<<<<<<<<<
@@ -10052,7 +10227,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CH_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":742
+  /* "pygrackle/grackle_wrapper.pyx":750
  *     cdef gr_float *C_density = get_field(fc, "C_density")
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")             # <<<<<<<<<<<<<<
@@ -10061,7 +10236,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CH2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":743
+  /* "pygrackle/grackle_wrapper.pyx":751
  *     cdef gr_float *CH_density = get_field(fc, "CH_density")
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")             # <<<<<<<<<<<<<<
@@ -10070,7 +10245,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CH3_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH3_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":744
+  /* "pygrackle/grackle_wrapper.pyx":752
  *     cdef gr_float *CH2_density = get_field(fc, "CH2_density")
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")             # <<<<<<<<<<<<<<
@@ -10079,7 +10254,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CH4_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH4_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":745
+  /* "pygrackle/grackle_wrapper.pyx":753
  *     cdef gr_float *CH3_density = get_field(fc, "CH3_density")
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")             # <<<<<<<<<<<<<<
@@ -10088,7 +10263,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CO_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":746
+  /* "pygrackle/grackle_wrapper.pyx":754
  *     cdef gr_float *CH4_density = get_field(fc, "CH4_density")
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")             # <<<<<<<<<<<<<<
@@ -10097,7 +10272,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_COplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_COplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":747
+  /* "pygrackle/grackle_wrapper.pyx":755
  *     cdef gr_float *CO_density = get_field(fc, "CO_density")
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")             # <<<<<<<<<<<<<<
@@ -10106,7 +10281,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CO2_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CO2_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":748
+  /* "pygrackle/grackle_wrapper.pyx":756
  *     cdef gr_float *COplus_density = get_field(fc, "COplus_density")
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")             # <<<<<<<<<<<<<<
@@ -10115,7 +10290,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CHplus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CHplus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":749
+  /* "pygrackle/grackle_wrapper.pyx":757
  *     cdef gr_float *CO2_density = get_field(fc, "CO2_density")
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")             # <<<<<<<<<<<<<<
@@ -10124,7 +10299,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_CH2plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_CH2plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":750
+  /* "pygrackle/grackle_wrapper.pyx":758
  *     cdef gr_float *CHplus_density = get_field(fc, "CHplus_density")
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")             # <<<<<<<<<<<<<<
@@ -10133,7 +10308,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_H3plus_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_H3plus_density);
 
-  /* "pygrackle/grackle_wrapper.pyx":751
+  /* "pygrackle/grackle_wrapper.pyx":759
  *     cdef gr_float *CH2plus_density = get_field(fc, "CH2plus_density")
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *e_density = get_field(fc, "de")             # <<<<<<<<<<<<<<
@@ -10142,7 +10317,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_e_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_de);
 
-  /* "pygrackle/grackle_wrapper.pyx":752
+  /* "pygrackle/grackle_wrapper.pyx":760
  *     cdef gr_float *H3plus_density = get_field(fc, "H3plus_density")
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")             # <<<<<<<<<<<<<<
@@ -10151,7 +10326,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_metal_density = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_metal);
 
-  /* "pygrackle/grackle_wrapper.pyx":753
+  /* "pygrackle/grackle_wrapper.pyx":761
  *     cdef gr_float *e_density = get_field(fc, "de")
  *     cdef gr_float *metal_density = get_field(fc, "metal")
  *     cdef gr_float *temperature = get_field(fc, "temperature")             # <<<<<<<<<<<<<<
@@ -10160,7 +10335,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   __pyx_v_temperature = __pyx_f_9pygrackle_15grackle_wrapper_get_field(__pyx_v_fc, __pyx_n_s_temperature);
 
-  /* "pygrackle/grackle_wrapper.pyx":755
+  /* "pygrackle/grackle_wrapper.pyx":763
  *     cdef gr_float *temperature = get_field(fc, "temperature")
  * 
  *     c_calculate_temperature(             # <<<<<<<<<<<<<<
@@ -10169,7 +10344,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
  */
   (void)(_calculate_temperature((&__pyx_v_my_chemistry), (&__pyx_v_my_rates), (&__pyx_v_my_units), __pyx_v_grid_rank, (&__pyx_v_grid_dimension), __pyx_v_grid_start, __pyx_v_grid_end, __pyx_v_density, __pyx_v_internal_energy, __pyx_v_HI_density, __pyx_v_HII_density, __pyx_v_HM_density, __pyx_v_HeI_density, __pyx_v_HeII_density, __pyx_v_HeIII_density, __pyx_v_H2I_density, __pyx_v_H2II_density, __pyx_v_DI_density, __pyx_v_DII_density, __pyx_v_HDI_density, __pyx_v_Water_density, __pyx_v_O_density, __pyx_v_OH_density, __pyx_v_O2_density, __pyx_v_Oplus_density, __pyx_v_OHplus_density, __pyx_v_H2Oplus_density, __pyx_v_H3Oplus_density, __pyx_v_O2plus_density, __pyx_v_Cplus_density, __pyx_v_C_density, __pyx_v_CH_density, __pyx_v_CH2_density, __pyx_v_CH3_density, __pyx_v_CH4_density, __pyx_v_CO_density, __pyx_v_COplus_density, __pyx_v_CO2_density, __pyx_v_CHplus_density, __pyx_v_CH2plus_density, __pyx_v_H3plus_density, __pyx_v_e_density, __pyx_v_metal_density, __pyx_v_temperature));
 
-  /* "pygrackle/grackle_wrapper.pyx":700
+  /* "pygrackle/grackle_wrapper.pyx":708
  *                 pressure)
  * 
  * def calculate_temperature(fc):             # <<<<<<<<<<<<<<
@@ -10195,7 +10370,7 @@ static PyObject *__pyx_pf_9pygrackle_15grackle_wrapper_8calculate_temperature(CY
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -10244,7 +10419,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_info->obj = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(__pyx_v_info->obj);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":265
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":265
  * 
  *             cdef int i, ndim
  *             cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -10253,7 +10428,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":266
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":266
  *             cdef int i, ndim
  *             cdef int endian_detector = 1
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -10262,7 +10437,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":268
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":268
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)
  * 
  *             ndim = PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -10271,7 +10446,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_ndim = PyArray_NDIM(__pyx_v_self);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10285,7 +10460,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L4_bool_binop_done;
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":271
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":271
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_C_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -10296,7 +10471,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L4_bool_binop_done:;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10305,7 +10480,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
@@ -10318,7 +10493,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(2, 272, __pyx_L1_error)
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10327,7 +10502,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10341,7 +10516,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L7_bool_binop_done;
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":275
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":275
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_F_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -10352,7 +10527,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L7_bool_binop_done:;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10361,7 +10536,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
@@ -10374,7 +10549,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(2, 276, __pyx_L1_error)
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10383,7 +10558,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":278
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":278
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
  * 
  *             info.buf = PyArray_DATA(self)             # <<<<<<<<<<<<<<
@@ -10392,7 +10567,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->buf = PyArray_DATA(__pyx_v_self);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":279
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":279
  * 
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim             # <<<<<<<<<<<<<<
@@ -10401,7 +10576,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->ndim = __pyx_v_ndim;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -10411,7 +10586,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":283
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":283
  *                 # Allocate new buffer for strides and shape info.
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)             # <<<<<<<<<<<<<<
@@ -10420,7 +10595,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->strides = ((Py_ssize_t *)PyObject_Malloc((((sizeof(Py_ssize_t)) * 2) * ((size_t)__pyx_v_ndim))));
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":284
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":284
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim             # <<<<<<<<<<<<<<
@@ -10429,7 +10604,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->shape = (__pyx_v_info->strides + __pyx_v_ndim);
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":285
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":285
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):             # <<<<<<<<<<<<<<
@@ -10441,7 +10616,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
       __pyx_v_i = __pyx_t_6;
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":286
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":286
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]             # <<<<<<<<<<<<<<
@@ -10450,7 +10625,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
       (__pyx_v_info->strides[__pyx_v_i]) = (PyArray_STRIDES(__pyx_v_self)[__pyx_v_i]);
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":287
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":287
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]
  *                     info.shape[i] = PyArray_DIMS(self)[i]             # <<<<<<<<<<<<<<
@@ -10460,7 +10635,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       (__pyx_v_info->shape[__pyx_v_i]) = (PyArray_DIMS(__pyx_v_self)[__pyx_v_i]);
     }
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":280
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -10470,7 +10645,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L9;
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":289
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":289
  *                     info.shape[i] = PyArray_DIMS(self)[i]
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -10480,7 +10655,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->strides = ((Py_ssize_t *)PyArray_STRIDES(__pyx_v_self));
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":290
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":290
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -10491,7 +10666,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   }
   __pyx_L9:;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":291
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":291
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL             # <<<<<<<<<<<<<<
@@ -10500,7 +10675,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->suboffsets = NULL;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":292
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":292
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)             # <<<<<<<<<<<<<<
@@ -10509,7 +10684,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->itemsize = PyArray_ITEMSIZE(__pyx_v_self);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":293
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":293
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)
  *             info.readonly = not PyArray_ISWRITEABLE(self)             # <<<<<<<<<<<<<<
@@ -10518,7 +10693,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->readonly = (!(PyArray_ISWRITEABLE(__pyx_v_self) != 0));
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":296
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":296
  * 
  *             cdef int t
  *             cdef char* f = NULL             # <<<<<<<<<<<<<<
@@ -10527,7 +10702,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_f = NULL;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":297
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":297
  *             cdef int t
  *             cdef char* f = NULL
  *             cdef dtype descr = <dtype>PyArray_DESCR(self)             # <<<<<<<<<<<<<<
@@ -10540,7 +10715,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_descr = ((PyArray_Descr *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":300
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":300
  *             cdef int offset
  * 
  *             info.obj = self             # <<<<<<<<<<<<<<
@@ -10553,7 +10728,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __Pyx_DECREF(__pyx_v_info->obj);
   __pyx_v_info->obj = ((PyObject *)__pyx_v_self);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -10563,7 +10738,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = ((!(PyDataType_HASFIELDS(__pyx_v_descr) != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":303
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":303
  * 
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num             # <<<<<<<<<<<<<<
@@ -10573,7 +10748,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_4 = __pyx_v_descr->type_num;
     __pyx_v_t = __pyx_t_4;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -10593,7 +10768,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     }
     __pyx_L15_next_or:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":305
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":305
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -10610,7 +10785,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_1 = __pyx_t_2;
     __pyx_L14_bool_binop_done:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -10619,7 +10794,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     if (unlikely(__pyx_t_1)) {
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -10632,7 +10807,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 306, __pyx_L1_error)
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":304
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -10641,7 +10816,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     }
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":307
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":307
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"             # <<<<<<<<<<<<<<
@@ -10654,7 +10829,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_UBYTE:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":308
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":308
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"             # <<<<<<<<<<<<<<
@@ -10665,7 +10840,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_SHORT:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":309
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":309
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"             # <<<<<<<<<<<<<<
@@ -10676,7 +10851,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_USHORT:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":310
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":310
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"             # <<<<<<<<<<<<<<
@@ -10687,7 +10862,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_INT:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":311
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":311
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"             # <<<<<<<<<<<<<<
@@ -10698,7 +10873,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_UINT:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":312
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":312
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"             # <<<<<<<<<<<<<<
@@ -10709,7 +10884,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_LONG:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":313
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":313
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"             # <<<<<<<<<<<<<<
@@ -10720,7 +10895,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_ULONG:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":314
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":314
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"             # <<<<<<<<<<<<<<
@@ -10731,7 +10906,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_LONGLONG:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":315
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":315
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"             # <<<<<<<<<<<<<<
@@ -10742,7 +10917,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_ULONGLONG:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":316
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":316
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"             # <<<<<<<<<<<<<<
@@ -10753,7 +10928,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_FLOAT:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":317
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":317
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"             # <<<<<<<<<<<<<<
@@ -10764,7 +10939,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_DOUBLE:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":318
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":318
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"             # <<<<<<<<<<<<<<
@@ -10775,7 +10950,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_LONGDOUBLE:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":319
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":319
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"             # <<<<<<<<<<<<<<
@@ -10786,7 +10961,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_CFLOAT:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":320
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":320
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"             # <<<<<<<<<<<<<<
@@ -10797,7 +10972,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_CDOUBLE:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":321
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":321
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"             # <<<<<<<<<<<<<<
@@ -10808,7 +10983,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_CLONGDOUBLE:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":322
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":322
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"             # <<<<<<<<<<<<<<
@@ -10819,7 +10994,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       case NPY_OBJECT:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":323
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":323
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"
  *                 elif t == NPY_OBJECT:      f = "O"             # <<<<<<<<<<<<<<
@@ -10830,7 +11005,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       default:
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":325
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":325
  *                 elif t == NPY_OBJECT:      f = "O"
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -10851,7 +11026,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
     }
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":326
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":326
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f             # <<<<<<<<<<<<<<
@@ -10860,7 +11035,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->format = __pyx_v_f;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":327
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":327
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f
  *                 return             # <<<<<<<<<<<<<<
@@ -10870,7 +11045,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_r = 0;
     goto __pyx_L0;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":302
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -10879,7 +11054,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":329
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":329
  *                 return
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)             # <<<<<<<<<<<<<<
@@ -10889,7 +11064,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->format = ((char *)PyObject_Malloc(0xFF));
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":330
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":330
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment             # <<<<<<<<<<<<<<
@@ -10898,7 +11073,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     (__pyx_v_info->format[0]) = '^';
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":331
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":331
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0             # <<<<<<<<<<<<<<
@@ -10907,7 +11082,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_offset = 0;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":332
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":332
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0
  *                 f = _util_dtypestring(descr, info.format + 1,             # <<<<<<<<<<<<<<
@@ -10917,7 +11092,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_9 = __pyx_f_5numpy__util_dtypestring(__pyx_v_descr, (__pyx_v_info->format + 1), (__pyx_v_info->format + 0xFF), (&__pyx_v_offset)); if (unlikely(__pyx_t_9 == ((char *)NULL))) __PYX_ERR(2, 332, __pyx_L1_error)
     __pyx_v_f = __pyx_t_9;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":335
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":335
  *                                       info.format + _buffer_format_string_len,
  *                                       &offset)
  *                 f[0] = c'\0' # Terminate format string             # <<<<<<<<<<<<<<
@@ -10927,7 +11102,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     (__pyx_v_f[0]) = '\x00';
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":258
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -10959,7 +11134,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -10983,7 +11158,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__releasebuffer__", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -10993,7 +11168,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (PyArray_HASFIELDS(__pyx_v_self) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":339
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":339
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)             # <<<<<<<<<<<<<<
@@ -11002,7 +11177,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->format);
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":338
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -11011,7 +11186,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -11021,7 +11196,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":341
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":341
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):
  *                 PyObject_Free(info.strides)             # <<<<<<<<<<<<<<
@@ -11030,7 +11205,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->strides);
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":340
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -11039,7 +11214,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":337
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -11051,7 +11226,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -11065,7 +11240,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":822
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":822
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -11079,7 +11254,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":821
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -11098,7 +11273,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -11112,7 +11287,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":825
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":825
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -11126,7 +11301,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":824
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -11145,7 +11320,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -11159,7 +11334,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":828
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":828
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -11173,7 +11348,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":827
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -11192,7 +11367,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -11206,7 +11381,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":831
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":831
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -11220,7 +11395,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":830
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -11239,7 +11414,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -11253,7 +11428,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":834
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":834
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -11267,7 +11442,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -11286,7 +11461,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -11300,7 +11475,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -11310,7 +11485,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":838
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":838
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -11322,7 +11497,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":837
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -11331,7 +11506,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":840
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":840
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -11345,7 +11520,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":836
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -11360,7 +11535,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -11389,7 +11564,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   char *__pyx_t_9;
   __Pyx_RefNannySetupContext("_util_dtypestring", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":847
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":847
  * 
  *     cdef dtype child
  *     cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -11398,7 +11573,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":848
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":848
  *     cdef dtype child
  *     cdef int endian_detector = 1
  *     cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -11407,7 +11582,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -11430,7 +11605,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_childname, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":852
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":852
  * 
  *     for childname in descr.names:
  *         fields = descr.fields[childname]             # <<<<<<<<<<<<<<
@@ -11447,7 +11622,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_fields, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":853
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":853
  *     for childname in descr.names:
  *         fields = descr.fields[childname]
  *         child, new_offset = fields             # <<<<<<<<<<<<<<
@@ -11482,7 +11657,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_new_offset, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -11499,7 +11674,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((((__pyx_v_end - __pyx_v_f) - ((int)__pyx_t_5)) < 15) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -11512,7 +11687,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 856, __pyx_L1_error)
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":855
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -11521,7 +11696,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -11541,7 +11716,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L8_next_or:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":859
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":859
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -11558,7 +11733,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = __pyx_t_7;
     __pyx_L7_bool_binop_done:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -11567,7 +11742,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":860
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":860
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -11580,7 +11755,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 860, __pyx_L1_error)
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":858
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -11589,7 +11764,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":870
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":870
  * 
  *         # Output padding bytes
  *         while offset[0] < new_offset:             # <<<<<<<<<<<<<<
@@ -11605,7 +11780,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (!__pyx_t_6) break;
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":871
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":871
  *         # Output padding bytes
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte             # <<<<<<<<<<<<<<
@@ -11614,7 +11789,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       (__pyx_v_f[0]) = 0x78;
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":872
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":872
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte
  *             f += 1             # <<<<<<<<<<<<<<
@@ -11623,7 +11798,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":873
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":873
  *             f[0] = 120 # "x"; pad byte
  *             f += 1
  *             offset[0] += 1             # <<<<<<<<<<<<<<
@@ -11634,7 +11809,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + 1);
     }
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":875
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":875
  *             offset[0] += 1
  * 
  *         offset[0] += child.itemsize             # <<<<<<<<<<<<<<
@@ -11644,7 +11819,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_8 = 0;
     (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + __pyx_v_child->elsize);
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -11654,7 +11829,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((!(PyDataType_HASFIELDS(__pyx_v_child) != 0)) != 0);
     if (__pyx_t_6) {
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":878
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":878
  * 
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num             # <<<<<<<<<<<<<<
@@ -11666,7 +11841,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -11676,7 +11851,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __pyx_t_6 = (((__pyx_v_end - __pyx_v_f) < 5) != 0);
       if (unlikely(__pyx_t_6)) {
 
-        /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
+        /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -11689,7 +11864,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __PYX_ERR(2, 880, __pyx_L1_error)
 
-        /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
+        /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":879
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -11698,7 +11873,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":883
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":883
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"             # <<<<<<<<<<<<<<
@@ -11716,7 +11891,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":884
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":884
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"             # <<<<<<<<<<<<<<
@@ -11734,7 +11909,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":885
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":885
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"             # <<<<<<<<<<<<<<
@@ -11752,7 +11927,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":886
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":886
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"             # <<<<<<<<<<<<<<
@@ -11770,7 +11945,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":887
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":887
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"             # <<<<<<<<<<<<<<
@@ -11788,7 +11963,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":888
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":888
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"             # <<<<<<<<<<<<<<
@@ -11806,7 +11981,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":889
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":889
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"             # <<<<<<<<<<<<<<
@@ -11824,7 +11999,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":890
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":890
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"             # <<<<<<<<<<<<<<
@@ -11842,7 +12017,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":891
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":891
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"             # <<<<<<<<<<<<<<
@@ -11860,7 +12035,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":892
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":892
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"             # <<<<<<<<<<<<<<
@@ -11878,7 +12053,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":893
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":893
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"             # <<<<<<<<<<<<<<
@@ -11896,7 +12071,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":894
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":894
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"             # <<<<<<<<<<<<<<
@@ -11914,7 +12089,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":895
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":895
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"             # <<<<<<<<<<<<<<
@@ -11932,7 +12107,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":896
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":896
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf             # <<<<<<<<<<<<<<
@@ -11952,7 +12127,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":897
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":897
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd             # <<<<<<<<<<<<<<
@@ -11972,7 +12147,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":898
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":898
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg             # <<<<<<<<<<<<<<
@@ -11992,7 +12167,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":899
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":899
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"             # <<<<<<<<<<<<<<
@@ -12010,7 +12185,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":901
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":901
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -12029,7 +12204,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       }
       __pyx_L15:;
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":902
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":902
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *             f += 1             # <<<<<<<<<<<<<<
@@ -12038,7 +12213,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":877
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -12048,7 +12223,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       goto __pyx_L13;
     }
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":906
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":906
  *             # Cython ignores struct boundary information ("T{...}"),
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)             # <<<<<<<<<<<<<<
@@ -12061,7 +12236,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L13:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":851
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -12071,7 +12246,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":907
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":907
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)
  *     return f             # <<<<<<<<<<<<<<
@@ -12081,7 +12256,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   __pyx_r = __pyx_v_f;
   goto __pyx_L0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":842
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -12106,7 +12281,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -12118,7 +12293,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1023
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1023
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -12127,7 +12302,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1024
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1024
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -12136,7 +12311,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1022
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -12148,7 +12323,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -12163,7 +12338,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1027
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1027
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -12172,7 +12347,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -12182,7 +12357,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1029
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1029
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -12193,7 +12368,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1028
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -12202,7 +12377,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1030
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1030
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -12214,7 +12389,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1026
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -12229,7 +12404,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -12250,7 +12425,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12266,7 +12441,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1036
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1036
  * cdef inline int import_array() except -1:
  *     try:
  *         _import_array()             # <<<<<<<<<<<<<<
@@ -12275,7 +12450,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1036, __pyx_L3_error)
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12289,7 +12464,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1037
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1037
  *     try:
  *         _import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -12304,7 +12479,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -12320,7 +12495,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1035
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12335,7 +12510,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1034
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -12358,7 +12533,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -12379,7 +12554,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12395,7 +12570,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1042
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1042
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -12404,7 +12579,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1042, __pyx_L3_error)
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12418,7 +12593,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1043
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1043
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -12433,7 +12608,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -12449,7 +12624,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1041
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12464,7 +12639,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1040
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -12487,7 +12662,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
+/* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -12508,7 +12683,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12524,7 +12699,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1048
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1048
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -12533,7 +12708,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1048, __pyx_L3_error)
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12547,7 +12722,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1049
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1049
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -12561,7 +12736,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1050
+      /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1050
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -12575,7 +12750,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
+    /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1047
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12590,7 +12765,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -12798,6 +12973,20 @@ static PyObject *__pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_gra
 static int __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_grackle_data_file(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
     return __pyx_pw_9pygrackle_15grackle_wrapper_14chemistry_data_17grackle_data_file_3__set__(o, v);
+  }
+  else {
+    PyErr_SetString(PyExc_NotImplementedError, "__del__");
+    return -1;
+  }
+}
+
+static PyObject *__pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_grackle_molecular_data(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_1__get__(o);
+}
+
+static int __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_grackle_molecular_data(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+  if (v) {
+    return __pyx_pw_9pygrackle_15grackle_wrapper_14chemistry_data_22grackle_molecular_data_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -13207,6 +13396,7 @@ static struct PyGetSetDef __pyx_getsets_9pygrackle_15grackle_wrapper_chemistry_d
   {(char *)"h2_optical_depth_approximation", __pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_h2_optical_depth_approximation, __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_h2_optical_depth_approximation, (char *)0, 0},
   {(char *)"photoelectric_heating", __pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_photoelectric_heating, __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_photoelectric_heating, (char *)0, 0},
   {(char *)"grackle_data_file", __pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_grackle_data_file, __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_grackle_data_file, (char *)0, 0},
+  {(char *)"grackle_molecular_data", __pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_grackle_molecular_data, __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_grackle_molecular_data, (char *)0, 0},
   {(char *)"CaseBRecombination", __pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_CaseBRecombination, __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_CaseBRecombination, (char *)0, 0},
   {(char *)"UVbackground", __pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_UVbackground, __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_UVbackground, (char *)0, 0},
   {(char *)"SolarMetalFractionByMass", __pyx_getprop_9pygrackle_15grackle_wrapper_14chemistry_data_SolarMetalFractionByMass, __pyx_setprop_9pygrackle_15grackle_wrapper_14chemistry_data_SolarMetalFractionByMass, (char *)0, 0},
@@ -13527,18 +13717,18 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "pygrackle/grackle_wrapper.pyx":291
+  /* "pygrackle/grackle_wrapper.pyx":299
  * 
  *     cdef np.ndarray ref_gs, ref_ge
  *     ref_gs = np.zeros(3, dtype="int64")             # <<<<<<<<<<<<<<
  *     ref_ge = np.zeros(3, dtype="int64")
  *     ref_ge[0] = grid_dimension - 1
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
@@ -13549,7 +13739,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":276
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_ARRAY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
@@ -13560,7 +13750,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":306
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -13571,7 +13761,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":856
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -13582,7 +13772,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":880
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -13593,7 +13783,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1038
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -13604,7 +13794,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1044
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -13615,65 +13805,65 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "pygrackle/grackle_wrapper.pyx":285
+  /* "pygrackle/grackle_wrapper.pyx":293
  *         return <gr_float *> rv.data
  * 
  * def solve_chemistry(fc, my_dt):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_tuple__12 = PyTuple_Pack(67, __pyx_n_s_fc, __pyx_n_s_my_dt, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_grid_dx, __pyx_n_s_dt_value, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_x_velocity_2, __pyx_n_s_y_velocity_2, __pyx_n_s_z_velocity_2, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_Water_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_volumetric_heating_rate, __pyx_n_s_specific_heating_rate, __pyx_n_s_RT_heating_rate, __pyx_n_s_RT_HI_ionization_rate, __pyx_n_s_RT_HeI_ionization_rate, __pyx_n_s_RT_HeII_ionization_rate, __pyx_n_s_RT_H2_dissociation_rate, __pyx_n_s_H2_self_shielding_length, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_HCOplus_density, __pyx_n_s_HeHplus_density, __pyx_n_s_CH3plus_density, __pyx_n_s_CH4plus_density, __pyx_n_s_CH5plus_density, __pyx_n_s_O2Hplus_density); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(67, __pyx_n_s_fc, __pyx_n_s_my_dt, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_grid_dx, __pyx_n_s_dt_value, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_x_velocity_2, __pyx_n_s_y_velocity_2, __pyx_n_s_z_velocity_2, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_Water_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_volumetric_heating_rate, __pyx_n_s_specific_heating_rate, __pyx_n_s_RT_heating_rate, __pyx_n_s_RT_HI_ionization_rate, __pyx_n_s_RT_HeI_ionization_rate, __pyx_n_s_RT_HeII_ionization_rate, __pyx_n_s_RT_H2_dissociation_rate, __pyx_n_s_H2_self_shielding_length, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_HCOplus_density, __pyx_n_s_HeHplus_density, __pyx_n_s_CH3plus_density, __pyx_n_s_CH4plus_density, __pyx_n_s_CH5plus_density, __pyx_n_s_O2Hplus_density); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(2, 0, 67, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_solve_chemistry, 285, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(2, 0, 67, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_solve_chemistry, 293, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 293, __pyx_L1_error)
 
-  /* "pygrackle/grackle_wrapper.pyx":426
+  /* "pygrackle/grackle_wrapper.pyx":434
  *                 O2Hplus_density)
  * 
  * def calculate_cooling_time(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_tuple__14 = PyTuple_Pack(33, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_x_velocity_2, __pyx_n_s_y_velocity_2, __pyx_n_s_z_velocity_2, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_cooling_time, __pyx_n_s_RT_heating_rate, __pyx_n_s_volumetric_heating_rate, __pyx_n_s_specific_heating_rate); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(33, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_x_velocity_2, __pyx_n_s_y_velocity_2, __pyx_n_s_z_velocity_2, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_cooling_time, __pyx_n_s_RT_heating_rate, __pyx_n_s_volumetric_heating_rate, __pyx_n_s_specific_heating_rate); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 434, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(1, 0, 33, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_cooling_time, 426, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(1, 0, 33, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_cooling_time, 434, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 434, __pyx_L1_error)
 
-  /* "pygrackle/grackle_wrapper.pyx":498
+  /* "pygrackle/grackle_wrapper.pyx":506
  *                 specific_heating_rate)
  * 
  * def calculate_gamma(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_tuple__16 = PyTuple_Pack(48, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_Water_density, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_gamma); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 498, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(48, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_Water_density, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_gamma); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(1, 0, 48, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_gamma, 498, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 498, __pyx_L1_error)
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(1, 0, 48, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_gamma, 506, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 506, __pyx_L1_error)
 
-  /* "pygrackle/grackle_wrapper.pyx":599
+  /* "pygrackle/grackle_wrapper.pyx":607
  *                 gamma)
  * 
  * def calculate_pressure(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_tuple__18 = PyTuple_Pack(48, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_Water_density, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_pressure); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 599, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(48, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_Water_density, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_pressure); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 607, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 48, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_pressure, 599, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 599, __pyx_L1_error)
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 48, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_pressure, 607, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 607, __pyx_L1_error)
 
-  /* "pygrackle/grackle_wrapper.pyx":700
+  /* "pygrackle/grackle_wrapper.pyx":708
  *                 pressure)
  * 
  * def calculate_temperature(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_tuple__20 = PyTuple_Pack(48, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_Water_density, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_temperature); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 700, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(48, __pyx_n_s_fc, __pyx_n_s_grid_rank, __pyx_n_s_grid_dimension, __pyx_n_s_ref_gs, __pyx_n_s_ref_ge, __pyx_n_s_grid_start, __pyx_n_s_grid_end, __pyx_n_s_chem_data, __pyx_n_s_my_chemistry, __pyx_n_s_my_rates, __pyx_n_s_my_units, __pyx_n_s_density, __pyx_n_s_internal_energy, __pyx_n_s_HI_density, __pyx_n_s_HII_density, __pyx_n_s_HM_density, __pyx_n_s_HeI_density, __pyx_n_s_HeII_density, __pyx_n_s_HeIII_density, __pyx_n_s_H2I_density, __pyx_n_s_H2II_density, __pyx_n_s_DI_density, __pyx_n_s_DII_density, __pyx_n_s_HDI_density, __pyx_n_s_Water_density, __pyx_n_s_O_density, __pyx_n_s_OH_density, __pyx_n_s_O2_density, __pyx_n_s_Oplus_density, __pyx_n_s_OHplus_density, __pyx_n_s_H2Oplus_density, __pyx_n_s_H3Oplus_density, __pyx_n_s_O2plus_density, __pyx_n_s_Cplus_density, __pyx_n_s_C_density, __pyx_n_s_CH_density, __pyx_n_s_CH2_density, __pyx_n_s_CH3_density, __pyx_n_s_CH4_density, __pyx_n_s_CO_density, __pyx_n_s_COplus_density, __pyx_n_s_CO2_density, __pyx_n_s_CHplus_density, __pyx_n_s_CH2plus_density, __pyx_n_s_H3plus_density, __pyx_n_s_e_density, __pyx_n_s_metal_density, __pyx_n_s_temperature); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 48, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_temperature, 700, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 700, __pyx_L1_error)
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 48, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pygrackle_grackle_wrapper_pyx, __pyx_n_s_calculate_temperature, 708, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -14042,64 +14232,64 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":285
+  /* "pygrackle/grackle_wrapper.pyx":293
  *         return <gr_float *> rv.data
  * 
  * def solve_chemistry(fc, my_dt):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_1solve_chemistry, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_1solve_chemistry, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_solve_chemistry, __pyx_t_2) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_solve_chemistry, __pyx_t_2) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":426
+  /* "pygrackle/grackle_wrapper.pyx":434
  *                 O2Hplus_density)
  * 
  * def calculate_cooling_time(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_3calculate_cooling_time, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_3calculate_cooling_time, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 434, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_cooling_time, __pyx_t_2) < 0) __PYX_ERR(0, 426, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_cooling_time, __pyx_t_2) < 0) __PYX_ERR(0, 434, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":498
+  /* "pygrackle/grackle_wrapper.pyx":506
  *                 specific_heating_rate)
  * 
  * def calculate_gamma(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_5calculate_gamma, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 498, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_5calculate_gamma, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_gamma, __pyx_t_2) < 0) __PYX_ERR(0, 498, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_gamma, __pyx_t_2) < 0) __PYX_ERR(0, 506, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":599
+  /* "pygrackle/grackle_wrapper.pyx":607
  *                 gamma)
  * 
  * def calculate_pressure(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_7calculate_pressure, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 599, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_7calculate_pressure, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 607, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_pressure, __pyx_t_2) < 0) __PYX_ERR(0, 599, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_pressure, __pyx_t_2) < 0) __PYX_ERR(0, 607, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pygrackle/grackle_wrapper.pyx":700
+  /* "pygrackle/grackle_wrapper.pyx":708
  *                 pressure)
  * 
  * def calculate_temperature(fc):             # <<<<<<<<<<<<<<
  *     cdef int grid_rank = 1
  *     cdef int grid_dimension
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_9calculate_temperature, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 700, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_9pygrackle_15grackle_wrapper_9calculate_temperature, NULL, __pyx_n_s_pygrackle_grackle_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_temperature, __pyx_t_2) < 0) __PYX_ERR(0, 700, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_temperature, __pyx_t_2) < 0) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "pygrackle/grackle_wrapper.pyx":1
@@ -14112,7 +14302,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "../../../../../../anaconda3/envs/water/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
+  /* "../../../../../../anaconda3/lib/python3.7/site-packages/Cython/Includes/numpy/__init__.pxd":1046
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<

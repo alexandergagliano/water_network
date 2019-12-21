@@ -103,7 +103,7 @@ c        NEW CHEMISTRY
 
       END TYPE
 
-c     This is the fortran definition of grackle_chemistry_dadta
+c     This is the fortran definition of grackle_chemistry_data
 
       TYPE, BIND(C) :: grackle_chemistry_data
          INTEGER(C_INT) :: use_grackle
@@ -151,6 +151,7 @@ c     This is the fortran definition of grackle_chemistry_dadta
          INTEGER(C_INT) :: water_rates
          INTEGER(C_INT) :: water_only
          INTEGER(C_INT) :: crx_ionization
+         TYPE(C_PTR)    :: grackle_molecular_data
 cc       INTEGER(C_INT) :: omp_nthreads // not supported in fortran
       END TYPE
 

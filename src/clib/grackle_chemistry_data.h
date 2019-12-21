@@ -131,6 +131,11 @@ typedef struct
   /* flag to specify the cosmic ray ionization levels */
   int crx_ionization;
 
+  /* data file containing UV photodissociation and photoionization rates 
+   * for molecular chemistry in the water network*/
+  char *grackle_molecular_data;
+
+
   /* number of OpenMP threads, if supported */
 # ifdef _OPENMP
   int omp_nthreads;
@@ -175,9 +180,12 @@ typedef struct
 {
 
     long long Nz;
+    long long Nz_molec;
 
     double zmin, zmax;    
+    double zmin_molec, zmax_molec;
     double *z;
+    double *z_molec;
 
     /* Radiative rates for 6-species. */
     double *k24;
@@ -198,6 +206,36 @@ typedef struct
     double *crsHI;
     double *crsHeI;
     double *crsHeII;
+
+    double *UV1;
+    double *UV2;
+    double *UV3;
+    double *UV4;
+    double *UV5;
+    double *UV6;
+    double *UV7;
+    double *UV8;
+    double *UV9;
+    double *UV10;
+    double *UV11;
+    double *UV12;
+    double *UV13;
+    double *UV14;
+    double *UV15;
+    double *UV16;
+    double *UV17;
+    double *UV18;
+    double *UV19;
+    double *UV20;
+    double *UV21;
+    double *UV22;
+    double *UV23;
+    double *UV24;
+    double *UV25;
+    double *UV26;
+    double *UV34;
+    double *UV37;
+    double *UV38;
 
 } UVBtable;
 

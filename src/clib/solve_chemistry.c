@@ -497,7 +497,7 @@ int _solve_chemistry(chemistry_data *my_chemistry,
 	       // Maybe indicate that you need to subcycle more? 
              
                // complete one iteration of the water network
-               ierr = integrate_network(my_chemistry->water_rates, Y, temperature, temperature, density[index], metallicity*Z_solar, UV_water, my_chemistry->crx_ionization, dt_value * my_units->time_units, &nstp, my_units, my_chemistry->primordial_chemistry, my_chemistry->H2_self_shielding, my_uvb_rates.crsHI, my_uvb_rates.k24,my_chemistry->water_only);
+               ierr = integrate_network(my_chemistry->water_rates, Y, temperature, temperature, density[index], metallicity*Z_solar, UV_water, my_chemistry->crx_ionization, dt_value * my_units->time_units, &nstp, my_units, my_chemistry->primordial_chemistry, my_chemistry->H2_self_shielding, my_uvb_rates.crsHI, my_uvb_rates.k24,my_chemistry->water_only, my_rates);
 
                if (ierr != 0 && ierr != MXSTP)
                {

@@ -234,7 +234,7 @@ double calc_H4(double alpha[], double nH, double temp){
       return gamma;
 }
 
-int get_rates(int water_rates, double *rate, double temp, double n, double t_dust, double Z, double UV, int CRX, code_units *my_units, int ispecies, double Y[], int H2_shield, double crsHI, double k24, int water_only) 
+int get_rates(int water_rates, double *rate, double temp, double n, double t_dust, double Z, double UV, int CRX, code_units *my_units, int ispecies, double Y[], int H2_shield, double crsHI, double k24, int water_only, chemistry_data_storage *my_rates) 
 {
   double uxyz = my_units->length_units; 
   double utim = my_units->time_units;
@@ -279,7 +279,7 @@ int get_rates(int water_rates, double *rate, double temp, double n, double t_dus
    //these coefficients are taken from Bialy & Sternberg 2015
    
    // if shielding is high, assume we use the LW-blocked rates instead of the thin rates
-// If column density of H2 is greater than 1.e22 cm^-2, then we'll have the LW-blocked rates
+   // If column density of H2 is greater than 1.e22 cm^-2, then we'll have the LW-blocked rates
 
    rate[H1] = 0.0;
    rate[Z1] = 0.0;
@@ -687,12 +687,15 @@ int get_rates(int water_rates, double *rate, double temp, double n, double t_dus
   }
 
    double Zdash = Z/Z_solar;
+   double IUV;
    if ((int) UV) {
-      //double IUV_0 = 1.0;
-      double IUV = 1.0;
-      //double IUV = IUV_0 * exp( - 38.0 * Zdash);
-     
-      if (!water_only){
+      //if (water_only){
+         IUV = 1.0;
+      //} else {
+	      // getting rid of this for now, don't want to add too many pieces at once
+	// double IUV_0 = 1.0;
+        // IUV = IUV_0 * exp( - 38.0 * Zdash);
+     // }
       double f_shield_H;
       if (H2_shield > 1){
 	 //calculate self-shielding factor
@@ -717,95 +720,233 @@ int get_rates(int water_rates, double *rate, double temp, double n, double t_dus
 	 f_shield_H = 1.0;
       }
 
-      // RATES CONSIDERING SELF-SHIELDED SCALING - NOT FULLY BLOCKED YET 
-      // TODO - FIND RATES FOR THESE THAT MAKE SENSE
-      rate[UV1] = 2.527e-10*IUV;
-      rate[UV2] = 3.221e-11*IUV;
-      rate[UV3] = 4.803e-10*IUV;
-      rate[UV4] = 5.126e-10*IUV;
-      rate[UV5] = 4.748e-10*IUV;
-      rate[UV6] = 0.00*IUV;
-      rate[UV7] = 0.00*IUV;
-      rate[UV8] = 0.00*IUV;
-      rate[UV9] = 2.07e-09*IUV;
-      rate[UV10] = 1.389e-10*IUV;
-      rate[UV11] = 3.36e-10*IUV;
-      rate[UV12] = 4.989e-11*IUV;
-      rate[UV13] = 2.343e-10*IUV;
-      rate[UV14] = 9.492e-10*IUV;
-      rate[UV15] = 1.104e-10*IUV;
-      rate[UV16] = 7.363e-12*IUV;
-      rate[UV17] = 1.087e-10*IUV;
-      rate[UV18] = 4.31e-10*IUV;
-      rate[UV19] = 0.0*IUV;
-      rate[UV20] = 2.631e-11*IUV;
-      rate[UV21] = 9.215e-16*IUV;
-      rate[UV22] = 0.0*IUV;
-      rate[UV23] = 0.0*IUV;
-      rate[UV24] = 0.0*IUV;
-      rate[UV25] = 5.00e-10*IUV;
-      rate[UV26] = 3.00e-10*IUV;
-      rate[UV27] = 1.00e-10*IUV;
-      rate[UV28] = 1.00e-10*IUV;
-      rate[UV29] = 3.00e-10*IUV;
-      rate[UV30] = 5.00e-11*IUV;
-      rate[UV31] = 5.00e-11*IUV;
-      rate[UV32] = 1.50e-11*IUV;
-      rate[UV33] = 3.50e-11*IUV;
-      rate[UV34] = 2.80e-10*IUV;
-      rate[UV35] = 5.00e-10*IUV;
-      rate[UV36] = 5.00e-10*IUV;
-      rate[UV37] = 5.60e-11*IUV;
-      rate[UV38] = 5.60e-11*IUV;
-      rate[UV39] = 5.00e-10*IUV;
-      rate[UV40] = 5.00e-10*IUV;
-      
-      for (int k = UV1; k <= UV40; k++){rate[k] *= f_shield_H;}
-
+      if (water_only){
+         // RATES CONSIDERING SELF-SHIELDED SCALING - NOT FULLY BLOCKED YET 
+         rate[UV1] = 2.527e-10*IUV;
+         rate[UV2] = 3.221e-11*IUV;
+         rate[UV3] = 4.803e-10*IUV;
+         rate[UV4] = 5.126e-10*IUV;
+         rate[UV5] = 4.748e-10*IUV;
+         rate[UV6] = 0.00*IUV;
+         rate[UV7] = 0.00*IUV;
+         rate[UV8] = 0.00*IUV;
+         rate[UV9] = 2.07e-09*IUV;
+         rate[UV10] = 1.389e-10*IUV;
+         rate[UV11] = 3.36e-10*IUV;
+         rate[UV12] = 4.989e-11*IUV;
+         rate[UV13] = 2.343e-10*IUV;
+         rate[UV14] = 9.492e-10*IUV;
+         rate[UV15] = 1.104e-10*IUV;
+         rate[UV16] = 7.363e-12*IUV;
+         rate[UV17] = 1.087e-10*IUV;
+         rate[UV18] = 4.31e-10*IUV;
+         rate[UV19] = 0.0*IUV;
+         rate[UV20] = 2.631e-11*IUV;
+         rate[UV21] = 9.215e-16*IUV;
+         rate[UV22] = 0.0*IUV;
+         rate[UV23] = 0.0*IUV;
+         rate[UV24] = 0.0*IUV;
+         rate[UV25] = 5.00e-10*IUV;
+         rate[UV26] = 3.00e-10*IUV;
+         rate[UV34] = 2.80e-10*IUV;
+         rate[UV37] = 5.60e-11*IUV;
+         rate[UV38] = 5.60e-11*IUV;
       } else{
+	   //Use the UV rates from the table! And interpolate where necessary
+	   double Redshift = 1.0 / (my_units->a_value * my_units->a_units) - 1;
+	   if (Redshift <= 0){ printf("Error! To run the water network with UV, start a cosmology run.\n"); }
+	     // find interpolation index
+	    if (Redshift <= my_rates->UVbackground_table.zmax_molec){
+            double *zvec = my_rates->UVbackground_table.z_molec;
+            double slope;
+            int index=0;
+            while (Redshift > zvec[index])
+              index++;
+            if(index == 0) index=1;
+            if(index == my_rates->UVbackground_table.Nz_molec) index--;
 
-      // LW-BLOCKED 1.e5K BB
-      rate[UV1] = 2.527e-10*IUV;
-      rate[UV2] = 3.221e-11*IUV;
-      rate[UV3] = 4.803e-10*IUV;
-      rate[UV4] = 5.126e-10*IUV;
-      rate[UV5] = 4.748e-10*IUV;
-      rate[UV6] = 0.00*IUV;
-      rate[UV7] = 0.00*IUV;
-      rate[UV8] = 0.00*IUV;
-      rate[UV9] = 2.07e-09*IUV;
-      rate[UV10] = 1.389e-10*IUV;
-      rate[UV11] = 3.36e-10*IUV;
-      rate[UV12] = 4.989e-11*IUV;
-      rate[UV13] = 2.343e-10*IUV;
-      rate[UV14] = 9.492e-10*IUV;
-      rate[UV15] = 1.104e-10*IUV;
-      rate[UV16] = 7.363e-12*IUV;
-      rate[UV17] = 1.087e-10*IUV;
-      rate[UV18] = 4.31e-10*IUV;
-      rate[UV19] = 0.0*IUV;
-      rate[UV20] = 2.631e-11*IUV;
-      rate[UV21] = 9.215e-16*IUV;
-      rate[UV22] = 0.0*IUV;
-      rate[UV23] = 0.0*IUV;
-      rate[UV24] = 0.0*IUV;
-      rate[UV25] = 5.00e-10*IUV;
-      rate[UV26] = 3.00e-10*IUV;
-      rate[UV27] = 1.00e-10*IUV;
-      rate[UV28] = 1.00e-10*IUV;
-      rate[UV29] = 3.00e-10*IUV;
-      rate[UV30] = 5.00e-11*IUV;
-      rate[UV31] = 5.00e-11*IUV;
-      rate[UV32] = 1.50e-11*IUV;
-      rate[UV33] = 3.50e-11*IUV;
-      rate[UV34] = 2.80e-10*IUV;
-      rate[UV35] = 5.00e-10*IUV;
-      rate[UV36] = 5.00e-10*IUV;
-      rate[UV37] = 5.60e-11*IUV;
-      rate[UV38] = 5.60e-11*IUV;
-      rate[UV39] = 5.00e-10*IUV;
-      rate[UV40] = 5.00e-10*IUV;
+                         /* *** UV1 *** */
+            slope = (my_rates->UVbackground_table.UV1[index] -
+           my_rates->UVbackground_table.UV1[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV1] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV1[index-1];
+
+	                /* *** UV2 *** */
+            slope = (my_rates->UVbackground_table.UV2[index] -
+           my_rates->UVbackground_table.UV2[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV2] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV2[index-1];
+
+	                /* *** UV3 *** */
+            slope = (my_rates->UVbackground_table.UV3[index] -
+           my_rates->UVbackground_table.UV3[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV3] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV3[index-1];
+
+	                /* *** UV4 *** */
+            slope = (my_rates->UVbackground_table.UV4[index] -
+           my_rates->UVbackground_table.UV4[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV4] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV4[index-1];
+
+	                /* *** UV5 *** */
+            slope = (my_rates->UVbackground_table.UV5[index] -
+           my_rates->UVbackground_table.UV5[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV5] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV5[index-1];
+
+	                /* *** UV6 *** */
+            slope = (my_rates->UVbackground_table.UV6[index] -
+           my_rates->UVbackground_table.UV6[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV6] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV6[index-1];
+
+	                /* *** UV7 *** */
+            slope = (my_rates->UVbackground_table.UV7[index] -
+           my_rates->UVbackground_table.UV7[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV7] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV7[index-1];
+
+	                /* *** UV8 *** */
+            slope = (my_rates->UVbackground_table.UV8[index] -
+           my_rates->UVbackground_table.UV8[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV8] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV8[index-1];
+
+	                /* *** UV9 *** */
+	   /* Because UV9 is already in Grackle
+            slope = (my_rates->UVbackground_table.UV9[index] -
+           my_rates->UVbackground_table.UV9[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV9] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV9[index-1];
+		*/
+
+	                /* *** UV10 *** */
+            slope = (my_rates->UVbackground_table.UV10[index] -
+           my_rates->UVbackground_table.UV10[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV10] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV10[index-1];
+
+	                /* *** UV11 *** */
+            slope = (my_rates->UVbackground_table.UV11[index] -
+           my_rates->UVbackground_table.UV11[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV11] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV11[index-1];
+
+	                /* *** UV12 *** */
+            slope = (my_rates->UVbackground_table.UV12[index] -
+           my_rates->UVbackground_table.UV12[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV12] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV12[index-1];
+
+	                /* *** UV13 *** */
+            slope = (my_rates->UVbackground_table.UV13[index] -
+           my_rates->UVbackground_table.UV13[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV13] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV13[index-1];
+
+	                /* *** UV14 *** */
+            slope = (my_rates->UVbackground_table.UV14[index] -
+           my_rates->UVbackground_table.UV14[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV14] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV14[index-1];
+
+	                /* *** UV15 *** */
+            slope = (my_rates->UVbackground_table.UV15[index] -
+           my_rates->UVbackground_table.UV15[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV15] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV15[index-1];
+
+	                /* *** UV16 *** */
+            slope = (my_rates->UVbackground_table.UV16[index] -
+           my_rates->UVbackground_table.UV16[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV16] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV16[index-1];
+
+	                /* *** UV17 *** */
+            slope = (my_rates->UVbackground_table.UV17[index] -
+           my_rates->UVbackground_table.UV17[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV17] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV17[index-1];
+
+	                /* *** UV18 *** */
+	   /* commenting out because UV9, UV18 are definitely already in grackle
+            slope = (my_rates->UVbackground_table.UV18[index] -
+           my_rates->UVbackground_table.UV18[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV18] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV18[index-1];
+		*/
+
+	                /* *** UV19 *** */
+            slope = (my_rates->UVbackground_table.UV19[index] -
+           my_rates->UVbackground_table.UV19[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV19] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV19[index-1];
+
+	                /* *** UV20 *** */
+            slope = (my_rates->UVbackground_table.UV20[index] -
+           my_rates->UVbackground_table.UV20[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV20] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV20[index-1];
+
+	                /* *** UV21 *** */
+            slope = (my_rates->UVbackground_table.UV21[index] -
+           my_rates->UVbackground_table.UV21[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV21] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV21[index-1];
+
+	                /* *** UV22 *** */
+            slope = (my_rates->UVbackground_table.UV22[index] -
+           my_rates->UVbackground_table.UV22[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV22] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV22[index-1];
+
+	                /* *** UV23 *** */
+            slope = (my_rates->UVbackground_table.UV23[index] -
+           my_rates->UVbackground_table.UV23[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV23] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV23[index-1];
+
+	                /* *** UV24 *** */
+            slope = (my_rates->UVbackground_table.UV24[index] -
+           my_rates->UVbackground_table.UV24[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV24] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV24[index-1];
+
+	                /* *** UV25 *** */
+            slope = (my_rates->UVbackground_table.UV25[index] -
+           my_rates->UVbackground_table.UV25[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV25] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV25[index-1];
+
+	                /* *** UV26 *** */
+            slope = (my_rates->UVbackground_table.UV26[index] -
+           my_rates->UVbackground_table.UV26[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV26] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV26[index-1];
+
+	                /* *** UV34 *** */
+            slope = (my_rates->UVbackground_table.UV34[index] -
+           my_rates->UVbackground_table.UV34[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV34] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV34[index-1];
+
+	                /* *** UV37 *** */
+            slope = (my_rates->UVbackground_table.UV37[index] -
+           my_rates->UVbackground_table.UV37[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV37] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV37[index-1];
+
+	                /* *** UV38 *** */
+            slope = (my_rates->UVbackground_table.UV38[index] -
+           my_rates->UVbackground_table.UV38[index-1]) / (zvec[index] - zvec[index-1]);
+           rate[UV38] = (Redshift - zvec[index-1]) * slope +
+                my_rates->UVbackground_table.UV38[index-1];
+	    }
       }
+
+      // scale according to f shielding! 
+      for (int k = UV1; k <= UV40; k++){rate[k] *= f_shield_H;}
    }
 
    if (water_rates == 3)
@@ -849,6 +990,8 @@ int get_rates(int water_rates, double *rate, double temp, double n, double t_dus
         rate[H1] = 3.50e-12 * pow(tov300, -0.75);
         rate[H2] = 3.37e-16 * pow(tov300, 0.64) * exp(-9.2 * tinv);
         rate[H3] = 4.32e-09 * pow(tov300, -0.39) * exp(-39.4 * tinv);
+	rate[UV9] = 2.07e-09*IUV;
+	rate[UV18] = 4.31e-10*IUV; //these two are already in Grackle! So turn them on only if running tests
       }
 
       //implementing H4, Formula A1 from Martin et al. (1996)
@@ -921,7 +1064,7 @@ int get_rates(int water_rates, double *rate, double temp, double n, double t_dus
          //not the broken pow law used in Bialy & Sternberg (2019)
          rate[H8] = 3.00e-17 * pow(T2, 0.5) * Zdash;
          rate[H8] *= n / Y[H];
-      }
+      } // else use the Grackle h2dust rate
 
       rate[H9] = 2.08e-09;
       rate[H10] = 4.36e-08*pow(tov300, -0.52);
