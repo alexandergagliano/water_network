@@ -96,27 +96,25 @@ int integrate_network(int water_rates, double *Y, double T0, double T1, double n
       dtdone += dttry;
 
       // compute greatest change in chemical over time step
+      /*
       double tmp, drel, dydt;
       int idx = 0;
       drel = 1.e-99;
-      dydt = (Y[H2m] - Y_old[H2m])/dttry;
-      //double Z_solar = 0.01295;
-      //printf("sumR[H2m] = %.2e\n", dydt/(Y[H]*Y[H]*(metl/Z_solar)));
-      /*
       for (int i = 0; i < nSpecies; i++) {
         //printf("cvg x, all abunds: %3d: Ylst = %15.6e  Y = %15.6e\n", i, Ylst[i], Y[i]);
-	printf("Y[%i] = %.2e\n", i, Y[i]);
+//	printf("Y[%i] = %.2e\n", i, Y[i]);
         //tmp = fabs(Y[i] - Y_old[i])/Y_old[i];
         dydt = (Y[i] - Y_old[i])/dttry;
         printf("dY[%d]/dt = %g\n",i,dydt);
-        //if ((Y[i] / sumY > noise_tol) && (tmp > drel)) {
-        //  idx = i;
-        //  drel = tmp;
-        }*/
+        if ((Y[i] / sumY > noise_tol) && (tmp > drel)) {
+          idx = i;
+          drel = tmp;
+        }
 
-     // }
-      //printf("\n");
-      //printf("Greatest Change: Y_old[%2d] = %.5e  Y[%2d] = %.5e  DY[%d] = %.5e\n",idx,Y_old[idx],idx,Y[idx],idx,drel);
+       }
+      printf("\n");
+      printf("Greatest Change: Y_old[%2d] = %.5e  Y[%2d] = %.5e  DY[%d] = %.5e\n",idx,Y_old[idx],idx,Y[idx],idx,drel);
+      */
 
       if (dtdone >= dtwant ) {
         //cycle complete

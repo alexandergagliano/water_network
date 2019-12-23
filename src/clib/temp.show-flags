@@ -37,10 +37,10 @@ DEFINES = -DLINUX -DH5_USE_16_API -fPIC  -DCONFIG_BFLOAT_8
 INCLUDES = -I/include     -I.
 
 CPPFLAGS = -P -traditional
-CFLAGS   =  -g 
-CXXFLAGS =  -g 
-FFLAGS   = -fno-second-underscore -ffixed-line-length-132 -g 
-F90FLAGS = -fno-second-underscore -g 
+CFLAGS   =  -O2 
+CXXFLAGS =  -O2 
+FFLAGS   = -fno-second-underscore -ffixed-line-length-132 -O2 
+F90FLAGS = -fno-second-underscore -O2 
 LDFLAGS  = -lm -lgsl -lgslcblas -lgfortran 
 
 LIBS     = -L/lib -lhdf5 -lz  -lgfortran 

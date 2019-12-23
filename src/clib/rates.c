@@ -683,45 +683,20 @@ int get_rates(int water_rates, double *rate, double temp, double n, double t_dus
     rate[D4] = 2.1e-9;
     rate[D5] = 3.2e-11 * exp( -3624.0 * tinv);
     rate[D6] = 1.0e-9 * exp( -464.0 * tinv); 
-
   }
 
    double Zdash = Z/Z_solar;
    double IUV;
    if ((int) UV) {
       //if (water_only){
-         IUV = 1.0;
+      //   IUV = 1.0;
       //} else {
 	      // getting rid of this for now, don't want to add too many pieces at once
 	// double IUV_0 = 1.0;
         // IUV = IUV_0 * exp( - 38.0 * Zdash);
      // }
-      double f_shield_H;
-      if (H2_shield > 1){
-	 //calculate self-shielding factor
-	 //         Compute shielding factor for H
-	 //         WARNING - MAKE SURE THE UNITS ARE RIGHT!
-	 //         SHOULD SPECIES BE IN NDENS OR MASS DENS??
-            double nSSh = 6.73e-3 *
-                pow(crsHI /2.49e-18,-2./3.) *
-                pow(temp/1.0e4, 0.17) *
-                pow(k24/1.0e-12, 2.0/3.0);
-
-            // Compute the total Hydrogen number density
-            double nratio = Y[H] + Y[Hplus] + Y[Hmin] + Y[H2m] + Y[H2plus];
-            nratio = nratio/nSSh;
-
-	    // Compute H shielding factor
-            f_shield_H = (0.98*
-                pow(1.0 + pow(nratio, 1.64), -2.28) +
-                 0.02*pow(1.0+nratio, -0.84));
-      }
-      else{
-	 f_shield_H = 1.0;
-      }
 
       if (water_only){
-         // RATES CONSIDERING SELF-SHIELDED SCALING - NOT FULLY BLOCKED YET 
          rate[UV1] = 2.527e-10*IUV;
          rate[UV2] = 3.221e-11*IUV;
          rate[UV3] = 4.803e-10*IUV;
@@ -942,11 +917,21 @@ int get_rates(int water_rates, double *rate, double temp, double n, double t_dus
            my_rates->UVbackground_table.UV38[index-1]) / (zvec[index] - zvec[index-1]);
            rate[UV38] = (Redshift - zvec[index-1]) * slope +
                 my_rates->UVbackground_table.UV38[index-1];
-	    }
+
+	   //estimating H2 shielding
+	   if ((H2_shield > 0) & (Nh2 > 1.e22)){
+              rate[UV6] = 0.0;
+              rate[UV7] = 0.0;
+              rate[UV8] = 0.0;
+              rate[UV19] = 0.0;
+              rate[UV22] = 0.0;
+              rate[UV23] = 0.0;
+              rate[UV24] = 0.0;
+           }
+
+	 }
       }
 
-      // scale according to f shielding! 
-      for (int k = UV1; k <= UV40; k++){rate[k] *= f_shield_H;}
    }
 
    if (water_rates == 3)
