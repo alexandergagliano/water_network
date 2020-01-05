@@ -620,6 +620,12 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                   }
 	       //}
 
+               // Set tiny floor for metal species - everything past 
+               for (int j = 0; j < nSpecies; j++){
+                   Y[j] = max(Y[j], tiny);
+               }
+
+
                /* Write updated number densities back to metal fields */
                Y[H]   /= d_to_n;
                Y[Hplus] /= d_to_n; 
