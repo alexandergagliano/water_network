@@ -391,7 +391,7 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                }
                else{
                  temperature = (double) internal_energy[index]* (double) temperature_units;
-                 if( metallicity < 1.e-8 || temperature > 1.e5){
+                 if( metallicity < 1.e-8){
                    continue;
                  }
                  static int on = 1;

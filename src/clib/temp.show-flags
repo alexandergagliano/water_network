@@ -25,11 +25,11 @@ the full path of each command used inside of those.
 
 Report bugs to <which-bugs@gnu.org>.
 CPP = 
-CC  = /bin/gcc
-CXX = /bin/g++
-FC  = /bin/gfortran
-F90 = /bin/gfortran
-LD  = /bin/gcc
+CC  = /usr/projects/hpcsoft/toss3/common/x86_64/gcc/5.3.0/bin/gcc
+CXX = /usr/projects/hpcsoft/toss3/common/x86_64/gcc/5.3.0/bin/g++
+FC  = /usr/projects/hpcsoft/toss3/common/x86_64/gcc/5.3.0/bin/gfortran
+F90 = /usr/projects/hpcsoft/toss3/common/x86_64/gcc/5.3.0/bin/gfortran
+LD  = /usr/projects/hpcsoft/toss3/common/x86_64/gcc/5.3.0/bin/gcc
 LIBTOOL = /usr/bin/libtool
 
 DEFINES = -DLINUX -DH5_USE_16_API -fPIC  -DCONFIG_BFLOAT_8
