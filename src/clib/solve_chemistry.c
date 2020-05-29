@@ -391,7 +391,7 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                }
                else{
                  temperature = (double) internal_energy[index]* (double) temperature_units;
-                 if( metallicity < 1.e-8){
+                 if( metallicity < 1.e-8 || temperature > 1.e5){
                    continue;
                  }
                  static int on = 1;
@@ -585,8 +585,9 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                   if ((sum_metl > metal_cgs) || (delta_mass > tiny)) {
                      // scale the water species back to appropriate values //
                      metl_frac = metal_cgs/sum_metl * metal_frac; 
+		     //printf("percent diff in metal is %.2f\n", metl_frac-1.0);
 
-		     if (abs(metl_frac - 1.0) > 0.1){
+		     if (abs(metl_frac - 1.0) >= 0.01){
 
                      Y[O]       *= metl_frac;
                      Y[OH]      *= metl_frac;
@@ -616,14 +617,14 @@ int _solve_chemistry(chemistry_data *my_chemistry,
                         Y[CH5plus] *= metl_frac;
                         Y[O2Hplus] *= metl_frac;
 		     }
-		     }
+		    }
                   }
 	       //}
-
-               // Set tiny floor for metal species - everything past 
-               for (int j = 0; j < nSpecies; j++){
-                   Y[j] = max(Y[j], tiny);
-               }
+	       
+	       // Set tiny floor for metal species - everything past 
+	       for (int j = 0; j < nSpecies; j++){
+		   Y[j] = max(Y[j], tiny);
+	       } 
 
 
                /* Write updated number densities back to metal fields */
